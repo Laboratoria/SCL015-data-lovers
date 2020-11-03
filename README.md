@@ -134,7 +134,7 @@ usuario necesita.
 
 ## 5. Criterios de aceptación mínimos del proyecto
 
-Los criterios para considerar que has completado este proyecto son:
+Los criterios para considerar que has realizado este proyecto son:
 
 ### Definición del producto
 
