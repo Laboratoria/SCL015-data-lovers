@@ -1,0 +1,36 @@
+body {
+    background-image: url("image/fondo.png");
+    background-repeat: round; /* hace que no se repita la imagen */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display : flex;
+    flex-direction: column;
+    /* width: 100vw;
+    height: 100vh; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+}
+
+#logo {
+    width: 346px;
+    height: 100px;
+}
+#pokebola {
+    width: 203px;
+    height: 120px;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+}
