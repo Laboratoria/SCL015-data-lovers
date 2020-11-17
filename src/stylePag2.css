@@ -113,7 +113,7 @@ footer {
 }
 
 /* formato responsive para table */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 415px) {
     header {
         height: 13vh;
         justify-content: center;
