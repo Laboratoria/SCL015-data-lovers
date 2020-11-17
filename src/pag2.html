@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="stylePag2.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="top">
       <figure>
         <img src="image/logo Pokedatos.png" alt="logoPokedatos" id="logo">
-        <img src="image/pokebola.png" alt="pokebola" id="pokebola">
+        <img src="image/pokebola.png" alt="pokebola" id="pokeball">
       </figure>
     </header>
 
-    <section class="data">
+    <section>
+      <select id="orderPokemon" class="selectStyle">
+        <option value="0" selected disabled>Ordenar por:</option>
+        <option value="1">Ascendente (A-Z)</option>
+        <option value="2">Descendente (Z-A)</option>
+      </select>
+    </section>
+    <section id="dataList">
       
     </section>
-
+    
+    <footer>
+      <p>Create by Erika Arango and Luzciel Montesinos SCL15</p>
+    </footer>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
