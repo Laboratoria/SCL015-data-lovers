@@ -1,6 +1,7 @@
 import { example } from './data.js';
 
-// import data from './data/pokemon/pokemon.js';
+//import data from './data/pokemon/pokemon.js';
+
 
 let dataInfo
 
@@ -17,7 +18,9 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   .then(response => response.json() )
   .then(data => {
   
+
   dataInfo = data.pokemon; // variable que contiene toda la data pokemon del json
+  //console.log(dataInfo[0].name);
   //let tarjetaPoke = ""; 
   let listPokemon= document.getElementById("dataList"); // seccion en HTML donde se introduciran las cards de los pokemones
   for(let i= 0; i < dataInfo.length; ++i) {
@@ -28,8 +31,8 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       //console.log(card);
       listPokemon.appendChild(card);
   }
-  console.log(dataInfo.name.sort())
-  //return tarjetaPoke
+  //console.log(dataInfo.name.sort())
+
 
   // const orderPoke = document.getElementById("orderPokemon").value; 
   // const sortByAlphabet = () => {

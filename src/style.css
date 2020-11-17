@@ -11,7 +11,13 @@ body {
     height: 100vh; */
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.contenedor {
+    width: 100wh;
+    /* max-width: 1000px; */
 }
 
 header {
@@ -41,11 +47,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
+
 h2{
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 254px 10px;
+    box-sizing: border-box;
 
 }
 
@@ -55,8 +64,8 @@ h2{
     height: 20vh;
     margin-right: 380px;
     align-items: center;
-
 }
+
 figure {
     display: flex;
 }
@@ -75,7 +84,6 @@ button{
     margin-right: 190px;
     left: calc(50% - 299px/2 + 0.5px);
     top: calc(50% - 80px/2 + 288px);
-
     background: rgba(19, 100, 222, 0.67);
     border: 5px solid rgba(250, 225, 94, 0.91);
     box-sizing: border-box;
@@ -99,10 +107,97 @@ footer {
     font-size: 20px;
     color: black;
     height: 10vh;
-    width: 50vw;
 }
 
 p {
     margin: 0px;
     font-size: 20px;
+}
+
+/* formato responsive para celular galaxy 8 plus */
+@media screen and (max-width: 415px) {
+    
+    header {
+        height: 23vh;
+        margin-bottom: 10vh;
+    }
+    figure {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    #pokemonesPrincipal {
+        width: 253px;
+    }
+
+    h2 {
+        font-size: 19px;
+        margin: 20px 0px;
+    }
+    .welcome {
+        height: 44vh
+    }
+    
+    .welcome-inferior{
+        margin: 50px 0px 0px;
+        height: 13vh;
+    }
+    button {
+        margin:0;
+        width: 165px;
+    }
+    #pikachu {
+        display: none;
+    }
+    footer {
+        height: 10vh;
+        width: 100%;
+    }
+    footer p {
+        margin: 0px;
+        font-size: 13px;
+    }
+}
+
+/* formato responsive para table */
+@media screen and (max-width: 768px) {
+    header {
+        height: 15vh;
+        justify-content: center;
+    }
+    section {
+        height: 34vh;
+    }
+    
+    #logo {
+        width: 270px;
+        height: 67px;
+    }
+  
+    #pokeball {
+        width: 168px;
+        height: 100px;
+    }
+    .welcome-information {
+        margin: 0px 47px;
+    }
+    h2{
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+    #pikachu {
+        width: 178px;
+        height: 158px;
+        margin-left: 281px;
+        margin-right: 0px;
+    }
+    footer {
+        height: 7vh;
+        width: 100%;
+    }
+    footer p {
+        margin: 0px;
+        font-size: 13px;
+    }
 }
