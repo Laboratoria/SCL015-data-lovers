@@ -1,9 +1,7 @@
-import  _data  from './data.js';
+//import  _data  from './data.js';
 
 // import data from './data/pokemon/pokemon.js';
-
 let dataInfo
-
 // funcion para crear e Imprimir un elemento en HTML. Un <template> es un elemento que se utiliza 
 //para declarar fragmentos de HTML que se pueden utilizar en scripts.
 const htmlToElements= (html) => {
@@ -23,7 +21,6 @@ function pokemonesEnPantalla (_dataInfo){
         listPokemon.appendChild(card);
     }
 }
-
 fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.json')
   .then(response => response.json() )
   .then(data => {  
