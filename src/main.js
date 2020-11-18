@@ -5,7 +5,7 @@ import logic from './data.js'
 
 //let dataInfo
 let listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
-const orderPoke = document.getElementById("orderPokemon")
+//const orderPoke = document.getElementById("orderPokemon")
 
 // Imprimir un elemento en HTML. 
 const htmlToElements= (html) => {
@@ -14,48 +14,62 @@ const htmlToElements= (html) => {
   return stencil.content.firstChild; //Nodo.firstChild = devuelve el primer hijo del nodo
 }
 
+//data .JSON
 fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.json')
   .then(response => response.json() )
   .then(data => { 
     const dataPokemon = data.pokemon; // data pokemon del json
-    printData(dataPokemon); 
+    //console.log("hola", dataPokemon);
+    
+    //console.log("hola", printData(dataPokemon));
 
-    orderPoke.addEventListener("change", () => { 
-      console.log("hola", orderPoke.value);
-      sortByAlphabet(dataPokemon, orderPoke) 
-      printData(dataPokemon) }
-  )})
-  .catch(function(error) {
-      return ('Hubo un problema con la petición Fetch:' + error.message);
-  });
+    // orderPoke.addEventListener("change", () => { 
+    //   console.log("hola", orderPoke.value);
+    //   sortByAlphabet(dataPokemon, orderPoke) 
+    //   printData(dataPokemon) }
 
-    const printData = (dataInfo) => {
+  //Imprime las card de los Pokemones con Nombre y Imagen 
+    const printData = (dataPokemonParameter) => {
       listPokemon.innerHTML ="";
-      console.log("data", dataInfo)
-      for (let i=0; i<dataInfo.length; i++){
+      console.log("data", dataPokemonParameter)
+      for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
-        <img src='${dataInfo[i].img}'/>
-        <p>'${dataInfo[i].name}'</p></div>`);
+        <img src='${dataPokemonParameter[i].img}'/>
+        <p>'${dataPokemonParameter[i].name}'</p></div>`);
         listPokemon.appendChild(card);
       } 
     }
+    printData(dataPokemon); 
 
-    const sortByAlphabet = (dataInfo, valor) => {
-        const valueOrder = valor.value;
-        console.log("entro en IF")
+    //Ordenar AZ - ZA
+    const orderPoke = document.getElementById("orderPokemon");
+    orderPoke.addEventListener("change", () => {
+      const sortByAlphabet = (dataPokemonParameter) => {
+        const valueOrder = orderPoke.value;
+        //console.log("entro en IF")
         if(valueOrder === "1"){ 
-          console.log("entro en 1")
-          logic.orderAZ(dataInfo)
-          console.log(dataInfo);
+          //console.log("entro en 1")
+          logic.orderAZ(dataPokemonParameter)
+          //console.log(dataPokemonParameter);
         }
         if(valueOrder === "2"){
-          console.log("entro en 2")
-          logic.orderZA(dataInfo)
+          //console.log("entro en 2")
+          logic.orderZA(dataPokemonParameter)
+         }
         }
+    sortByAlphabet(dataPokemon)
+    printData(dataPokemon)
+      
 
 
-        }
 
+        })
+      })
+
+      .catch(function(error) {
+            return ('Hubo un problema con la petición Fetch:' + error.message);
+
+        });
         
       // dataInfo = data.pokemon; // variable que contiene toda la data pokemon del json
       // dataOrden.ordenar(dataInfo)

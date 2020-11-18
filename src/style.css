@@ -160,7 +160,7 @@ p {
     }
 }
 
-/* formato responsive para table */
+/* formato responsive para table hay que colocar max y min */  
 @media screen and (max-width: 768px) and (min-width: 415px) {
     header {
         height: 15vh;

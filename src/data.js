@@ -27,29 +27,6 @@ export const orderZA = (arrayPoke) => {
 
   export default {orderAZ, orderZA };
 
-// const funciones = () => {
-//   let pokemon = data.pokemon;
-//   pokemon.sort(function(a, b) {
-//     if(a.name > b.name){
-//         return 1;
-//     }
-
-//     if (a.name < b.name) {
-//         return -1
-//     }
-//     });
-    
-//   let sortdata = pokemon.sort() 
-//   console.log (sortdata)
-//   for (let i=0; i<sortdata.length; i++){
-// }
-// }
-
-// const validator = { funciones }
-// export default validator;
-
-
-
 
 
 
