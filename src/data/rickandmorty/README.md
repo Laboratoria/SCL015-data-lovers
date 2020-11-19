@@ -1,5 +1,5 @@
 # Rick and Morty
-
+Prueba 2
 Rick y Morty es una serie de televisión estadounidense de animación para
 adultos. La serie tiene gran acogida a nivel mundial, de todo este fandom hay
 un grupo que desea poder interactuar y ver la información de los personajes y
