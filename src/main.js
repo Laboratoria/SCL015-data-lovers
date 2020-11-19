@@ -19,9 +19,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   .then(response => response.json() )
   .then(data => { 
     const dataPokemon = data.pokemon; // data pokemon del json
-    //console.log("hola", dataPokemon);
     
-    //console.log("hola", printData(dataPokemon));
 
     // orderPoke.addEventListener("change", () => { 
     //   console.log("hola", orderPoke.value);
@@ -31,7 +29,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   //Imprime las card de los Pokemones con Nombre y Imagen 
     const printData = (dataPokemonParameter) => {
       listPokemon.innerHTML ="";
-      console.log("data", dataPokemonParameter)
+      // console.log("data", dataPokemonParameter)
       for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
         <img src='${dataPokemonParameter[i].img}'/>
@@ -71,48 +69,4 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
 
         });
         
-      // dataInfo = data.pokemon; // variable que contiene toda la data pokemon del json
-      // dataOrden.ordenar(dataInfo)
-      // //console.log(dataInfo[0].name); 
-      // const listPokemon = document.getElementById("dataList");
-      // for (let i=0; i<dataInfo.length; i++){
-      //   let card = htmlToElements(`<div class ="all-card">
-      //   <img src='${dataInfo[i].img}'/>
-      //   <p>'${dataInfo[i].name}'</p></div>`);
-      //   listPokemon.appendChild(card);
-      // } 
-
-
-
-      // dataInfo = data.pokemon; // variable que contiene toda la data pokemon del json
-  //console.log(dataInfo[0].name);
-    // for(let i= 0; i < dataInfo.length; ++i) {
-    // //console.log(dataInfo[i].img)
-    // let card = htmlToElements(`<div class ="all-card">
-    // <img src='${dataInfo[i].img}'/>
-    // <p>'${dataInfo[i].name}'</p></div>`);
-    //   //console.log(card);
-    //   listPokemon.appendChild(card);
-    // }
-
-//console.log(dataInfo.name.sort())
-
-
-  // const orderPoke = document.getElementById("orderPokemon").value; 
-  // const sortByAlphabet = () => {
-     
-  // }
-
-
-// fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.json')
-//   .then(response => response.json() )
-// .then(data => {
-//  <p> ${data.pokemon[i].name}</p>
-
-//     let primerPokemon= document.getElementById("orden")
-//     primerPokemon.innerHTML= `
-//     <img src='${data.pokemon[0].img}' />
-//     <p> ${data.pokemon[0].name}</p>
-//     `
-//     console.log(data.pokemon[0].name)
-//   })
+    

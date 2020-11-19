@@ -1,7 +1,7 @@
 //import data  from './data/pokemon/pokemon.js' // importar la data del data.js
 
 
-export const orderAZ = (arrayPoke) => { 
+const orderAZ = (arrayPoke) => { 
   arrayPoke.sort(function(a, b) {
       if(a.name > b.name){
           return 1;
@@ -13,7 +13,7 @@ export const orderAZ = (arrayPoke) => {
       });
   }
 
-export const orderZA = (arrayPoke) => {    
+const orderZA = (arrayPoke) => {    
     arrayPoke.sort(function(a, b) {
         if(a.name < b.name){
             return 1;
@@ -24,7 +24,8 @@ export const orderZA = (arrayPoke) => {
         }
         });
     }
-
+    console.log(typeof orderAZ)
+    
   export default {orderAZ, orderZA };
 
 
