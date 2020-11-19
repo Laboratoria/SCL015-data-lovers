@@ -1,30 +1,92 @@
-export default  {
-  const filterOrder = documement.getElementById("orderPokemon");
-  filterOrder.addEventListener("onChange", function (){
+//import data  from './data/pokemon/pokemon.js' // importar la data del data.js
 
-  }) 
 
-  sortData = namesPokemon.sort((a,b) => a.name.localeCompare(b.name) * -1);
+export const orderAZ = (arrayPoke) => { 
+  arrayPoke.sort(function(a, b) {
+      if(a.name > b.name){
+          return 1;
+      }
+  
+      if (a.name < b.name) {
+          return -1
+      }
+      });
+  }
 
-//llamando los datos de la API
-fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.json')
- .then(response => response.json() )
- .then(data => {console.log(data)});
+export const orderZA = (arrayPoke) => {    
+    arrayPoke.sort(function(a, b) {
+        if(a.name < b.name){
+            return 1;
+        }
+    
+        if (a.name > b.name) {
+            return -1
+        }
+        });
+    }
 
-//fetch(`https://api.giphy.com/v1/gifs/search?api_key=PzBiUI6sCbqrLCFDOGArGWBCtfoauzYf&q=${gif}&limit=25&offset=0&rating=G&lang=en`)
-    //.then(response => response.json())
-    //.then(data => {
-   // renderInfo(data);
-  //  })
+  export default {orderAZ, orderZA };
 
-//declaro una variable de los nombres de los pokemones
-//var namesPokemon = data.pokemon.name
-//const sortData=(namesPokemon)
 
-//filterOrder = namesPokemon.sort((a,b) => a.name.localeCompare(b.name));
-//if (a.name>b.name){return 1}
-// else if (a.name<b.name){return -1}
 
-// sort ordena si es mayor o menor, pero  como son letras se pone 1 y -1
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import data  from './data/pokemon.js'
+
+// const  pokemon = data.pokemon; 
+// // estas funciones son de ejemplo
+
+// // export const example = () => {
+// //   return 'example';
+// // };
+
+// // export const anotherExample = () => {
+// //   return 'OMG';
+// // };
+
+// let ordenaz = document.getElementById("clickme");
+// ordenaz.addEventListener("click", function (a, b) {
+//     if(a.name > b.name){
+//         return 1;
+//     }
+
+//     if (a.name < b.name) {
+//         return -1
+//     }
+
+//     return 0;
+
+// });
+
+
+
+// // pokemon.sort(function(a, b) {
+// //   if(a.name > b.name){
+// //       return 1;
+// //   }
+
+// //   if (a.name < b.name) {
+// //       return -1
+// //   }
+
+// //   return 0;
+// // });
+
+// // console.log(pokemon);*/
