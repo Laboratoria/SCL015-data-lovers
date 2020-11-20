@@ -16,12 +16,41 @@ En este proyecto, teníamos como proposito realizar una página web que le permi
 
 Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. 
 
-![Rick and Morty](https://www.tonica.la/__export/1593033191339/sites/debate/img/2020/06/24/rick-and-morty-portada.jpg_423682103.jpg)
+![rick-and-morty](/src/img/rickandmortyreadme.jpg)
 
-## 2. 
+## 2. Definición de producto
+
+### Definición del usuario
+
+Nuestros usuarios son personas entre 28 y 35 años que tienen interés en conocer sobre la serie Rick y Morty y con esto decidir si verla o no. Según nuestra investigación tienen prioridad en ver información sobre los personajes y capítulos.
+
+### Definición del problema
+
+Descubrimos que la necesidad de nuestro usuario es obtener información útil y rápida respecto a los aspectos mas importantes de la serie (personajes y capitulos), para informarse más y tomar la decisión de verla.
+
+### Solución del problema
+
+Nuestra página les mostrará a los usuarios la información básica de la serie, les permitirá filtrarla y ordenarla a su gusto, para que así puedan conseguir los datos que necesitan.
 
 
-## 3. 
+## 3. Prototipo de baja fidelidad
+
+Para definir nuestro prototipo, realizamos una encuesta con preguntas clave para definir los datos que nuestros usuarios querían conocer. Esta encuesta determinó que querían conocer:
+
+- A los personajes y sus imágenes
+- Lugar de origen y donde viven
+- Episodios dónde aparecen
+- Especie
+
+Esto con la finalidad de conocer la serie. 
+
+A continuación les mostramos nuestros primeros sketches.
+
+insertar fotos
+
+Luego de obtener feedback de nuestros usuarios e iterar obtuvimos este resultado final en nuestro prototipo:
+
+insertar foto
 
 ### HTML y CSS
 
