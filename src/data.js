@@ -1,8 +1,7 @@
 //import data  from './data/pokemon/pokemon.js' // importar la data del data.js
 
-
 const orderAZ = (arrayPoke) => { 
-  arrayPoke.sort(function(a, b) {
+    let orderIndicatorName = arrayPoke.sort(function(a, b) {
       if(a.name > b.name){
           return 1;
       }
@@ -10,21 +9,22 @@ const orderAZ = (arrayPoke) => {
       if (a.name < b.name) {
           return -1
       }
-      });
+      }); 
+  return orderIndicatorName;
   }
 
+
 const orderZA = (arrayPoke) => {    
-    arrayPoke.sort(function(a, b) {
+    const orderIndicatorName = arrayPoke.sort(function(a, b) {
         if(a.name < b.name){
             return 1;
         }
-    
         if (a.name > b.name) {
             return -1
         }
         });
+        return orderIndicatorName;
     }
-    console.log(typeof orderAZ)
     
   export default {orderAZ, orderZA };
 
@@ -32,7 +32,17 @@ const orderZA = (arrayPoke) => {
 
 
 
-
+// const orderAZ = (arrayPoke) => { 
+//   arrayPoke.sort(function(a, b) {
+//       if(a.name > b.name){
+//           return 1;
+//       }
+  
+//       if (a.name < b.name) {
+//           return -1
+//       }
+//       });
+//   }
 
 
 

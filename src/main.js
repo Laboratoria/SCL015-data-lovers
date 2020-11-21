@@ -19,7 +19,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   .then(response => response.json() )
   .then(data => { 
     const dataPokemon = data.pokemon; // data pokemon del json
-    
+    console.log(dataPokemon);
 
     // orderPoke.addEventListener("change", () => { 
     //   console.log("hola", orderPoke.value);
