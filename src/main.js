@@ -19,7 +19,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   .then(response => response.json() )
   .then(data => { 
     const dataPokemon = data.pokemon; // data pokemon del json
-    console.log(dataPokemon);
+    //console.log(dataPokemon);
 
     // orderPoke.addEventListener("change", () => { 
     //   console.log("hola", orderPoke.value);
@@ -58,10 +58,23 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
     sortByAlphabet(dataPokemon)
     printData(dataPokemon)
       
-
-
+     
 
         })
+
+    //modal
+    const printModal = (dataPokemonParameter) => {
+      listPokemon.innerHTML ="";
+      console.log("data", dataPokemonParameter)
+      //for (let i=0; i<dataPokemonParameter.length; i++){
+        let modal = htmlToElements(`<div class ="modal">
+        <img src='${dataPokemonParameter[i].img}'/>
+        <p>'${dataPokemonParameter[i].name}'</p><p>'${dataPokemonParameter[i].type}'</p><p>'${dataPokemonParameter[i].weaknesses}'</p><p>'${dataPokemonParameter[i].resistant}'</p></div>`);
+        listPokemon.appendChild(modal);
+        //console.log(modal);
+        printModal("hola mundo")
+      }  
+        
       })
 
       .catch(function(error) {
