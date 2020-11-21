@@ -59,7 +59,7 @@ describe('logic', () => {
       expect(typeof logic.filterType).toBe('function');
     });
 
-    it('logit.filterType', () => {
+    it('logic.filterType', () => {
       expect(logic.filterType(pokemon).toEqual(pokemonElectric))
     })
 
