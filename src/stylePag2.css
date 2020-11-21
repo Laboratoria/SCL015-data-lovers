@@ -50,6 +50,14 @@ p {
     border: 4px solid #1364DE;
     border-radius: 54px;
 }
+/**select Tipos */
+#filterPokemon {
+    width: 151px;
+    height: 39px;
+    background: rgba(250, 225, 94, 0.91);
+    border: 4px solid #1364DE;
+    border-radius: 54px;
+}
 
 
 #dataList {

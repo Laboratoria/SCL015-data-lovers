@@ -1,16 +1,11 @@
 //import { example, anotherExample } from '../src/data.js';
 import logic from '../src/data.js'
-//import data from '../src/data/pokemon/pokemon.js'
 
-const pokemon = [
-  {name: "charmander", type: ["fire"]},
-  {name: "pikachu", type: [ "electric"]},
-  {name: "raichu", type: [ "electric"] },
-  {name: "bulbasaur", type: [ "grass","poison"]},
-]
+let pokemon;
+
 const pokemonAZ =[ 
   { name: 'bulbasaur', type: [ 'grass', 'poison' ]},
-  { name: "charmander", type: ["fire"]},
+  { name: 'charmander', type: ['fire']},
   { name: 'pikachu', type: [ 'electric' ]},
   { name: 'raichu', type: [ 'electric' ] } 
 ]
@@ -18,16 +13,22 @@ const pokemonAZ =[
 const pokemonZA =[ 
   { name: 'raichu', type: [ 'electric' ] },
   { name: 'pikachu', type: [ 'electric' ] },
-  { name : "charmander", type : ["fire"]},
+  { name : 'charmander', type : ['fire']},
   { name: 'bulbasaur', type: [ 'grass', 'poison' ]} 
 ]
-const pokemonElectri = [
+const pokemonElectric = [
   {name: "pikachu", type: [ "electric"]},
   {name: "raichu", type: [ "electric"] }
 ]
 
-
-const pokemonElectric =
+beforeEach(() => {
+  pokemon = [
+    {name: "charmander", type: ["fire"]},
+    {name: "pikachu", type: [ "electric"]},
+    {name: "raichu", type: [ "electric"] },
+    {name: "bulbasaur", type: [ "grass","poison"]},
+  ]
+});
 
 describe('logic', () => {
   it('debería ser un objeto', () => {
@@ -54,13 +55,17 @@ describe('logic', () => {
       });
   });
 
-  describe('logic.filterType', () => {
+  describe('logic.filterData', () => {
     it('debería ser una función', () => {
-      expect(typeof logic.filterType).toBe('function');
+      expect(typeof logic.filterData).toBe('function');
     });
 
-    it('logic.filterType', () => {
-      expect(logic.filterType(pokemon).toEqual(pokemonElectric))
+    it('deberia devolver los pokemones electricos (pikachu y raichu)', () => {
+      console.log(logic.filterData(pokemon, "electric"))
+      console.log(pokemonElectric)
+      expect(logic.filterData(pokemon, "electric")).toEqual(expect.arrayContaining(pokemonElectric))
+      expect(pokemonElectric).toEqual(expect.arrayContaining(logic.filterData(pokemon, "electric")))
+
     })
 
 

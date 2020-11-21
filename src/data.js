@@ -1,4 +1,6 @@
-//import data  from './data/pokemon/pokemon.js' // importar la data del data.js
+// import data  from './data/pokemon/pokemon.js' // importar la data del data.js
+
+// const pokemon = data.pokemon;
 
 const orderAZ = (arrayPoke) => { 
     let orderIndicatorName = arrayPoke.sort(function(a, b) {
@@ -16,17 +18,32 @@ const orderAZ = (arrayPoke) => {
 
 const orderZA = (arrayPoke) => {    
     const orderIndicatorName = arrayPoke.sort(function(a, b) {
+        console.log("antes if",a,b)
         if(a.name < b.name){
+            console.log("XXXXXXXXXX")
             return 1;
         }
         if (a.name > b.name) {
+            console.log("hola2")
             return -1
         }
         });
         return orderIndicatorName;
     }
+
+    const filterData = (arrayPoke, typePoke) => {
+        const allFilter = arrayPoke.filter(arrayPoke => {
+            //console.log(1, arrayPoke.type)
+            return arrayPoke.type == typePoke;
+        })
+        // console.log(2, allFilter)
+        return allFilter;
+    }
     
-  export default {orderAZ, orderZA };
+      
+    //console.log("filtar pokemones", filterData(pokemon, "electric"))
+    
+  export default {orderAZ, orderZA, filterData };
 
 
 
