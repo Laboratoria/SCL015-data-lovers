@@ -1,85 +1,69 @@
 //import { example } from './data.js';
 // import data  from './data/pokemon.js'
 import logic from './data.js'
-
-
-//let dataInfo
 let listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
-//const orderPoke = document.getElementById("orderPokemon")
-
+let contenedorModal= document.getElementById("modal"); //seccion HTML para el modal
 // Imprimir un elemento en HTML. 
 const htmlToElements= (html) => {
   let stencil = document.createElement('template');
   stencil.innerHTML = html; // .innerHTML devuelve o establece la sintaxis HTML describiendo los descendientes del elemento.
   return stencil.content.firstChild; //Nodo.firstChild = devuelve el primer hijo del nodo
 }
-
 //data .JSON
 fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.json')
   .then(response => response.json() )
   .then(data => { 
-    const dataPokemon = data.pokemon; // data pokemon del json
-    //console.log(dataPokemon);
-
-    // orderPoke.addEventListener("change", () => { 
-    //   console.log("hola", orderPoke.value);
-    //   sortByAlphabet(dataPokemon, orderPoke) 
-    //   printData(dataPokemon) }
-
-  //Imprime las card de los Pokemones con Nombre y Imagen 
+    const dataPokemon = data.pokemon; // data pokemon del json    
+    //Imprime las card de los Pokemones con Nombre y Imagen 
     const printData = (dataPokemonParameter) => {
-      listPokemon.innerHTML ="";
-      // console.log("data", dataPokemonParameter)
+      listPokemon.innerHTML ="";      
       for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
         <img src='${dataPokemonParameter[i].img}'/>
         <p>'${dataPokemonParameter[i].name}'</p></div>`);
         listPokemon.appendChild(card);
+        //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
+        card.addEventListener ("click",function() {
+          printModal(dataPokemonParameter[i])
+        })
       } 
     }
     printData(dataPokemon); 
-
-    //Ordenar AZ - ZA
+    //ORDENAR AZ - ZA
     const orderPoke = document.getElementById("orderPokemon");
-    orderPoke.addEventListener("change", () => {
+    orderPoke.addEventListener("change", () => { //agregamos el evento "change" para que al seleccionar alguna de las opciones, se emplee la funcion ordenar
       const sortByAlphabet = (dataPokemonParameter) => {
-        const valueOrder = orderPoke.value;
-        //console.log("entro en IF")
-        if(valueOrder === "1"){ 
-          //console.log("entro en 1")
+        const valueOrder = orderPoke.value;  
+        if(valueOrder === "1"){           
           logic.orderAZ(dataPokemonParameter)
-          //console.log(dataPokemonParameter);
         }
-        if(valueOrder === "2"){
-          //console.log("entro en 2")
+        if(valueOrder === "2"){          
           logic.orderZA(dataPokemonParameter)
          }
         }
     sortByAlphabet(dataPokemon)
-    printData(dataPokemon)
-      
-     
-
+    printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
         })
+       //FILTRAR POR TIPO   
+    const filterPoke = document.getElementById("filterPokemon");
+    filterPoke.addEventListener("change", (event) => { //"event" es el parametro que indica que fue lo que cambio - agrego el evento "change",para que al seleccionar la opcion de tipo se ejecute la funcion
+      //creo una variable donde se agrupen las coincidencias de tipo de pokemon       
+     let pokemonMatches = logic.filterData(dataPokemon,(event.target.value)) // ".target" indica que elemteno se esta cambiando en el select que cambia - con ".value" extraigo el valor del select        
+        printData(pokemonMatches)
+        }) 
+    //MODAL
 
-    //modal
-    const printModal = (dataPokemonParameter) => {
-      listPokemon.innerHTML ="";
-      console.log("data", dataPokemonParameter)
+     const printModal = (arrayPokeUnitario) => {
+      contenedorModal.innerHTML ="";
+      //console.log("data", dataPokemonParameter)
       //for (let i=0; i<dataPokemonParameter.length; i++){
         let modal = htmlToElements(`<div class ="modal">
-        <img src='${dataPokemonParameter[i].img}'/>
-        <p>'${dataPokemonParameter[i].name}'</p><p>'${dataPokemonParameter[i].type}'</p><p>'${dataPokemonParameter[i].weaknesses}'</p><p>'${dataPokemonParameter[i].resistant}'</p></div>`);
-        listPokemon.appendChild(modal);
-        //console.log(modal);
-        printModal("hola mundo")
-      }  
-        
+        <img src='${arrayPokeUnitario.img}'/>
+        <p>'${arrayPokeUnitario.name}'</p><p>'${arrayPokeUnitario.type}'</p><p>'${arrayPokeUnitario.weaknesses}'</p><p>'${arrayPokeUnitario.resistant}'</p></div>`);
+        contenedorModal.appendChild(modal);
+        console.log(modal); //en css debe estar en una posicion absoluta      
+      }         
       })
-
       .catch(function(error) {
             return ('Hubo un problema con la petición Fetch:' + error.message);
-
-        });
-        
-    
+        });      
