@@ -1,120 +1,33 @@
 // import data  from './data/pokemon/pokemon.js' // importar la data del data.js
-
-// const pokemon = data.pokemon;
-
+//FUNCION ORDENAR de la A a  la Z
 const orderAZ = (arrayPoke) => { 
     let orderIndicatorName = arrayPoke.sort(function(a, b) {
       if(a.name > b.name){
           return 1;
-      }
-  
+      }  
       if (a.name < b.name) {
           return -1
       }
       }); 
   return orderIndicatorName;
   }
-
-
+//FUNCION ORDENAR de la Z a la A
 const orderZA = (arrayPoke) => {    
-    const orderIndicatorName = arrayPoke.sort(function(a, b) {
-        console.log("antes if",a,b)
-        if(a.name < b.name){
-            console.log("XXXXXXXXXX")
+    const orderIndicatorName = arrayPoke.sort(function(a, b) {        
+        if(a.name < b.name){            
             return 1;
         }
-        if (a.name > b.name) {
-            console.log("hola2")
+        if (a.name > b.name) {            
             return -1
         }
         });
         return orderIndicatorName;
     }
-
+    //FUNCION FILTRAR
     const filterData = (arrayPoke, typePoke) => {
-        const allFilter = arrayPoke.filter(arrayPoke => {
-            //console.log(1, arrayPoke.type)
-            return arrayPoke.type == typePoke;
-        })
-        // console.log(2, allFilter)
+        const allFilter = arrayPoke.filter(arrayPokeUnitario => { //arrayPokeUnitario es toda la data de un solo pokemon        
+            return arrayPokeUnitario.type.includes(typePoke);//includes devuelve verdadero y falso, Aqui le pido que compare si encuentra algo con las mismas caracteristicas de tipo
+        })    
         return allFilter;
-    }
-    
-      
-    //console.log("filtar pokemones", filterData(pokemon, "electric"))
-    
+    }            
   export default {orderAZ, orderZA, filterData };
-
-
-
-
-
-// const orderAZ = (arrayPoke) => { 
-//   arrayPoke.sort(function(a, b) {
-//       if(a.name > b.name){
-//           return 1;
-//       }
-  
-//       if (a.name < b.name) {
-//           return -1
-//       }
-//       });
-//   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import data  from './data/pokemon.js'
-
-// const  pokemon = data.pokemon; 
-// // estas funciones son de ejemplo
-
-// // export const example = () => {
-// //   return 'example';
-// // };
-
-// // export const anotherExample = () => {
-// //   return 'OMG';
-// // };
-
-// let ordenaz = document.getElementById("clickme");
-// ordenaz.addEventListener("click", function (a, b) {
-//     if(a.name > b.name){
-//         return 1;
-//     }
-
-//     if (a.name < b.name) {
-//         return -1
-//     }
-
-//     return 0;
-
-// });
-
-
-
-// // pokemon.sort(function(a, b) {
-// //   if(a.name > b.name){
-// //       return 1;
-// //   }
-
-// //   if (a.name < b.name) {
-// //       return -1
-// //   }
-
-// //   return 0;
-// // });
-
-// // console.log(pokemon);*/
