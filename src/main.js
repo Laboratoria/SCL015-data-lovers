@@ -33,7 +33,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
         <img src='${dataPokemonParameter[i].img}'/>
-        <p>'${dataPokemonParameter[i].name}'</p></div>`);
+        <p>${dataPokemonParameter[i].name}</p></div>`); // recordar eliminar comillas
         listPokemon.appendChild(card);
       } 
     }
@@ -44,26 +44,25 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
     orderPoke.addEventListener("change", () => {
       const sortByAlphabet = (dataPokemonParameter) => {
         const valueOrder = orderPoke.value;
-        //console.log("entro en IF")
         if(valueOrder === "1"){ 
-          //console.log("entro en 1")
           logic.orderAZ(dataPokemonParameter)
-          //console.log(dataPokemonParameter);
         }
         if(valueOrder === "2"){
-          //console.log("entro en 2")
           logic.orderZA(dataPokemonParameter)
-         }
         }
+      }
     sortByAlphabet(dataPokemon)
     printData(dataPokemon)
-      
+    })
 
 
 
-        })
+
+
+
+
+
       })
-
       .catch(function(error) {
             return ('Hubo un problema con la petición Fetch:' + error.message);
 
