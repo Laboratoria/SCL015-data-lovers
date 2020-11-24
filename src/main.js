@@ -20,7 +20,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
         <img src='${dataPokemonParameter[i].img}'/>
-        <p>'${dataPokemonParameter[i].name}'</p></div>`);
+        <p>${dataPokemonParameter[i].name}</p></div>`);
         listPokemon.appendChild(card);
         //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
         card.addEventListener ("click",function() {
@@ -52,17 +52,14 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         printData(pokemonMatches)
         }) 
     //MODAL
-
-     const printModal = (arrayPokeUnitario) => {
-      contenedorModal.innerHTML ="";
-      //console.log("data", dataPokemonParameter)
-      //for (let i=0; i<dataPokemonParameter.length; i++){
-        let modal = htmlToElements(`<div class ="modal">
-        <img src='${arrayPokeUnitario.img}'/>
-        <p>'${arrayPokeUnitario.name}'</p><p>'${arrayPokeUnitario.type}'</p><p>'${arrayPokeUnitario.weaknesses}'</p><p>'${arrayPokeUnitario.resistant}'</p></div>`);
-        contenedorModal.appendChild(modal);
-        console.log(modal); //en css debe estar en una posicion absoluta      
-      }         
+     //const printModal = (arrayPokeUnitario) => {
+      //contenedorModal.innerHTML ="";    
+        //let modal = htmlToElements(`<div class ="modal">
+        //<img src='${arrayPokeUnitario.img}'/>
+       // <p>${arrayPokeUnitario.name}</p><p>${arrayPokeUnitario.type}</p><p>${arrayPokeUnitario.weaknesses}</p><p>${arrayPokeUnitario.resistant}</p></div>`);
+         //en css debe estar en una posicion absoluta      
+        //contenedorModal.appendChild(modal); 
+      //}         
       })
       .catch(function(error) {
             return ('Hubo un problema con la petición Fetch:' + error.message);
