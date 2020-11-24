@@ -12,7 +12,7 @@ body {
     height: 100vh; */
     padding: 0;
     margin: 0;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -20,6 +20,7 @@ header {
     display: flex;
     height: 30vh;
     width: 100vw;
+    align-items: baseline;
 }
 
 #logo {
@@ -29,6 +30,10 @@ header {
 #pokeball{
     width: 203px;
     height: 120px;
+}
+.iconify {
+    margin-left: 519px;
+    margin-top: 50px;
 }
 .data {
     display: flex;
@@ -43,20 +48,37 @@ p {
     font-size: 20px;
 }
 
+.opcion {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.fa option {
+
+    font-weight: 900;
+}
+
 #orderPokemon {
-    width: 151px;
+    width: 173px;
     height: 39px;
     background: rgba(250, 225, 94, 0.91);
     border: 4px solid #1364DE;
     border-radius: 54px;
+    color: #1364DE;
+    font-style: normal;
+    font-size: 20px;
 }
 
 #filterPokemon {
-    width: 151px;
+    width: 158px;
     height: 39px;
     background: rgba(250, 225, 94, 0.91);
     border: 4px solid #1364DE;
     border-radius: 54px;
+    color: #1364DE;
+    font-size: 20px;
+    margin-left: 43px;
 }
 
 
@@ -98,6 +120,7 @@ footer {
     height: 10vh;
     width: 50vw;
 }
+/* formato responsive para celular S8 */
 
 @media screen and (device-width : 414px) and (device-height : 736px){
     header {
@@ -114,6 +137,9 @@ footer {
     #pokeball {
         width: 127px;
         height: 79px;
+    }
+    .iconify {
+        display: none;
     }
     #orderPokemon{
         margin: 14px;
@@ -147,6 +173,9 @@ footer {
     #pokeball {
         width: 127px;
         height: 79px;
+    }
+    .iconify {
+        display: none;
     }
     div.all-card {
         width: 27%;

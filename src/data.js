@@ -1,4 +1,6 @@
-// import data  from './data/pokemon/pokemon.js' // importar la data del data.js
+// import data  from './data/pokemon/pokemon.js' // importar la data del data
+// const datapoke= data.pokemon;
+
 //FUNCION ORDENAR de la A a  la Z
 const orderAZ = (arrayPoke) => { 
     let orderIndicatorName = arrayPoke.sort(function(a, b) {
@@ -30,4 +32,6 @@ const orderZA = (arrayPoke) => {
         })    
         return allFilter;
     }            
+
+
   export default {orderAZ, orderZA, filterData };

@@ -20,7 +20,8 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       for (let i=0; i<dataPokemonParameter.length; i++){
         let card = htmlToElements(`<div class ="all-card">
         <img src='${dataPokemonParameter[i].img}'/>
-        <p>${dataPokemonParameter[i].name}</p></div>`);
+        <p>${dataPokemonParameter[i].name}</p></div>`);  
+
         listPokemon.appendChild(card);
         //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
         card.addEventListener ("click",function() {
@@ -39,8 +40,8 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         }
         if(valueOrder === "2"){          
           logic.orderZA(dataPokemonParameter)
-         }
         }
+      }
     sortByAlphabet(dataPokemon)
     printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
         })

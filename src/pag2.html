@@ -5,25 +5,30 @@
     <title>PokeDatos</title>
     <link rel="stylesheet" href="stylePag2.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
 
     <header class="top">
       <figure>
-        <img src="image/logo Pokedatos.png" alt="logoPokedatos" id="logo">
-        <img src="image/pokebola.png" alt="pokebola" id="pokeball">
+        <a href="index.html"><img src="image/logo Pokedatos.png" alt="logoPokedatos" id="logo"></a>
+        <a href="pag2.html"><img src="image/pokebola.png" alt="pokebola" id="pokeball"></a>
       </figure>
-    </header>
+      <a href="index.html">
+        <span class="iconify" data-inline="false" data-icon="ant-design:home-outlined" style="color: #1364de; font-size: 95px;">
+      </a>
+        </header>
 
-    <section>      
-      <select id="orderPokemon" class="selectStyle">
-        <option value="0" selected disabled>Ordenar por:</option>
+    <section class="opcion">  
+      <!-- <i class="iconify" data-icon="feather:filter"></i> -->
+      <select class="fa" id="orderPokemon">
+        <option value="0" selected disabled> &#xf160; Ordenar por:</option>
         <option value="1">Ascendente (A-Z)</option>
         <option value="2">Descendente (Z-A)</option>
       </select>
-      <select id="filterPokemon" class="filtertStyle">
-        <option value="0" selected disabled>Tipos</option>
+      <select id="filterPokemon" class="fa">
+        <option value="0" selected disabled> &#xf0b0; Tipos</option>
         <option value="normal">normal</option>
         <option value="fire">Fuego</option>
         <option value="water">Agua</option>
@@ -54,6 +59,7 @@
       <p>Create by Erika Arango and Luzciel Montesinos SCL15</p>
     </footer>
     <div id="root"></div>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="main.js" type="module"></script> 
     <!-- <script src="data.js" type="module"></script> -->
   </body>
