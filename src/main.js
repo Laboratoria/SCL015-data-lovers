@@ -3,6 +3,7 @@
 import logic from './data.js'
 let listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
 let contenedorModal= document.getElementById("modal"); //seccion HTML para el modal
+
 // Imprimir un elemento en HTML. 
 const htmlToElements= (html) => {
   let stencil = document.createElement('template');
@@ -18,13 +19,16 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
     const printData = (dataPokemonParameter) => {
       listPokemon.innerHTML ="";      
       for (let i=0; i<dataPokemonParameter.length; i++){
-        let card = htmlToElements(`<div class ="all-card">
-        <img src='${dataPokemonParameter[i].img}'/>
-        <p>${dataPokemonParameter[i].name}</p></div>`); // recordar eliminar comillas
+        let card = htmlToElements(
+          `<div class ="all-card">
+           <img src='${dataPokemonParameter[i].img}'/>
+            <p>${dataPokemonParameter[i].name}</p>
+          </div>`);
         listPokemon.appendChild(card);
         //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
         card.addEventListener ("click",function() {
           printModal(dataPokemonParameter[i])
+          contenedorModal.style.display = "block";
         })
       } 
     }
@@ -52,16 +56,37 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         printData(pokemonMatches)
         }) 
     //MODAL
+  
 
      const printModal = (arrayPokeUnitario) => {
       contenedorModal.innerHTML ="";
       //console.log("data", dataPokemonParameter)
       //for (let i=0; i<dataPokemonParameter.length; i++){
-        let modal = htmlToElements(`<div class ="modal">
-        <img src='${arrayPokeUnitario.img}'/>
-        <p>'${arrayPokeUnitario.name}'</p><p>'${arrayPokeUnitario.type}'</p><p>'${arrayPokeUnitario.weaknesses}'</p><p>'${arrayPokeUnitario.resistant}'</p></div>`);
+        let modal = htmlToElements(
+          `<div class ="modal-content">
+            <div class="modal-top">
+              <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
+              <span class="close">&times;</span>
+              </div>
+            <div class="modal-body">
+              <p>${arrayPokeUnitario.name}</p>
+              <p>Tipo:  <br>${arrayPokeUnitario.type}</p>
+              <div class="body-resistant">
+                <p>Fortalezas: <br> ${arrayPokeUnitario.resistant}</p>
+                <p>Debilidades: <br> ${arrayPokeUnitario.weaknesses} </p>
+              </div>
+            </div> 
+        </div>`);
         contenedorModal.appendChild(modal);
         console.log(modal); //en css debe estar en una posicion absoluta      
+     
+
+     // Cuando se haga click <span> (x), cierra el modal
+    const spanModalClose = document.getElementsByClassName("close")[0];
+    spanModalClose.onclick = () => {
+      contenedorModal.style.display = "none";
+    }
+     
       }         
       })
       .catch(function(error) {
