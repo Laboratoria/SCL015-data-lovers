@@ -55,7 +55,8 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
      let pokemonMatches = logic.filterData(dataPokemon,(event.target.value)) // ".target" indica que elemteno se esta cambiando en el select que cambia - con ".value" extraigo el valor del select        
         printData(pokemonMatches)
         }) 
-    //MODAL
+    
+        //MODAL
   
 
      const printModal = (arrayPokeUnitario) => {
@@ -65,18 +66,23 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         let modal = htmlToElements(
           `<div class ="modal-content">
             <div class="modal-top">
-              <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
+              <figure class="top-figure">
+                <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
+              </figure>
               <span class="close">&times;</span>
               </div>
             <div class="modal-body">
-              <p>${arrayPokeUnitario.name}</p>
-              <p>Tipo:  <br>${arrayPokeUnitario.type}</p>
+              <p><strong>${arrayPokeUnitario.name}</strong></p>
+              <p>Tipo:  <br> ${arrayPokeUnitario.type.join(', ')}</p>
               <div class="body-resistant">
-                <p>Fortalezas: <br> ${arrayPokeUnitario.resistant}</p>
-                <p>Debilidades: <br> ${arrayPokeUnitario.weaknesses} </p>
+                <p class="resistant">Fortalezas:<br> ${arrayPokeUnitario.resistant.join( "\n" )}</p>
+                <p class=weaknesses>Debilidades:<br> ${arrayPokeUnitario.weaknesses.join(', ')}</p></p>
               </div>
             </div> 
         </div>`);
+        // join() une todos los elementos de un array formando una cadena y separándolos con aquel argumento que definamos.
+
+
         contenedorModal.appendChild(modal);
         console.log(modal); //en css debe estar en una posicion absoluta      
      
