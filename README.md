@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Proyecto Data Lovers: Rick y Morty
+=======
+>>>>>>> 710e04a00547ee0f73c6c18b8ed2ef1684dc4ad9
 
 ## Índice
 
@@ -46,4 +49,5 @@ El proceso de diseño del producto siguió la siguiente planificación:
 ![color figma1](/src/images/figmacolor1.jpg)
 
 
+<<<<<<< HEAD
 ----------------------------------------------------------------------------
