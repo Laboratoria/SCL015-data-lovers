@@ -25,7 +25,6 @@
   width: 100vh;
   height:100vh;}
 
-<<<<<<< HEAD
 .button{
     background: #00b7f8;
     border-bottom: 5px solid #0045a6;
@@ -51,7 +50,7 @@
   .button.two{
     margin-right: 20%;
   } */
-=======
+
   .button{
   background: #00b7f8;
   border-bottom: 5px solid #0045a6;
@@ -71,7 +70,6 @@
   width: 15vw;
   margin-bottom: 5vw;}
 
->>>>>>> raiza-branch
   .button:hover{
   background: #0096f7;}
 
