@@ -6,7 +6,7 @@ console.log(example, data);
 
 const charactersBtn = document.getElementById("charactersBtn");
 charactersBtn.addEventListener("click", function(){
-    const welcomeSection = document.getElementById("welcomeSection");
+    const welcomeSection = document.getElementById("indexSection");
     welcomeSection.style.display= "none";
     const charactersSection = document.getElementById("charactersSection");
     charactersSection.style.display= "block";
