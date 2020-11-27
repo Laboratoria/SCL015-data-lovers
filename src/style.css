@@ -104,3 +104,7 @@
           width: 30vw;
           margin-bottom: 28vw;
       } }
+
+      .charactersSection{
+        display: none;
+      }
