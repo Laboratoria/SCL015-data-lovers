@@ -81,7 +81,8 @@
   /* //seccion personajes// */
   .charactersSection{
   display: none;
-  color: #ffffff;}
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;}
 
   .header{
     display: flex;
