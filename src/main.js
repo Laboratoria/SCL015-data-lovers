@@ -23,6 +23,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
           `<div class ="all-card">
            <img src='${dataPokemonParameter[i].img}'/>
             <p>${dataPokemonParameter[i].name}</p>
+            <button class="button-card">Ver Perfil</button>
           </div>`);
         listPokemon.appendChild(card);
         //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
@@ -57,7 +58,11 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         }) 
     
         //MODAL
-  
+      
+      let text;
+      function myFunction(value) {
+        text += "<li>" + value + "</li>";
+      } 
 
      const printModal = (arrayPokeUnitario) => {
       contenedorModal.innerHTML ="";
@@ -72,12 +77,16 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
               <span class="close">&times;</span>
               </div>
             <div class="modal-body">
-              <p><strong>${arrayPokeUnitario.name}</strong></p>
-              <p>Tipo:  <br> ${arrayPokeUnitario.type.join(', ')}</p>
+              <p class= "modal-name"><strong>${arrayPokeUnitario.name.toUpperCase()}</strong></p>
+              <p><strong>Tipo:</strong>  <br> ${arrayPokeUnitario.type.join(', ')}</p>
               <div class="body-resistant">
-                <p class="resistant">Fortalezas:<br> ${arrayPokeUnitario.resistant.join( "\n" )}</p>
-                <p class=weaknesses>Debilidades:<br> ${arrayPokeUnitario.weaknesses.join(', ')}</p></p>
+              <p class="resistant-title"><strong>Fortalezas:</strong></p>
+              <p><strong>Debilidades:</strong></p>
               </div>
+              <div class="items">
+              <p class="resistant">${arrayPokeUnitario.resistant.join("\n")}</p>
+              <p class=weaknesses>${arrayPokeUnitario.weaknesses.join("\n")}</p>
+            </div>
             </div> 
         </div>`);
         // join() une todos los elementos de un array formando una cadena y separándolos con aquel argumento que definamos.

@@ -32,7 +32,7 @@ header {
     height: 120px;
 }
 .iconify {
-    margin-left: 519px;
+    margin-left: 452px;
     margin-top: 50px;
 }
 .data {
@@ -98,16 +98,24 @@ div.all-card {
     background: rgba(19, 100, 222, 0.67);
     border-radius: 22px;
 }
+
+.button-card {
+    background: rgba(250, 225, 94, 0.91);
+    border: 1px solid #1364DE;
+    border-radius: 54px;
+    color: #1364DE;
+    margin: 4px 0px 10px;
+}
 /*modal */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 122px; /* Location of the box */
+    padding-top: 77px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 108%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -122,7 +130,7 @@ div.all-card {
     padding: 0;
     border: 1px solid #888;
     width: 45%;
-    height: 68%;
+    height: 76%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -187,8 +195,34 @@ div.all-card {
     text-align: center;
 }
 
+.modal-name {
+    color: #1364DE;
+    font-size: 25px;
+}
 .body-resistant {
     display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.resistant-title{
+    margin-right: 20px;
+}
+
+.items {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+.resistant {
+    width: 65px;
+    margin: 0px 63px 0px 15px;
+    text-align: center;
+}
+
+.weaknesses {
+    width: 59px;
+    margin:0px 42px 0px 50px;
 }
 /*div.modal {
     display: flex;
