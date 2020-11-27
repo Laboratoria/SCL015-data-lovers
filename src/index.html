@@ -10,10 +10,30 @@
   <body>
 
 <main class="flexcontainer">
-  <section class="welcomeSection">
-      <span class="button one">Personajes</span>
-      <span class="button two">Episodios</span>
+  <section class="welcomeSection" id="welcomeSection">
+        <span class="button one" id="charactersBtn">Personajes</span>
+        <span class="button two">Episodios</span>
   </section>
+
+  <section class="charactersSection" id="charactersSection">
+      <header>
+        <label for="order" class="select">Ordenar</label> <br>
+        <select name="order" id="select">
+          <option value="alphAscending">Alfabéticamente (A-Z)</option>
+          <option value="alphDescending">Alfabéticamente (Z-A)</option>
+        </select>
+        <h1 class="charactersTitle">Personajes</h1>
+        <button>Volver</button>
+        <button>Episodios</button>
+      </header>
+      <aside>
+
+      </aside>
+      <table>
+
+      </table>
+  </section>
+
 </main>
 
     <script src="main.js" type="module"></script>
