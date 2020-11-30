@@ -1,5 +1,11 @@
-// import data  from './data/pokemon/pokemon.js' // importar la data del data
-// const datapoke= data.pokemon;
+//import data  from './data/pokemon/pokemon.js' // importar la data del data
+//const datapoke= data.pokemon;
+let pokemon = [
+    {name: "charmander", type: ["fire"]},
+    {name: "pikachu", type: [ "electric"]},
+    {name: "raichu", type: [ "electric"] },
+    {name: "bulbasaur", type: [ "grass","poison"]},
+  ]
 
 //FUNCION ORDENAR de la A a  la Z
 const orderAZ = (arrayPoke) => { 
@@ -7,7 +13,7 @@ const orderAZ = (arrayPoke) => {
       if(a.name > b.name){
           return 1;
       }  
-      if (a.name < b.name) {
+      if (a.name < b.name) {    
           return -1
       }
       }); 
@@ -34,17 +40,13 @@ const orderZA = (arrayPoke) => {
     }      
     //CALCULAR %
     const computeData = (arrayPoke, typePoke) => {
-        let tipoPorcen = [];
-        for (let i = 0; i < arrayPoke.length; i++) {
-          for (let x = 0; x < arrayPoke[i].type.length; x++) {
-            if (arrayPoke[i].type[x] === typePoke) {
-              tipoPorcen.push(arrayPoke[i].type[x]);
-              //console.log(tipoPorcen);
-            }
+        let percentajeByType = [];         
+         for (let i = 0; i < arrayPoke.length; i++) {           
+          if (arrayPoke[i].type.includes(typePoke)) { 
+            percentajeByType.push(arrayPoke[i].type);            
           }
         }
-        return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 151 * 100) + '%');
-      };
-
-
-  export default {orderAZ, orderZA, filterData,computeData };
+        return ((percentajeByType.length) / 251 * 100).toFixed(1) + '%';
+    };
+    console.log(computeData(pokemon,'electric'))
+  export default {orderAZ, orderZA, filterData,computeData}; 

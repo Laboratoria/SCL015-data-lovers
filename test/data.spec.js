@@ -67,14 +67,17 @@ describe('logic', () => {
       expect(pokemonElectric).toEqual(expect.arrayContaining(logic.filterData(pokemon, "electric")))
 
     })
-
-
-
   });
+
   describe('logic.computeData',() =>{
     it('deberia ser una funcion',()=>{
-      expect(typeof logic.computeData).tobe('function');
+      expect(typeof logic.computeData).toBe('function');
     });
+
+    it('debeia devolver el porcentaje de pokemones por tipo', () => {
+      expect(logic.computeData(pokemon,'electric')).toEqual('0.8%');
+    });
+    
   })
 
 });

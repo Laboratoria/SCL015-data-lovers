@@ -1,8 +1,8 @@
-//import { example } from './data.js';
 // import data  from './data/pokemon.js'
 import logic from './data.js'
 let listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
 let contenedorModal= document.getElementById("modal"); //seccion HTML para el modal
+const containerPercentage= document.getElementById("percentage"); // seccion HTML para el porcentaje
 
 // Imprimir un elemento en HTML. 
 const htmlToElements= (html) => {
@@ -23,12 +23,13 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
           `<div class ="all-card">
            <img src='${dataPokemonParameter[i].img}'/>
             <p>${dataPokemonParameter[i].name}</p>
+            <button class="button-card">Ver Perfil</button>
           </div>`);
         listPokemon.appendChild(card);
-        //aqui estoy imprimiendo la carta de un pokemon, para que al hacer click se imprima una tarjeta con la informacion(el modal)
+        //Al hacer click en la Card, se imprime el Modal con la informacion de ese pokemon
         card.addEventListener ("click",function() {
           printModal(dataPokemonParameter[i])
-          contenedorModal.style.display = "block";
+          contenedorModal.style.display = "block"; 
         })
       } 
     }
@@ -47,38 +48,58 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       }
     sortByAlphabet(dataPokemon)
     printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
+    containerPercentage.style.display = "none"; // Desaparece el contenedor del porcentaje 
+    document.getElementById("filterPokemon").value=0;  // coloca el select de Filtar en el valor 0 ("Tipos")
+    
+
         })
        //FILTRAR POR TIPO   
     const filterPoke = document.getElementById("filterPokemon");
     filterPoke.addEventListener("change", (event) => { //"event" es el parametro que indica que fue lo que cambio - agrego el evento "change",para que al seleccionar la opcion de tipo se ejecute la funcion
       //creo una variable donde se agrupen las coincidencias de tipo de pokemon       
-     let pokemonMatches = logic.filterData(dataPokemon,(event.target.value)) // ".target" indica que elemteno se esta cambiando en el select que cambia - con ".value" extraigo el valor del select        
-        printData(pokemonMatches)
-        }) 
-    //MODAL
-  
+      let pokemonMatches = logic.filterData(dataPokemon,(event.target.value)) // ".target" indica que elemteno se esta cambiando en el select que cambia - con ".value" extraigo el valor del select        
+      printData(pokemonMatches)
+      printPercentage(event.target.value) // imprime el porcentaje segun el tipo
+      containerPercentage.style.display = "block"; // Aparece la sesion del porcentaje 
+      document.getElementById("orderPokemon").value=0; //  coloca el select de Ordenar en el valor 0 ("Ordenar por")
+    }) 
 
+
+  //PORCENTAJE POR TIPO
+    const printPercentage = (typeFilter) => {
+      containerPercentage.innerHTML ="";
+      let seccionPercentage = htmlToElements(`<h3 class="percentage-text">Sabias que el porcentaje total de pokemones de tipo ${typeFilter} es de un  </h3>`);
+      return containerPercentage.appendChild(seccionPercentage);
+    }
+    
+    
+   //MODAL
      const printModal = (arrayPokeUnitario) => {
       contenedorModal.innerHTML ="";
-      //console.log("data", dataPokemonParameter)
-      //for (let i=0; i<dataPokemonParameter.length; i++){
         let modal = htmlToElements(
           `<div class ="modal-content">
             <div class="modal-top">
-              <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
-              <span class="close">&times;</span>                          
+              <figure class="top-figure">
+                <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
+              </figure>
+              <span class="close">&times;</span>
               </div>
             <div class="modal-body">
-              <p>${arrayPokeUnitario.name}</p>
-              <p>Tipo:  <br>${arrayPokeUnitario.type}</p>
+              <p class= "modal-name"><strong>${arrayPokeUnitario.name.toUpperCase()}</strong></p>
+              <p><strong>Tipo:</strong>  <br> ${arrayPokeUnitario.type.join(', ')}</p>
               <div class="body-resistant">
-                <p>Fortalezas: <br> ${arrayPokeUnitario.resistant}</p>
-                <p>Debilidades: <br> ${arrayPokeUnitario.weaknesses} </p>
+              <p class="resistant-title"><strong>Fortalezas:</strong></p>
+              <p><strong>Debilidades:</strong></p>
               </div>
+              <div class="items">
+              <p class="resistant">${arrayPokeUnitario.resistant.join("\n")}</p>
+              <p class=weaknesses>${arrayPokeUnitario.weaknesses.join("\n")}</p>
+            </div>
             </div> 
         </div>`);
+        // join() une todos los elementos de un array formando una cadena y separándolos con aquel argumento que definamos.
         contenedorModal.appendChild(modal);
-        //console.log(modal); //en css debe estar en una posicion absoluta      
+             
      
 
      // Cuando se haga click <span> (x), cierra el modal
@@ -86,8 +107,6 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
     spanModalClose.onclick = () => {    
       contenedorModal.style.display = "none";
     }
-    //console.log(spanModalClose);
-     
       }         
       })
       .catch(function(error) {
