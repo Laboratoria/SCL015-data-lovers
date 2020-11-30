@@ -77,7 +77,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   //PORCENTAJE POR TIPO
     const printPercentage = (typeFilter) => {
       containerPercentage.innerHTML ="";
-      let seccionPercentage = htmlToElements(`<h3>Sabias que el porcentaje total de pokemones de tipo ${typeFilter} es de un  </h3>`);
+      let seccionPercentage = htmlToElements(`<h3>Sabias que el porcentaje total de pokemones de tipo ${typeFilter} es de un ${logic.computeData(dataPokemon,typeFilter)}</strong> </h3>`);
       return containerPercentage.appendChild(seccionPercentage);
     }
     
@@ -113,10 +113,9 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
 
      // Cuando se haga click <span> (x), cierra el modal
     const spanModalClose = document.getElementsByClassName("close")[0];
-    spanModalClose.onclick = () => {
+    spanModalClose.onclick = () => {    
       contenedorModal.style.display = "none";
     }
-
       }         
       })
       .catch(function(error) {

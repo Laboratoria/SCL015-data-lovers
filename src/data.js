@@ -1,5 +1,5 @@
-import data  from './data/pokemon/pokemon.js' // importar la data del data
-const datapoke= data.pokemon;
+//import data  from './data/pokemon/pokemon.js' // importar la data del data
+//const datapoke= data.pokemon;
 
 //FUNCION ORDENAR de la A a  la Z
 const orderAZ = (arrayPoke) => { 
@@ -7,7 +7,7 @@ const orderAZ = (arrayPoke) => {
       if(a.name > b.name){
           return 1;
       }  
-      if (a.name < b.name) {
+      if (a.name < b.name) {    
           return -1
       }
       }); 
@@ -33,28 +33,6 @@ const orderZA = (arrayPoke) => {
         return allFilter;
     }           
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //FUNCION BUSCADOR
     const searchCharacter = (arrayPoke, words) => {
         const filteredCharacter = arrayPoke.filter((character) => {
@@ -63,5 +41,17 @@ const orderZA = (arrayPoke) => {
         return filteredCharacter
     }
 // console.log(searchCharacter(datapoke, "chu"))
+    
+    //CALCULAR %
+    const computeData = (arrayPoke, typePoke) => {
+        let percentajeByType = [];         
+         for (let i = 0; i < arrayPoke.length; i++) {           
+          if (arrayPoke[i].type.includes(typePoke)) { 
+            percentajeByType.push(arrayPoke[i].type);            
+          }
+        }
+        return ((percentajeByType.length) / 251 * 100).toFixed(1) + '%';
+    };
+    
+  export default {orderAZ, orderZA, filterData,computeData, searchCharacter}; 
 
-  export default {orderAZ, orderZA, filterData, searchCharacter };

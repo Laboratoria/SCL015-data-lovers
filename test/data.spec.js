@@ -67,33 +67,17 @@ describe('logic', () => {
       expect(pokemonElectric).toEqual(expect.arrayContaining(logic.filterData(pokemon, "electric")))
 
     })
-
-
-
   });
 
+  describe('logic.computeData',() =>{
+    it('deberia ser una funcion',()=>{
+      expect(typeof logic.computeData).toBe('function');
+    });
+
+    it('debeia devolver el porcentaje de pokemones por tipo', () => {
+      expect(logic.computeData(pokemon,'electric')).toEqual('0.8%');
+    });
+    
+  })
 
 });
-
-
-
-// describe('example', () => {
-//   skip.it('is a function', () => {
-//     expect(typeof example).toBe('function');
-//   });
-
-//   skip.it('returns `example`', () => {
-//     expect(example()).toBe('example');
-//   });
-// });
-
-
-// skip.describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   skip.it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
