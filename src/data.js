@@ -31,7 +31,7 @@ const orderZA = (arrayPoke) => {
             return arrayPokeUnitario.type.includes(typePoke);//includes devuelve verdadero y falso, Aqui le pido que compare si encuentra algo con las mismas caracteristicas de tipo
         })    
         return allFilter;
-    }            
+    }           
 
 
 
@@ -51,7 +51,10 @@ const orderZA = (arrayPoke) => {
 
 
 
-    
+
+
+
+
     //FUNCION BUSCADOR
     const searchCharacter = (arrayPoke, words) => {
         const filteredCharacter = arrayPoke.filter((character) => {
