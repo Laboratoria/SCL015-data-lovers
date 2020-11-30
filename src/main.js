@@ -104,10 +104,9 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
 
      // Cuando se haga click <span> (x), cierra el modal
     const spanModalClose = document.getElementsByClassName("close")[0];
-    spanModalClose.onclick = () => {
+    spanModalClose.onclick = () => {    
       contenedorModal.style.display = "none";
     }
-
       }         
       })
       .catch(function(error) {
