@@ -1,7 +1,6 @@
-// import data  from './data/pokemon.js'
 import logic from './data.js'
-let listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
-let contenedorModal= document.getElementById("modal"); //seccion HTML para el modal
+const listPokemon= document.getElementById("dataList"); // seccion HTML para las cards
+const contenedorModal= document.getElementById("modal"); //seccion HTML para el modal
 const containerPercentage= document.getElementById("percentage"); // seccion HTML para el porcentaje
 
 // Imprimir un elemento en HTML. 
@@ -34,6 +33,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       } 
     }
     printData(dataPokemon); 
+    
     //ORDENAR AZ - ZA
     const orderPoke = document.getElementById("orderPokemon");
     orderPoke.addEventListener("change", () => { //agregamos el evento "change" para que al seleccionar alguna de las opciones, se emplee la funcion ordenar
@@ -50,10 +50,19 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
     printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
     containerPercentage.style.display = "none"; // Desaparece el contenedor del porcentaje 
     document.getElementById("filterPokemon").value=0;  // coloca el select de Filtar en el valor 0 ("Tipos")
-    
+    })
 
-        })
-       //FILTRAR POR TIPO   
+    //BUSCADOR
+    const containerSearch= document.getElementById("search");
+    containerSearch.addEventListener("keyup", (words) =>{
+      const searchString = words.target.value.toLowerCase(); // valor de las letras en minusculas
+      const searchPokemon = logic.searchCharacter(dataPokemon, searchString) 
+      printData(searchPokemon)
+      document.getElementById("orderPokemon").value=0; //coloca el select de Ordenar en el valor 0 ("Ordenar por")
+      document.getElementById("filterPokemon").value=0; //coloca el select de Filtar en el valor 0 ("Tipos")
+      containerPercentage.style.display = "none"; //Desaparece el contenedor del porcentaje 
+    })
+    //FILTRAR POR TIPO   
     const filterPoke = document.getElementById("filterPokemon");
     filterPoke.addEventListener("change", (event) => { //"event" es el parametro que indica que fue lo que cambio - agrego el evento "change",para que al seleccionar la opcion de tipo se ejecute la funcion
       //creo una variable donde se agrupen las coincidencias de tipo de pokemon       
@@ -68,7 +77,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
   //PORCENTAJE POR TIPO
     const printPercentage = (typeFilter) => {
       containerPercentage.innerHTML ="";
-      let seccionPercentage = htmlToElements(`<h3 class="percentage-text">Sabias que el porcentaje total de pokemones de tipo ${typeFilter} es de un  </h3>`);
+      let seccionPercentage = htmlToElements(`<h3>Sabias que el porcentaje total de pokemones de tipo ${typeFilter} es de un  </h3>`);
       return containerPercentage.appendChild(seccionPercentage);
     }
     

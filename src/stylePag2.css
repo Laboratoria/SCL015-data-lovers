@@ -8,8 +8,6 @@ body {
     align-items: center;
     display : flex;
     flex-direction: column;
-    /* width: 100vw;
-    height: 100vh; */
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -42,10 +40,21 @@ header {
     width: 100vw;
 }
 
-
 p {
     margin: 0px;
     font-size: 20px;
+} 
+#search{
+    font-family: "FontAwesome";
+    width: 20vw;
+    height: 4.5vh;
+    background: rgba(250, 225, 94, 0.91);
+    border: 4px solid #1364DE;
+    border-radius: 54px;
+    color: #1364DE;
+    font-style: normal;
+    font-size: 17px;
+    text-align-last: center;
 }
 
 .opcion {
@@ -60,7 +69,7 @@ p {
 }
 
 #orderPokemon {
-    width: 173px;
+    width: 15vw;
     height: 39px;
     background: rgba(250, 225, 94, 0.91);
     border: 4px solid #1364DE;
@@ -68,11 +77,12 @@ p {
     color: #1364DE;
     font-style: normal;
     font-size: 20px;
-    text-align-last: center;
+    margin-left: 43px;
+    text-align-last: center; /* centrar elementos en un select */
 }
 
 #filterPokemon {
-    width: 158px;
+    width: 15vw;
     height: 39px;
     background: rgba(250, 225, 94, 0.91);
     border: 4px solid #1364DE;

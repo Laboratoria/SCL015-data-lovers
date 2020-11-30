@@ -1,5 +1,5 @@
-// import data  from './data/pokemon/pokemon.js' // importar la data del data
-// const datapoke= data.pokemon;
+import data  from './data/pokemon/pokemon.js' // importar la data del data
+const datapoke= data.pokemon;
 
 //FUNCION ORDENAR de la A a  la Z
 const orderAZ = (arrayPoke) => { 
@@ -34,4 +34,31 @@ const orderZA = (arrayPoke) => {
     }            
 
 
-  export default {orderAZ, orderZA, filterData };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    //FUNCION BUSCADOR
+    const searchCharacter = (arrayPoke, words) => {
+        const filteredCharacter = arrayPoke.filter((character) => {
+            return character.name.includes(words)
+        })
+        return filteredCharacter
+    }
+// console.log(searchCharacter(datapoke, "chu"))
+
+  export default {orderAZ, orderZA, filterData, searchCharacter };
