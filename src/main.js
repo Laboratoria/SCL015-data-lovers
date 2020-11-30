@@ -66,7 +66,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
           `<div class ="modal-content">
             <div class="modal-top">
               <img src='${arrayPokeUnitario.img}' id="PokemonModal"/>
-              <span class="close">&times;</span>
+              <span class="close">&times;</span>                          
               </div>
             <div class="modal-body">
               <p>${arrayPokeUnitario.name}</p>
@@ -78,14 +78,15 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
             </div> 
         </div>`);
         contenedorModal.appendChild(modal);
-        console.log(modal); //en css debe estar en una posicion absoluta      
+        //console.log(modal); //en css debe estar en una posicion absoluta      
      
 
      // Cuando se haga click <span> (x), cierra el modal
     const spanModalClose = document.getElementsByClassName("close")[0];
-    spanModalClose.onclick = () => {
+    spanModalClose.onclick = () => {    
       contenedorModal.style.display = "none";
     }
+    //console.log(spanModalClose);
      
       }         
       })

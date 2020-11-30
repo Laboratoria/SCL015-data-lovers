@@ -71,7 +71,11 @@ describe('logic', () => {
 
 
   });
-
+  describe('logic.computeData',() =>{
+    it('deberia ser una funcion',()=>{
+      expect(typeof logic.computeData).tobe('function');
+    });
+  })
 
 });
 
