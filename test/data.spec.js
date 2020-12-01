@@ -74,5 +74,14 @@ describe('logic', () => {
     });
     
   })
-
+  describe('logic.searchCharacter',()=>{
+    it('deberia ser una funcion',()=>{
+      expect(typeof logic.searchCharacter).toBe('function');
+    });
+    it('deberia buscar las coincidencias con "chu"', () => {
+      expect(logic.searchCharacter(pokemon,'chu')).toEqual(pokemonElectric);
+    });
+    
+  })
+  
 });

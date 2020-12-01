@@ -201,3 +201,13 @@ p {
         font-size: 13px;
     }
 }
+/*.welcome-inferior figure{
+    margin-top:100px;       
+}*/
+
+@media screen and (min-width: 1250px) {
+   
+    .welcome-inferior figure {
+        margin-top:100px;       
+    }
+}
