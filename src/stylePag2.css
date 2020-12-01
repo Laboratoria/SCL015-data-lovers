@@ -25,13 +25,15 @@ header {
     width: 346px;
     height: 100px;
 }
-#pokeball{
+#pokeBall{
     width: 203px;
     height: 120px;
 }
 .iconify {
     margin-left: 452px;
     margin-top: 50px;
+    color: #1364de;
+    font-size: 95px;
 }
 .data {
     display: flex;
@@ -272,7 +274,7 @@ footer {
         width: 239px;
         height: 83px;
     }
-    #pokeball {
+    #pokeBall {
         width: 127px;
         height: 79px;
     }
@@ -322,7 +324,7 @@ footer {
         width: 288px;
         height: 93px
     }
-    #pokeball {
+    #pokeBall {
         width: 127px;
         height: 79px;
     }

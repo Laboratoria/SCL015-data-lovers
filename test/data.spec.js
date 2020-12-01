@@ -1,4 +1,3 @@
-//import { example, anotherExample } from '../src/data.js';
 import logic from '../src/data.js'
 
 let pokemon;
@@ -61,11 +60,7 @@ describe('logic', () => {
     });
 
     it('deberia devolver los pokemones electricos (pikachu y raichu)', () => {
-      console.log(logic.filterData(pokemon, "electric"))
-      console.log(pokemonElectric)
-      expect(logic.filterData(pokemon, "electric")).toEqual(expect.arrayContaining(pokemonElectric))
-      expect(pokemonElectric).toEqual(expect.arrayContaining(logic.filterData(pokemon, "electric")))
-
+      expect(logic.filterData(pokemon, "electric")).toEqual((pokemonElectric))
     })
   });
 
