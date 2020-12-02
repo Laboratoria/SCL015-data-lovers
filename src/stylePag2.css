@@ -20,7 +20,12 @@ header {
     width: 100vw;
     align-items: baseline;
 }
-
+section {
+    display: flex;
+}
+div{
+    display: flex;
+}
 #logo {
     width: 346px;
     height: 100px;
@@ -42,10 +47,16 @@ header {
     width: 100vw;
 }
 
+a{
+    text-decoration: none;
+    color:  #1364DE;
+}
+
 p {
     margin: 0px;
     font-size: 20px;
 } 
+
 #search{
     font-family: "FontAwesome";
     width: 20vw;
@@ -94,19 +105,48 @@ p {
     margin-left: 43px;
     text-align-last: center;
 }
+#percentageSeccion {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+div .statistics{
+    display: flex;
+}
+
+#percentageAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #percentage {
     display: flex;
-    display: none;
     justify-content: center;
     text-align: center;
 
+}
+.statistics{
+    width: 8vw;
+    height: 23px;
+    background: rgba(250, 225, 94, 0.91);
+    border: 2px solid #1364DE;
+    border-radius: 54px;
+    color: #1364DE;
+    font-size: 13px;
+    margin-left: 43px;
+    text-align-last: center;
 }
 
 #dataList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#myChart {
+    font-size: 23px;
 }
 
 /* clase que contiene cada tarjeta de los pokemones */
@@ -240,16 +280,6 @@ div.all-card {
     width: 59px;
     margin:0px 42px 0px 50px;
 }
-/*div.modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    margin: 30px 60px 0px;
-    background: rgba(19, 100, 222, 0.67);
-    border-radius: 22px;
-}*/
-
 
 footer {
     display: flex;
