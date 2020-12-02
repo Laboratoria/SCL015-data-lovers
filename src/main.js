@@ -5,7 +5,8 @@ const filterPoke = document.getElementById("filterPokemon"); //Selec en HTML fil
 const listPokemon = document.getElementById("dataList"); // seccion HTML para las cards
 const containerModal = document.getElementById("modal"); //seccion HTML para el modal
 const containerPercentage = document.getElementById("percentage"); // seccion HTML para el porcentaje
-const containerClassPercentage = document.getElementsByClassName("percentage");
+const containerClassPercentage = document.getElementById("percentageSeccion");
+
 // Imprimir un elemento en HTML. 
 const htmlToElements = (html) => {
   let stencil = document.createElement('template');
@@ -51,7 +52,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       }
       sortByAlphabet(dataPokemon)
       printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
-      containerPercentage.style.display = "none"; // Desaparece el contenedor del porcentaje 
+      containerClassPercentage.style.display = "none"; // Desaparece el contenedor del porcentaje 
       document.getElementById("filterPokemon").value = 0; // coloca el select de Filtar en el valor 0 ("Tipos")
       document.getElementById("search").value = ""; // Deja en blanco el contenido del buscador
     })
@@ -63,7 +64,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       printData(searchPokemon)
       document.getElementById("orderPokemon").value = 0; //coloca el select de Ordenar en el valor 0 ("Ordenar por")
       document.getElementById("filterPokemon").value = 0; //coloca el select de Filtar en el valor 0 ("Tipos")
-      containerPercentage.style.display = "none"; //Desaparece el contenedor del porcentaje 
+      containerClassPercentage.style.display = "none"; //Desaparece el contenedor del porcentaje 
     })
 
     //FILTRAR POR TIPO   
@@ -72,7 +73,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       let pokemonMatches = logic.filterData(dataPokemon, (event.target.value)) // ".target" indica que elemteno se esta cambiando en el select que cambia - con ".value" extraigo el valor del select        
       printData(pokemonMatches)
       printPercentage(event.target.value) // imprime el porcentaje segun el tipo
-      containerPercentage.style.display = "block"; // Aparece la sesion del porcentaje 
+      containerClassPercentage.style.display = "block"; // Aparece la sesion del porcentaje 
       document.getElementById("orderPokemon").value = 0; //  coloca el select de Ordenar en el valor 0 ("Ordenar por")
       document.getElementById("search").value = ""; //Deja en blanco el contenido del buscador
     })
