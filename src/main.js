@@ -116,19 +116,19 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       spanModalClose.onclick = () => {
         containerModal.style.display = "none";
       }
-      //ESTADISTICA
-        const containerChart = document.getElementById("modal-statistics");
-        const theChart = new Chart(containerChart,{
-          type:"horizontalBar",
-          data: {
-            labels: ["Defensa", "Debilidades"],
-            datasets:[{
-              label: "Numero de datos",
-              data:[10, 20]
-            }]
-          }
+      // //ESTADISTICA
+      //   const containerChart = document.getElementById("modal-statistics");
+      //   const theChart = new Chart(containerChart,{
+      //     type:"horizontalBar",
+      //     data: {
+      //       labels: ["Defensa", "Debilidades"],
+      //       datasets:[{
+      //         label: "Numero de datos",
+      //         data:[10, 20]
+      //       }]
+      //     }
             
-        })
+      //   })
 
 
     }
