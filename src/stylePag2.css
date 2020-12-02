@@ -146,7 +146,7 @@ div.all-card {
   .modal-content {
     display: flex;
     flex-direction: column;
-    background-color: #EDDB36;
+    background-color: #FAE15E;;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -281,11 +281,32 @@ footer {
     .iconify {
         display: none;
     }
+    #search{
+        width: 309px;
+        height: 27px;
+    }
+    .opcion {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #search{
+        width: 309px;
+        height: 27px;
+    }
     #orderPokemon{
+        display: flex;
         margin: 14px;
+        width: 209px;
+        height: 35px;
+        
     }
     #filterPokemon{
-        margin: 14px;
+        display: flex;
+        margin: 0px;
+        width: 209px;
+        height: 35px;
     }
     div.all-card {
         width: 42%;
@@ -330,6 +351,25 @@ footer {
     }
     .iconify {
         display: none;
+    }
+    .opcion {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    #search{
+        width: 206px;
+        height: 27px;
+    }
+    #orderPokemon{
+        margin: 14px;
+        width: 202px;
+        height: 35px;
+    }
+    #filterPokemon{
+        margin: 14px;
+        width: 202px;
+        height: 35px;
     }
     div.all-card {
         width: 27%;
