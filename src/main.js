@@ -5,7 +5,7 @@ const filterPoke = document.getElementById("filterPokemon"); //Selec en HTML fil
 const listPokemon = document.getElementById("dataList"); // seccion HTML para las cards
 const containerModal = document.getElementById("modal"); //seccion HTML para el modal
 const containerPercentage = document.getElementById("percentage"); // seccion HTML para el porcentaje
-
+const containerClassPercentage = document.getElementsByClassName("percentage");
 // Imprimir un elemento en HTML. 
 const htmlToElements = (html) => {
   let stencil = document.createElement('template');
@@ -53,6 +53,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       printData(dataPokemon)    //dataPokemon es una variable local dentro de fetch
       containerPercentage.style.display = "none"; // Desaparece el contenedor del porcentaje 
       document.getElementById("filterPokemon").value = 0; // coloca el select de Filtar en el valor 0 ("Tipos")
+      document.getElementById("search").value = ""; // Deja en blanco el contenido del buscador
     })
 
     //BUSCADOR
@@ -73,6 +74,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       printPercentage(event.target.value) // imprime el porcentaje segun el tipo
       containerPercentage.style.display = "block"; // Aparece la sesion del porcentaje 
       document.getElementById("orderPokemon").value = 0; //  coloca el select de Ordenar en el valor 0 ("Ordenar por")
+      document.getElementById("search").value = ""; //Deja en blanco el contenido del buscador
     })
 
     //PORCENTAJE POR TIPO
@@ -104,9 +106,6 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
               <p class="resistant">${arrayPokeUnitario.resistant.join("\n")}</p> 
               <p class=weaknesses>${arrayPokeUnitario.weaknesses.join("\n")}</p>
             </div>
-            <div class="modal-statistics">
-              <canvas id="myChart" width="400" height="400"></canvas>
-            </div> 
         </div>`);
       // join() une todos los elementos de un array formando una cadena y separándolos con aquel argumento que definamos.
       containerModal.appendChild(modal);
@@ -116,22 +115,8 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
       spanModalClose.onclick = () => {
         containerModal.style.display = "none";
       }
-      //ESTADISTICA
-        const containerChart = document.getElementById("modal-statistics");
-        const theChart = new Chart(containerChart,{
-          type:"horizontalBar",
-          data: {
-            labels: ["Defensa", "Debilidades"],
-            datasets:[{
-              label: "Numero de datos",
-              data:[10, 20]
-            }]
-          }
-            
-        })
-
-
     }
+      
   })
   .catch(function (error) {
     return ('Hubo un problema con la petición Fetch:' + error.message);

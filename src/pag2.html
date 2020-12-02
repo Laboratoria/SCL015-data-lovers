@@ -18,12 +18,12 @@
       <a href="index.html">
         <span class="iconify" data-inline="false" data-icon="ant-design:home-outlined"></span>
       </a>
-        </header>
+    </header>
 
     <main>
       <section class="opcion">  
         <input type="text" id="search" placeholder="&#xf002; Buscar por Nombre"/>
-
+        
         <select id="orderPokemon" class="fa" >
           <option value="0" selected disabled> &#xf160; Ordenar por:</option>
           <option value="1">Ascendente (A-Z)</option>
@@ -32,7 +32,7 @@
 
         <select id="filterPokemon" class="fa">
           <option value="0" selected disabled> &#xf0b0; Tipos</option>
-          <option value="normal">normal</option>
+          <option value="normal">Normal</option>
           <option value="fire">Fuego</option>
           <option value="water">Agua</option>
           <option value="grass">Planta</option>
@@ -42,7 +42,7 @@
           <option value="poison">Veneno</option>
           <option value="ground">Tierra</option>
           <option value="flying">Volador</option>
-          <option value="psychic">psiquico</option>
+          <option value="psychic">Psiquico</option>
           <option value="bug">Bicho</option>
           <option value="rock">Roca</option>
           <option value="ghost">Fantasma</option>
@@ -53,13 +53,19 @@
         </select>
       </section>
         <!--contenedor donde van a ir el calculo-->
-      <section id="percentage">
+      <section id="percentageSeccion">
+        <div id="percentage">
+        </div>
+        <div id="statistics">
+          <button class="statistics"><a href="pag3.html">Ver Estadisticas</a></button>
+        </div>
       </section>
+      
       <!--contenedor donde van a ir todos los pokemones-->
       <section id="dataList">
       </section>
 
-        <!--contenedor donde va a ir el modal-->
+        <!--contenedor del modal-->
       <section id="modal" class="modal">
 
       </section>

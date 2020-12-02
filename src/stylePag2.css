@@ -42,6 +42,11 @@ header {
     width: 100vw;
 }
 
+a{
+    text-decoration: none;
+    color:  #1364DE;
+}
+
 p {
     margin: 0px;
     font-size: 20px;
@@ -94,7 +99,12 @@ p {
     margin-left: 43px;
     text-align-last: center;
 }
-
+#percentageSeccion {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 #percentage {
     display: flex;
     display: none;
@@ -102,11 +112,26 @@ p {
     text-align: center;
 
 }
+.statistics{
+    width: 10vw;
+    height: 28px;
+    background: rgba(250, 225, 94, 0.91);
+    border: 2px solid #1364DE;
+    border-radius: 54px;
+    color: #1364DE;
+    font-size: 13px;
+    margin-left: 43px;
+    text-align-last: center;
+}
 
 #dataList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#myChart {
+    font-size: 23px;
 }
 
 /* clase que contiene cada tarjeta de los pokemones */
@@ -240,16 +265,6 @@ div.all-card {
     width: 59px;
     margin:0px 42px 0px 50px;
 }
-/*div.modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    margin: 30px 60px 0px;
-    background: rgba(19, 100, 222, 0.67);
-    border-radius: 22px;
-}*/
-
 
 footer {
     display: flex;
