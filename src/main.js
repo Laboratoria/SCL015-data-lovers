@@ -117,7 +117,7 @@ fetch('https://luzciel.github.io/SCL015-data-lovers/src/data/pokemon/pokemon.jso
         containerModal.style.display = "none";
       }
     }
-      
+     
   })
   .catch(function (error) {
     return ('Hubo un problema con la petición Fetch:' + error.message);
