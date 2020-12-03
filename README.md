@@ -144,7 +144,8 @@ DEFINICIÓN DE TERMINADO
 
 [USUARIO 4](https://www.loom.com/share/c416a27718484ed3994e00cd84b564e4)
 
-[USUARIO 5]()
+[USUARIO 5](https://www.loom.com/share/ac6b634f07e5454aa469d13e2873795c) 
+
 
 
 [link al sitio web POKEDATOS](https://luzciel.github.io/SCL015-data-lovers/src/)
