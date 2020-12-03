@@ -9,8 +9,8 @@ PokeDatos es una aplicación web diseñada para los fans de la serie Pokemon. En
 PokéDatos ha sido diseñada para que el usuario pueda conocer las características principales de los Pokémon. Para ellos se creó una web que facilita la búsqueda y la visualización de la información según los requerimientos del usuario.
 En esta Web se podrán buscar los pokemones según el nombre,identificarlo por su imagen, ordenarlos alfabéticamente (A-Z o Z-A) y filtrarlos según el tipo ( agua, fuego, roca, hada…).Además se visualizarán las debilidades y fortalezas de cada pokemon y el porcentaje de cuantos pokemones hay  según el tipo.
 
-![Pagina Inicial](src/data/image/pantallainicial.png)
-![Pagina Inicial](src/data/image/pagina2.png)
+![Pagina Inicial]()
+![Pagina Inicial]()
 
 ## FORMULARIO DE ENCUESTA A USUARIOS PARA DEFINICION DEL PRODUCTO
 
@@ -22,11 +22,11 @@ Realizamos una cuesta preguntando a los usuarios sus necesidades, conocimientos,
 
 [Link a la encuesta](https://docs.google.com/forms/d/15EwU5PNP4rRjRn-XddgOPJ59yMssWoU9cSP_Sqnki0s/edit#responses)
 
-![respuestas](src/data/image/encuesta1.jpeg)
-![respuestas](src/data/image/encuesta2.jpeg)
-![respuestas](src/data/image/encuesta3.jpeg)
-![respuestas](src/data/image/encuesta4.jpeg)
-![respuestas](src/data/image/encuesta5.jpeg)
+![respuestas]()
+![respuestas]()
+![respuestas]()
+![respuestas]()
+![respuestas]()
 
 ## HISTORIAS DE USUARIO
 
@@ -128,8 +128,8 @@ DEFINICIÓN DE TERMINADO
 
 ## PROTOTIPO DE BAJA FIDELIDAD
 
-![Prototipo papel](src/data/image/prototipo.jpg)
-![Prototipo papel](src/data/image/prototipo2.jpg)
+![Prototipo papel](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/prototipo2.jpg?raw=true)
+![Prototipo papel](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/prototipo.jpg?raw=true)
 
 ## PROTOTIPO DE ALTA FIDELIDAD
 
