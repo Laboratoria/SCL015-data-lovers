@@ -39,7 +39,7 @@ const computeData = (arrayPoke, typePoke) => {
             percentajeByType.push(arrayPoke[i].type);
         }
     }
-    return ((percentajeByType.length) / 251 * 100).toFixed(1) + '%';
+    return ((percentajeByType.length) / arrayPoke.length * 100).toFixed(1) + '%';
 };
 
 export default { orderAZ, orderZA, filterData, computeData, searchCharacter };

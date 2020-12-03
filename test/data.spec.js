@@ -70,7 +70,7 @@ describe('logic', () => {
     });
 
     it('debeia devolver el porcentaje de pokemones por tipo', () => {
-      expect(logic.computeData(pokemon,'electric')).toEqual('0.8%');
+      expect(logic.computeData(pokemon,'electric')).toEqual('50.0%');
     });
     
   })
