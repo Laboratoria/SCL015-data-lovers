@@ -9,8 +9,8 @@ PokeDatos es una aplicación web diseñada para los fans de la serie Pokemon. En
 PokéDatos ha sido diseñada para que el usuario pueda conocer las características principales de los Pokémon. Para ellos se creó una web que facilita la búsqueda y la visualización de la información según los requerimientos del usuario.
 En esta Web se podrán buscar los pokemones según el nombre,identificarlo por su imagen, ordenarlos alfabéticamente (A-Z o Z-A) y filtrarlos según el tipo ( agua, fuego, roca, hada…).Además se visualizarán las debilidades y fortalezas de cada pokemon y el porcentaje de cuantos pokemones hay  según el tipo.
 
-![Pagina Inicial]()
-![Pagina Inicial]()
+![Pagina Inicial](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/pantallaInicial.png?raw=true)
+![Pagina Inicial](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/pagina2.png?raw=true)
 
 ## FORMULARIO DE ENCUESTA A USUARIOS PARA DEFINICION DEL PRODUCTO
 
@@ -21,16 +21,15 @@ Realizamos una cuesta preguntando a los usuarios sus necesidades, conocimientos,
 ## RESULTADO DE LA ENCUESTA
 
 [Link a la encuesta](https://docs.google.com/forms/d/15EwU5PNP4rRjRn-XddgOPJ59yMssWoU9cSP_Sqnki0s/edit#responses)
-
-![respuestas]()
-![respuestas]()
-![respuestas]()
-![respuestas]()
-![respuestas]()
+![respuestas](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/encuesta3.jpeg?raw=true)
+![respuestas](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/encuesta1.jpeg?raw=true) 
+![respuestas](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/encuesta2.jpeg?raw=true) 
+![respuestas](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/encuesta4.jpeg?raw=true)
+![respuestas](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/encuesta5.jpeg?raw=true)
 
 ## HISTORIAS DE USUARIO
 
-PRIMERA HISTORIA:
+PRIMERA HISTORIA DE USUARIO:
 
 YO COMO USUARIO: fan de la serie pokemon
 
@@ -55,7 +54,7 @@ DEFINICIÓN DE TERMINADO
 
 
 
-SEGUNDA HISTORIA:
+SEGUNDA HISTORIA DE USUARIO:
 
 YO COMO USUARIO: fan de la serie
 
@@ -78,7 +77,7 @@ DEFINICIÓN DE TERMINADO
 - Se  realiza un coreview
 
 
-TERCERA HISTORIA
+TERCERA HISTORIA DE USUARIO:
 
 YO COMO USUARIO : Fan de la serie de pokemon
 
@@ -102,7 +101,7 @@ DEFINICIÓN DE TERMINADO:
 - Se  realiza un coreview
 
 
-CUARTA HISTORIA:
+CUARTA HISTORIA DE USUARIO:
 
 YO COMO USUARIO: cliente “laboratoria”.
 
@@ -146,6 +145,7 @@ DEFINICIÓN DE TERMINADO
 [USUARIO 4](https://www.loom.com/share/c416a27718484ed3994e00cd84b564e4)
 
 [USUARIO 5]()
+
 
 [link al sitio web POKEDATOS](https://luzciel.github.io/SCL015-data-lovers/src/)
 
