@@ -18,7 +18,7 @@ En esta Web se podrán buscar los pokemones según el nombre,identificarlo por s
 ![Pagina Inicial](https://github.com/erikaArango/SCL015-data-lovers/blob/Erika/src/imgReadme/pagina2.png?raw=true)
 
 
-## FORMULARIO DE ENCUESTA A USUARIOS PARA DEFINICION DEL PRODUCTO
+## FORMULARIO DE ENCUESTA A LOS USUARIOS 
 
 Realizamos una cuesta preguntando a los usuarios sus necesidades, conocimientos,y temas de interes con respecto al mundo pokemon, basandonos en ellas para tomar las decisiones de diseño y funcionalidad.
 
