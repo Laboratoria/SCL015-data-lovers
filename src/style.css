@@ -1,0 +1,233 @@
+body {
+  background-color: black;
+  background-image: url(../src/images/fondos/estrellas3.jpg);
+  /* background-size: 100%; */
+  animation: muv 25s infinite linear alternate;
+}
+@keyframes muv {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+  container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background: black;
+    align-content: center;
+  }
+}
+.pages1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.contentimage1 {
+  display: flex;
+  padding: 15%;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url(../src/images/fondos/rickymorty.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.container-welcome {
+ 
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+
+h1 {
+  font-family: "orbitron";
+  text-align: justify;
+  color: #ffffff;
+  text-align: center;
+  max-width: 850px;
+  width:100%;
+  font-size: 240%;
+
+  
+}
+.containerbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  max-width: 100%;
+  
+}
+.enterbutton {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 160%;
+  font-family: "ORBITRON", sans-serif;
+  box-shadow: inset 0px 4px 4px rgba(6, 10, 6, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden; 
+}
+/* con overflow:hidden se crea la funcionalidad neon para el boton */
+.enterbutton:hover { 
+  color: #111; 
+  background: #39ff14; 
+  box-shadow: 0 0 50px #39ff14; 
+ 
+}
+/* se crean filtros */
+filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* padding: 5%; */
+  
+}
+.filter-especie {
+   /* width: 15%; */
+}
+.filter-origen {
+  /* width: 15%; */
+}
+.filter-az{
+  /* width: 15%; */
+
+}
+select {
+  display: block;
+  font-size: 16px;
+  font-family: "ORBITRON", sans-serif;
+  font-weight: bold;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  border: 1px solid rgb(30, 187, 56);
+  box-shadow: 0 1px 0 1px rgba(12, 221, 23, 0.03);
+  border-radius: 0.3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(169, 226, 155);
+  background-image: url("../src/images/diseño/flecha.png"),
+    linear-gradient(to bottom, #8bb41b 0%, #f7f7f7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  /* overflow: hidden; */
+}
+
+select:hover{
+  color: #111; 
+  background: #39ff14; 
+  box-shadow: 0 0 50px #39ff14; 
+ 
+}
+pages2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* Se crea contenedor de tarjetas*/
+.cards-container {
+  align-self: center;
+  overflow-y: scroll;
+  width: 100%;
+  height: 600px;
+  /* background-color: gray; */
+  border-radius: 1;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.cards-item {
+  display: flex;
+  padding: 1rem;
+  /* background-color: blue; */
+}
+
+@media (min-width: 40rem) {
+  .cards-item {
+    width: 50%;
+  }
+  }
+
+@media (min-width: 56rem) {
+  .cards-item {
+    width: 33.3333%;
+  }
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+  
+  
+}
+/* se crea tarjeta */
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card-images{
+  width: 100%;
+}
+
+.card-content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #dbb09a 40%, #BC6843 100%);
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 150%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}

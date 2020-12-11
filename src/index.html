@@ -1,11 +1,77 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <pages1>
+      <container>
+        <div class="contentimage1"></div>
+      </container>
+      <welcome class="container-welcome">
+        <h1>
+          “Bienvenido al portal de Rick y Morty, aquí encontrarás toda la
+          información de tus personajes favoritos”.
+        </h1>
+      </welcome>
+      <div class="containerbutton">
+        <button class="enterbutton" id="enterbutton">INGRESAR</button>
+      </div>
+    </pages1>
+
+    <pages2 style="display: none;">
+      <filter>
+        <div class="filter-especie">
+          <select name="select">
+            <option value="" selected>SELECCIONE ESPECIE</option>
+            <option value="HUMANS">HUMANS</option>
+            <option value="ALIENS">ALIENS</option>
+            <option value="ROBOT">ROBOT</option>
+          </select>
+        </div>
+        <div class="filter-origen">
+          <select name="select">
+            <option value="" selected>SELECCIONE GENERO</option>
+            <option value="FEMENINO">FEMENINO</option>
+            <option value="MASCULINO">MASCULINO</option>
+            <option value="OTRO">OTRO</option>
+          </select>
+        </div>
+        <div class="filter-az">
+          <select name="select">
+            <option value="" selected>ORDEN ALFABETICO</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+            
+          </select>
+        </div>
+      </filter>
+
+      <div class="cards-container">
+        <ul class="profile"id="card_list">
+          <li class="cards-item">
+            <div class="card">
+              <div class="card-images">
+                <img src="images/fondos/rick.jfif" />
+              </div>
+              <div class="card-content">
+                <div class="card-title">Nombre</div>
+              </div>
+            </div>
+          </li>
+              
+        </ul>
+      </div>
+    </pages2>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
