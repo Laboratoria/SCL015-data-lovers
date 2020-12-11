@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#Inicio{
+  display: block;
+}
+
+#Inicio{
+ height: 100%;
+ background-image: url(./assets/FondoInicio.png);
+ background-size: 100%;
+ background-attachment: fixed;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.logo{
+  width: 50%;
+  filter: drop-shadow(2px 4px 75px rgba(0, 0, 0, 0.75));
+  padding-top: 3%;
+}
+/*#ContenedorBoton{
+
+padding-top: 100px;
+}**/
+
+.letrasLol{
+width: 40%;
+background-position: bottom;
+filter: drop-shadow(2px 4px 75px rgba(0, 0, 0, 0.75));
+padding-left: 5%;
+padding-top: 5%;
+}
+
+/*#Entrar{
+align-self: flex-end;
+right: 5%;
+padding-right: 50px;
+padding-bottom: 170px;
+padding: 5%;
+}*/
+
+#BotonEntrar{
+ width: 15%;
+ height: 15%;
+ right: 10%;
+ align-self: center;
+ background-position: top;
+}
+
+
+/* segundo div */
+#Tablero{
+display: none;
+background-image: url(FondoPrincipal.png);
+}
+#Cabecera{
+width: 100%;
+height: 353px;
+
+}
+.contenedorCabecera{
+width: 569px;
+height: 288px;
+
+}
+
+.logoPequeño{
+width: 328px;
+height: 40%;
+left: 45px;
+top: 34px;
+mix-blend-mode: normal;
+}
+nav{
+width: 569px;
+height: 60%;
+
+box-sizing: border-box;
+flex-direction: row;
+
+}
+ul{
+display: flex;
+
+}
+
+.ashe{
+
+ width: 70%;
+ left: 876.84px;
+ top: -77.34px;
+ transform: rotate(-0.09deg);
+}
+
+#oroSobreJuego{
+width: 223px;
+height: 117px;
+
+}
+
+#ingresar{
+  background-image: url(./assets/BotonEntrarT.png);
+  padding: 5%;
+}
