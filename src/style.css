@@ -2,14 +2,14 @@ body {
   background-color: black;
   background-image: url(../src/images/fondos/estrellas3.jpg);
   /* background-size: 100%; */
-  animation: muv 25s infinite linear alternate;
+  animation: muv 20s infinite linear alternate;
 }
 @keyframes muv {
   from {
-    background-position: bottom left;
+    background-position: top;
   }
   to {
-    background-position: top right;
+    background-position: center;
   }
   container {
     display: flex;
@@ -153,81 +153,67 @@ pages2 {
   flex-direction: column;
   width: 100%;
 }
-/* Se crea contenedor de tarjetas*/
-.cards-container {
-  align-self: center;
-  overflow-y: scroll;
-  width: 100%;
-  height: 600px;
-  /* background-color: gray; */
-  border-radius: 1;
-}
-
-.profile {
+.cards-container{
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* background-color: red; */
-}
-
-.cards-item {
-  display: flex;
-  padding: 1rem;
-  /* background-color: blue; */
-}
-
-@media (min-width: 40rem) {
-  .cards-item {
-    width: 50%;
-  }
+  justify-content: center;
+  /* justify-items: center; */
+  /* align-self: center; */
+  overflow-y: scroll;
+  width: 95%;
+  height: 550px;
+  /* background-color: gray; */
   }
 
-@media (min-width: 56rem) {
-  .cards-item {
-    width: 33.3333%;
-  }
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-  
-  
-}
-/* se crea tarjeta */
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
+.card{
+   width: 200px;
+  height: 200px; 
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-.card-images{
-  width: 100%;
+  margin: 40px;
 }
 
-.card-content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #dbb09a 40%, #BC6843 100%);
+.image-style{
+
+  height: 200px; 
+  border-radius: 20px;
+  border: solid;
+  border-color: #77B649;
 }
 
-.card-title {
-  color: #ffffff;
-  font-size: 150%;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
+.name-style{
+  font-size: 16px;
+  font-family: "ORBITRON", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #77B649;
   margin: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 190px;
+
+
 }
+
+/* width */
+::-webkit-scrollbar {
+width: 20px;
+height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px #77B649; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #77B649;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #39ff14; 
+
