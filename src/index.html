@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <title>League of Legends</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/Ele.ico"/>
   </head>
   <body>
@@ -20,13 +22,18 @@
       <!-- <div id="Entrar" style="align-self: center;" >
         <input type="image" src="./assets/BotonEntrarT.png" class="lol submit" id="BotonEntrar">
       </div> -->
-
     </section>
      <section id= "Tablero" >
-       <img class="logoPequeño" src="./assets/logo.png">
-        <header id="Cabecera" >
+       <input type="image" id= "BotonVolver" class="logoPequeño" src="./assets/logo.png">
+        <div id="Cabecera" >
          <div class="contenedorCabecera">
             <div class="logo">
+              <div>
+                <div class="oromenu"><a href=""><img class="oroSobreJuego" src="./assets/oroSobreJuego.png">SOBRE EL JUEGO</a></div>
+                <div class="oromenu"><a href=""><img class="oroAprende" src="./assets/oroAprende.png">APRENDE A JUGAR</a></div>
+                <div class="oromenu"><a href=""><img class="oroSitioOf" src="./assets/oroSitioOf.png">SITIO OFICIAL</a></div>
+              </div>
+<!--
               <nav>
              <ul>
               <div id="oroSobreJuego">
@@ -44,9 +51,9 @@
               <li><a href="#">SITIO OFICIAL</a></li>
               </div>
              </ul>
-            </nav>
+            </nav> -->
            </div>
-        </header>
+          </div>
         <aside>
         <input type="seach" placeholder="Campeones" class="card-filter">
         <select name="orden" id="orden">
@@ -56,11 +63,9 @@
          <option>Aleatorio</option>
         </select>
         </aside>
-        <section></section>
-
       </section>
 
-
+      <footer></footer>
 
    <script src="main.js"></script>
   </body>

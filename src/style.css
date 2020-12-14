@@ -10,6 +10,10 @@
   color: #FFFFFF;
 } */
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 #Inicio{
   display: block;
 }
@@ -62,24 +66,17 @@ background-image: url(assets/fondolimpio.jpg);
 background-size: cover;
 }
 
-#Cabecera{
+/* #Cabecera{
 width: 100%;
-height: 353px;
-}
-
-.contenedorCabecera{
-width: 569px;
-height: 288px;
-
-}
+height: 300px;
+} */
 
 .logoPequeño{
 width: 328px;
-height: 40%;
 left: 45px;
 top: 34px;
-mix-blend-mode: normal;
 }
+
 nav{
 width: 569px;
 height: 60%;
@@ -92,20 +89,23 @@ ul{
 display: flex;
 
 }
-
-.ashe{
-
- width: 70%;
- left: 876.84px;
- top: -77.34px;
- transform: rotate(-0.09deg);
+a{
+text-decoration: none;
+color: white;
+font-family: ;
 }
 
-#oroSobreJuego{
+.oromenu{
+display: inline-block;
+margin: 20px 0 60px 0;
+}
+
+
+/* #oroSobreJuego{
 width: 223px;
 height: 117px;
 
-}
+} */
 
 #ingresar{
   background-image: url(./assets/BotonEntrarT.png);
@@ -131,6 +131,22 @@ margin: 7%;
     margin-left: 30%;
     }
 
+    .logoPequeño{
+      width: 95%;
+      margin-left: 5%;
+      margin-top: 5%;
+      }
+
+ .oromenu{
+  display: inline-block;
+  margin: 20px 0 60px 100px;
+  }
+
+  #Tablero{
+    background-image: url(assets/fondolimpio_mob.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
 }
 
 @media (max-width: 480px) {
