@@ -1,0 +1,24 @@
+body{
+  font-family: 'Rum Raisin', sans-serif;
+  background-image: url("img/welcome-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.welcomeText{
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.logoText{
+  font-size: 65px;
+  font-family: 'Lacquer', cursive;
+  color: #12B0C9;
+  border-color: #000000;
+  text-shadow: 0px 2px 8px #C8DD5D;
+  transform: rotate(-3.84deg);
+}
+
