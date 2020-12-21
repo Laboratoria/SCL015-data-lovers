@@ -1,9 +1,10 @@
 body{
   font-family: 'Rum Raisin', sans-serif;
   background-image: url("img/welcome-background.jpg");
-  background-repeat: no-repeat;
   background-attachment: fixed;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .welcomeText{
