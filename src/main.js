@@ -2,7 +2,7 @@
 import data from './data/pokemon/pokemon.js';
 
 
-console.log(example, data);
+console.log(data);
 
 
 //llamo e invoco las funciones 
