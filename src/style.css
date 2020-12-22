@@ -1,4 +1,4 @@
-npm* {
+* {
   padding: 0;
   margin: 0;
 }
@@ -18,7 +18,7 @@ body{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position:fixed;
+  position:relative;
   top:0;
   left: 0;
   width:100%;
@@ -73,11 +73,18 @@ img.logorick{
   transform: matrix(1, -0.09, 0.09, 1, 0, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  position: fixed;
+  position: absolute;
 }
 
 .letsExploreButton{
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.charactersTittle{
+  background: rgba(4, 86, 124, 0.44);
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
