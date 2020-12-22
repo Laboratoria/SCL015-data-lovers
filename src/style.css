@@ -1,5 +1,18 @@
+npm* {
+  padding: 0;
+  margin: 0;
+}
+
 body{
   font-family: 'Rum Raisin', sans-serif;
+
+}
+
+.welcomeScreen{
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-image: url("img/welcome-background.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -8,18 +21,71 @@ body{
 }
 
 .welcomeText{
-
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h2 {
+  align-items: center;
+
 }
 
 .logoText{
   font-size: 65px;
   font-family: 'Lacquer', cursive;
   color: #12B0C9;
-  border-color: #000000;
   text-shadow: 0px 2px 8px #C8DD5D;
   transform: rotate(-3.84deg);
+  margin-left: 80px;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+
 }
 
+img.logorick{
+  transform: rotate(-3.84deg);
+  margin-left: 80px;
+}
+
+.exploreButton{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  font-family: 'Lacquer', cursive;
+  font-size: 40px;
+  color: #D6E3FB;
+  border-radius: 50%;
+  border: 3px solid;
+  height: 246.02342125057478px;
+  width: 253.8107263059118px;
+  border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 72.4%);
+  cursor: pointer;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(242, 255, 0, 0.89) 24.48%, rgba(242, 255, 0, 0) 100%);
+  box-shadow: inset 0px 4px 6px #d6e3fb;
+  transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+}
+
+.letsExploreButton{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.charactersScreen{
+  background-image: url("img/blue-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logoNavbar{
+}
