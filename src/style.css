@@ -5,26 +5,30 @@ npm* {
 
 body{
   font-family: 'Rum Raisin', sans-serif;
-
-}
-
-.welcomeScreen{
-  visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   background-image: url("img/welcome-background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+.welcomeScreen{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
 }
 
 .welcomeText{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
   text-align: center;
 }
 
@@ -69,23 +73,11 @@ img.logorick{
   transform: matrix(1, -0.09, 0.09, 1, 0, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-
+  position: fixed;
 }
 
 .letsExploreButton{
   display: flex;
   justify-content: center;
   flex-direction: row;
-
-}
-
-.charactersScreen{
-  background-image: url("img/blue-background.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logoNavbar{
 }
