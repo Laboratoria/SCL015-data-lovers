@@ -1,5 +1,6 @@
 
 import data from './data/pokemon/pokemon.js';
+
 //en esta función queremos que al presionar pokebola de agua, apareceran los de tipo agua
 const pokemons = data.pokemon;
 
@@ -24,9 +25,14 @@ function filterWater(){
 }
 filterWater(pokemons);
 
-console.log(data);
 
 
+
+
+
+
+
+    
 //llamo e invoco las funciones 
 //DOM - tomo los valores 
-//creacion de documento
+// creacion de documento
