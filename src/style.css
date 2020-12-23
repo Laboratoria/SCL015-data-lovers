@@ -12,6 +12,12 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  /*font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  */
+  
 }
 
 #Inicio{
@@ -29,7 +35,6 @@ body{
 .logo{
   width: 50%;
   filter: drop-shadow(2px 4px 75px rgba(0, 0, 0, 0.75));
-  padding-top: 3%;
 }
 /*#ContenedorBoton{
 
@@ -44,13 +49,6 @@ padding-left: 5%;
 padding-top: 5%;
 }
 
-/*#Entrar{
-align-self: flex-end;
-right: 5%;
-padding-right: 50px;
-padding-bottom: 170px;
-padding: 5%;
-}*/
 
 #BotonEntrar{
 width: 15vw;
@@ -58,59 +56,138 @@ margin-left: 20%;
 margin-bottom: 5%;
 }
 
-
+/*#ingresar{
+  background-image: url(./assets/BotonEntrarT.png);
+  padding: 5%;
+}*/
 /* segundo div */
 #Tablero{
-display: none;
-background-image: url(assets/fondolimpio.jpg);
-background-size: cover;
+ display: none;
+ background-image: url(assets/fondolimpio.jpg);
+ background-size: cover;
+ height: 100vh;
+ 
 }
+
+
+.logoPequeño{
+  width: 328px;
+  left: 45px;
+  top: 34px;
+  
+  }
+
+
+  .oromenu{
+    display: inline-block;
+    margin: 0px 25px 10px 25px;
+    }
+  
+.oro{
+  width: 110px;
+}
+
 
 /* #Cabecera{
 width: 100%;
 height: 300px;
 } */
 
-.logoPequeño{
-width: 328px;
-left: 45px;
-top: 34px;
+
+
+#contenedorTableros{
+ height: 360px;
+
+ align-content: flex-start;
+ 
 }
 
-nav{
-width: 569px;
-height: 60%;
-
-box-sizing: border-box;
-flex-direction: row;
+#cajaFiltros {
+  width: 250px;
+  height: 376px;
+  border: 2px solid #8985FB;
+  margin: 10px;
+  border-radius: 8px;
+  float: left;
+  
+  
 
 }
-ul{
-display: flex;
+
+#cajaFiltros .Filtros{
+  background: linear-gradient(to bottom, #000000, #8985FB);
+  border: 8px solid black;
+  height: 360px;
+  border-radius: 8px;
+  float: left;
 
 }
-a{
-text-decoration: none;
-color: white;
-font-family: ;
+
+#bordeTablero {
+  width: 1016px;
+  height: 376px;
+  border: 2px solid #8985FB;
+  margin: 10px;
+  border-radius: 8px;
+  float: left;
+  
 }
 
-.oromenu{
-display: inline-block;
-margin: 20px 0 60px 0;
+#bordeTablero .cajaTablero{
+  background: linear-gradient(to bottom, #000000, #8985FB);
+  /*opacity: 0.8;*/
+  border: 8px solid black;
+  width: 1000px;
+  height: 360px ;
+  overflow-y: scroll;
+  border-radius: 8px;
+  display: flex;
+  float: left;
+
+}
+#containerData{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.card{
+ margin: 10px 10px 0px 10px;
+}
+
+.card> img {
+ width: 220px;
+}
+.char-name {
+  width: 220wh;
+  height: 5vh;
+  background-color: #8985FB;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  
+
 }
 
 
-/* #oroSobreJuego{
-width: 223px;
-height: 117px;
 
-} */
 
-#ingresar{
-  background-image: url(./assets/BotonEntrarT.png);
-  padding: 5%;
-}
+
+
+
+
+
+/*.containerData{
+  width: 500px;
+  height: 160px;
+  border: 5px solid black;
+  border-radius: 5%;
+  background-color:rgba(91, 94, 143, 0.76);
+  margin: 0;
+
+}*/
+
+
 
 /*media*/
 
@@ -123,7 +200,7 @@ height: 117px;
 
 .letrasLol{
   width: 80%;
-margin: 7%;
+  margin: 7%;
   }
 
   #BotonEntrar{
@@ -149,11 +226,98 @@ margin: 7%;
     }
 }
 
-@media (max-width: 480px) {
-}
+/*@media (max-width: 1680px){
+  
+
+  #Tablero{
+    display: none;
+    background-image: url(assets/fondolimpio.jpg);
+    background-size: cover;
+    }
+    
+    .logoPequeño{
+      width: 328px;
+      left: 45px;
+      top: 34px;
+      
+      }
+    
+    
+      .oromenu{
+        display: inline-block;
+        margin: 0px 25px 0px 25px;
+        }
+      
+    .oro{
+      width: 125px;
+    }
+    
+    
+    #contenedorTableros{
+     height: 500px;
+
+     align-content: flex-end;
+     
+    }
+    
+    #cajaFiltros {
+      width: 300px;
+      height: 500px;
+      border: 2px solid #8985FB;
+      margin: 15px;
+      border-radius: 3px;
+      float: left;
+      
+    }
+    
+    #cajaFiltros .Filtros{
+      background: linear-gradient(to bottom, #000000, #8985FB);
+      opacity: 0.5;
+      border: 5px solid black;
+      height: 520px;
+      border-radius: 5%;
+      float: left;
+    
+    }
+    
+    #bordeTablero {
+      width: 1100px;
+      height: 520px;
+      border: 2px solid #8985FB;
+      margin: 15px;
+      border-radius: 3%;
+      
+    }
+    
+    #bordeTablero .cajaTablero{
+      background: linear-gradient(to bottom, #000000, #8985FB);
+      border: 5px solid black;
+      width: 1050px;
+      height: 500px ;
+      overflow-y: scroll;
+      border-radius: 3%;
+      display: flex;
+      float: left;
+    
+    }
+    #containerData{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+    }
+    .card{
+     margin: 10px;
+    }
+    
+    .card> img {
+     width: 200px;
+    }
+
+  }
 
 
-@media (min-width: 1024px){
+/*@media (min-width: 1024px){
 
 }
 
