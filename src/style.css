@@ -5,16 +5,17 @@
 
 body{
   font-family: 'Rum Raisin', sans-serif;
-  background-image: url("img/welcome-background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
 }
 
 .welcomeScreen{
   display: flex;
+  background-image: url("img/welcome-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -83,7 +84,7 @@ img.logorick{
 }
 
 .charactersScreen{
-  background-image: url(img/blue-background.png);
+  background-image: url("img/blue-background.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
