@@ -1,0 +1,103 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(image/Johto.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #00ffff;
+    margin: 0%;
+}
+.page-background {
+    background-size: cover;
+}
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+
+}
+    .header a {
+    text-decoration: none;
+    }
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+}
+.navigation ul {
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+    .navigation ul li {
+        display: inline-block;
+    }
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px ;
+        }
+            .navigation ul li a:hover {
+                background-color: #00ffff;    
+                }
+.introduccion {
+    display: inline-block;
+    background-color:#EECC17;
+    font-family:righteous sans-serif ;
+    color: #2E2BD0;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.pokemones {
+    display: inline-block;
+    background-color:#2E2BD0;    
+    font-family:righteous sans-serif;
+    color: #EECC17;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.topPokemon {
+    display: block;
+    background-color:#EECC17;
+    font-family:righteous sans-serif ;
+    color: #2E2BD0;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.main{
+    padding-top:10rem;
+}   
+    .main container h1 {
+        display: block;    
+        margin: auto;
+    }   
+.footer {
+    font-family: serif;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}
+

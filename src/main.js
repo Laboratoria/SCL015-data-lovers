@@ -27,12 +27,7 @@ filterWater(pokemons);
 
 
 
-
-
-
-
-
-    
+ 
 //llamo e invoco las funciones 
 //DOM - tomo los valores 
 // creacion de documento
