@@ -12,20 +12,20 @@
 
 <body>
   <div id="root">
-    <div class="welcomeScreen">
+    <div class="welcomeScreen" id="welcomeScreen">
       <main class="welcomeText">
         <h1 class="logoText">Welcome to</h1>
         <img src="img/rickandmortylogopng.png" alt="Logo RickandMorty" class="logorick">
         <h2 class="logoText">Wiki</h2>
       </main>
       <div class="letsExploreButton">
-        <button class="exploreButton">Let's Explore</button>
+        <button id="startButton" class="exploreButton">Let's Explore</button>
       </div>
     </div>
 
     <!---------------------------Segunda página---------------------------------->
 
-    <div class="charactersScreen">
+    <div class="charactersScreen" id="charactersScreen" hidden>
       <nav>
         <img src="img/rickandmortylogopng.png">
         <button class="charactersBtn">Characters</button>
@@ -33,6 +33,11 @@
       <main>
         <tittle class="charactersTittle">Characters</tittle>
       </main>
+      <div id="listCharacters">
+      </div>
+      <div class="goHomeButton">
+        <button id="returnButton" class="returnButton">Home</button>
+      </div>
 
     </div>
 
