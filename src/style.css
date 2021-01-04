@@ -82,7 +82,16 @@ img.logorick{
   flex-direction: row;
 }
 
+.charactersScreen{
+  background-image: url(img/blue-background.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .charactersTittle{
+  width: 351px;
+  height: 69px;
   background: rgba(4, 86, 124, 0.44);
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
