@@ -21,7 +21,7 @@ body {
 }
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     padding: 0rem 1rem;
     position: fixed;
@@ -35,7 +35,7 @@ body {
     }
 .container-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-decoration: none;
 }
@@ -56,13 +56,13 @@ body {
     }
         .navigation ul li a {
             display: block;
-            padding: 0.5rem 1rem;
+            padding: 1.5rem 4rem;
             transition: all 0.4s linear;
             border-radius: 5px ;
         }
             .navigation ul li a:hover {
                 background-color: #00ffff;    
-                }
+            }
 .introduccion {
     display: inline-block;
     background-color:#EECC17;
@@ -89,15 +89,39 @@ body {
 }
 .main{
     padding-top:10rem;
-}   
-    .main container h1 {
+}
+    .main h1 {
         display: block;    
         margin: auto;
+        justify-content: center;
     }   
+
+.button {
+    
+
+}    
 .footer {
     font-family: serif;
     padding: 4rem 0;
     text-align: center;
     margin-top: 5rem;
+}
+@media (max-width:767px){
+    .navigation {
+        width: 100%;
+    }
+        .navigation ul li {
+            display: block;
+        }
+            .navigation ul li a {
+                display: block;
+                padding: 0.5rem 1rem;
+                transition: all 0.4s linear;
+                border-radius: 5px;
+            }
+                .navigation ul li a:hover {
+                    background-color: cyan;
+                }
+
 }
 
