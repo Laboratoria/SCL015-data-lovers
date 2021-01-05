@@ -94,6 +94,13 @@ img.logorick{
   height:100%;
 }
 
+.charactersContainer{
+  scroll-behavior: smooth;
+  background-color:white ;
+  width: 1250px;
+  height: 700px;
+}
+
 .charactersTittle{
   width: 351px;
   height: 69px;

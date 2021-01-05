@@ -27,8 +27,8 @@ function charactersList() {
   let list = ""
   //Incio el bucle
   for (let i = 0; i < rickandmorty.length; i++) {
-    list += rickandmorty[i].name + "," + rickandmorty[i].status + "," + rickandmorty[i].gender + "," + rickandmorty[i].species + "." + rickandmorty[i].origin.name + "," + "<br>";
-    console.log(rickandmorty[i]);
+    list += `<img src="${rickandmorty[i].image}" alt="">` + rickandmorty[i].name + "," + rickandmorty[i].status + "," + rickandmorty[i].gender + "," + rickandmorty[i].species + "." + rickandmorty[i].origin.name + "," + "<br>";
+    // console.log(rickandmorty[i]);
 
   }
   return list;
