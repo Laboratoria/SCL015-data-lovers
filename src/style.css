@@ -15,7 +15,7 @@ body {
     background-size: cover;
 }
 .container {
-    width: 85%;
+    width: 40%;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     position: fixed;
     left:0;
     top:0;
@@ -38,6 +38,7 @@ body {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 .navigation {
     display: flex;
@@ -56,12 +57,12 @@ body {
     }
         .navigation ul li a {
             display: block;
-            padding: 1.5rem 4rem;
+            padding: 1rem 4rem;
             transition: all 0.4s linear;
             border-radius: 5px ;
         }
             .navigation ul li a:hover {
-                background-color: #00ffff;    
+                background-color: cyan;    
             }
 .introduccion {
     display: inline-block;
@@ -71,11 +72,11 @@ body {
     justify-content: space-between;
     text-decoration: none;
 }
-.pokemones {
+.pokemon {
     display: inline-block;
     background-color:#2E2BD0;    
     font-family:righteous sans-serif;
-    color: #EECC17;
+    color: #f5d104;
     justify-content: space-between;
     text-decoration: none;
 }
@@ -88,40 +89,68 @@ body {
     text-decoration: none;
 }
 .main{
-    padding-top:10rem;
+    padding-top: 06rem;
 }
     .main h1 {
         display: block;    
         margin: auto;
         justify-content: center;
     }   
-
 .button {
-    
+    padding-top: 15rem;
+    padding: 5rem;
+    justify-self: center;
+    align-self: center;
+}
 
-}    
+.poketipo {
+    background-image: url(image/klipartz.com.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    border: 0rem;
+    background-position: center;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    background-size: cover;
+    border-radius: 50%;
+}  
+.links {
+    background-image: url(image/poketipo.jpeg);
+    background-repeat: no-repeat;
+    height: 1.5px;
+    width: 1.5px;
+    border: 0rem;
+    background-position: center;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    background-size: cover;
+    border-radius: 50%;
+} 
 .footer {
     font-family: serif;
-    padding: 4rem 0;
+    padding: 10rem 0;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 @media (max-width:767px){
     .navigation {
         width: 100%;
+        margin-top: 1rem;
     }
-        .navigation ul li {
-            display: block;
+      .navigation ul li {
+        display: block;
+      }
+        .navigation ul li a {
+          display: block;
+          padding: 0.5rem 0rem;
+          transition: all 0.4s linear;
+          /* border-radius: 5px; */
         }
-            .navigation ul li a {
-                display: block;
-                padding: 0.5rem 1rem;
-                transition: all 0.4s linear;
-                border-radius: 5px;
-            }
-                .navigation ul li a:hover {
-                    background-color: cyan;
-                }
-
+          .navigation ul li a:hover {
+            background-color: cyan;
+          }
 }
 
