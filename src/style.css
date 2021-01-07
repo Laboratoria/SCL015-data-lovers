@@ -104,7 +104,7 @@ body {
 }
 
 .poketipo {
-    background-image: url(image/klipartz.com.png);
+    background-image: url(image/poketipo.png);
     background-repeat: no-repeat;
     height: 200px;
     width: 200px;
@@ -117,7 +117,7 @@ body {
     border-radius: 50%;
 }  
 .links {
-    background-image: url(image/poketipo.jpeg);
+    background-image: url(image/klipartz.com.png);
     background-repeat: no-repeat;
     height: 1.5px;
     width: 1.5px;
