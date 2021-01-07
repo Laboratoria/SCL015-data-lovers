@@ -93,19 +93,15 @@ img.logorick{
   height:100%;
 }
 
-.charactersContainer{
-  line-height: 31px;
-  color: #091332;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color:white;
-}
-
-
 .photo{
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #E5EC2E;
   border-radius: 6px;
+}
+
+.nameStyle{
+  font-size: 30px;
 }
 
 .charactersTittle{
@@ -129,10 +125,9 @@ img.logorick{
 
 .cardContainer{
   background-color: transparent;
-  width: 180px;
-  height: 180px;
-  border: 1px solid #f1f1f1;
-  /* perspective: 1000px; */
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
 .cardContainer-inner{
@@ -147,21 +142,46 @@ img.logorick{
 }
 
 .frontCard {
-  height: 180px;
-  width: 180px;
+  height: 300px;
+  width: 300px;
   color: #091332;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 44px;
   background: rgba(255, 255, 255, 0.65);
   border-radius: 6px;
 }
 
 .backCard {
-  height: 180px;
-  width: 180px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
   background-color: rgba(51, 66, 98, 1);
+  border: 2px solid #E5EC2E;
+  border-radius: 6px;
   color: white;
   transform: rotateY(180deg);
 }
 
+.charactersContainer{
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: #091332;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color:white;
+  position: absolute;
+}
 
+.descriptionCard{
+  font-size: 18px;
+  color: #BEDCEC;
+}
+
+.cardText{
+  font-size: 24px;
+  color: #FFFFFF;
+}

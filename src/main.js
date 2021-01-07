@@ -19,7 +19,7 @@ document.getElementById("returnButton")
 
 //LLAMAR LISTA DE PERSONAJES
 
-function charactersList() {
+const charactersList = () => {
   //Declaro una variable para llamar la data desde rickandmorty.js
   const rickandmorty = data.results;
   //Declaro una variable para imprimir la lista de personajes
@@ -29,21 +29,22 @@ function charactersList() {
     list += `<div class= "cardContainer">
     <div id="rickandmorty" class="cardContainer-inner">
     <div class="frontCard">
-    <p id="nameChar">${rickandmorty[i].name}
+    <p id="nameChar">${rickandmorty[i].name}</p>
     <img id="photo" class="photo" src="${rickandmorty[i].image}"/>
-    </p>
     </div>
     <div class="backCard">
-    <p id="statusChar" >${rickandmorty[i].status}</p>
-    <p id="genderChar" >${rickandmorty[i].gender}</p>
-    <p id="speciesChar" >${rickandmorty[i].species}</p>
+    <p id="nameChar" class="nameStyle">${rickandmorty[i].name}</p>
+    <p id="statusChar" class="cardText">
+    ${rickandmorty[i].status + " - " + rickandmorty[i].species}</p>
+    <p class="descriptionCard">Gender:</p>
+    <p id="genderChar" class="cardText">${rickandmorty[i].gender}</p>
+    <p class="descriptionCard">Last known location:</p>
+    <p id="locationChar" class="cardText">${rickandmorty[i].location.name}</p>
     </div>
     </div>
     </div>`;
     // console.log(rickandmorty[i]);
-
   }
   return list;
 }
 document.getElementById("listCharacters").innerHTML = charactersList();
-
