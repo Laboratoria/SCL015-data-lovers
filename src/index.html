@@ -12,6 +12,14 @@
     />
   </head>
   <body>
+    <!-- se crea modal -->
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <center id="createmodal"></center>
+      </div>
+    </div>
+
     <pages1 id="pages1">
       <container>
         <div class="contentimage1"></div>
@@ -48,7 +56,7 @@
         </div>
         <div class="filter-origen">
           <select name="select " id="select_genero">
-            <option value="" selected>SELECCIONE GENERO</option>
+            <option value="" selected>SELECCIONE GÉNERO</option>
             <option value="Female">FEMENINO</option>
             <option value="Male">MASCULINO</option>
             <option value="unknown">UNKNOWN</option>
@@ -57,7 +65,7 @@
         </div>
         <div class="filter-az">
           <select name="select" id="select_az">
-            <option value="" selected>ORDEN ALFABETICO</option>
+            <option value="" selected>ORDEN ALFABÉTICO</option>
             <option value="1">A-Z</option>
             <option value="2">Z-A</option>
           </select>
@@ -65,8 +73,7 @@
       </filter>
 
       <div class="cards-container" id="cards-container">
-        <ul class="profile" id="card_list">
-          <!-- <li class="cards-item">
+        <!-- <li class="cards-item">
             <div class="card">
               <div class="card-images">
                 <img src="images/fondos/rick.jfif" />
@@ -76,10 +83,9 @@
               </div>
             </div>
           </li> -->
-        </ul>
       </div>
     </pages2>
-    <div id="root"></div>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
