@@ -29,8 +29,8 @@ const charactersList = () => {
     list += `<div class= "cardContainer">
     <div id="rickandmorty" class="cardContainer-inner">
     <div class="frontCard">
-    <p id="nameChar">${rickandmorty[i].name}</p>
-    <img id="photo" class="photo" src="${rickandmorty[i].image}"/>
+      <img id="photo" class="photo" src="${rickandmorty[i].image}"/>
+      <p id="nameChar" class="name-character">${rickandmorty[i].name}</p>
     </div>
     <div class="backCard">
     <p id="nameChar" class="nameStyle">${rickandmorty[i].name}</p>
