@@ -19,6 +19,11 @@ smallPokeball.value='showTypes';
 spacePokeballs.appendChild(smallPokeball);
 
 
+
+
+
+
+
 })
  
 //llamo e invoco las funciones 
