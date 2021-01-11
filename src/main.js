@@ -34,12 +34,24 @@ const charactersList = () => {
     </div>
     <div class="backCard">
     <p id="nameChar" class="nameStyle">${rickandmorty[i].name}</p>
-    <p id="statusChar" class="cardText">
-    ${rickandmorty[i].status + " - " + rickandmorty[i].species}</p>
-    <p class="descriptionCard">Gender:</p>
-    <p id="genderChar" class="cardText">${rickandmorty[i].gender}</p>
-    <p class="descriptionCard">Last known location:</p>
-    <p id="locationChar" class="cardText">${rickandmorty[i].location.name}</p>
+      <div class="backCardProperty">
+        <div class="propertyFlex">
+          <p class="propertyStyle">Status:</p>
+          <p id="statusChar" class="cardText">${rickandmorty[i].status}</p><br>
+        </div>
+        <div class="propertyFlex">
+          <p class="propertyStyle">Specie: </p>
+          <p id="specieChar" class="cardText">${rickandmorty[i].species}</p><br>
+        </div>
+        <div class="propertyFlex">
+          <p class="propertyStyle">Gender: </p>
+          <p id="genderChar" class="cardText">${rickandmorty[i].gender}</p><br>
+        </div>
+        <div class="propertyFlex">
+          <p class="propertyStyle">Last known location: </p>
+          <p id="locationChar" class="cardText">${rickandmorty[i].location.name}</p><br>
+        </div>
+      </div>
     </div>
     </div>
     </div>`;

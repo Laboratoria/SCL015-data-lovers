@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-
+/*----------------------PRIMERA PÁGINA----------------------*/
 body{
   font-family: 'Rum Raisin', sans-serif;
   background-image: url("img/welcome-background.jpg");
@@ -29,7 +29,7 @@ body{
   text-align: center;
   margin-bottom: 44.5rem;
 }
-
+/* Wiki */
 h2 {
   align-items: center;
 }
@@ -80,6 +80,7 @@ img.logorick{
   flex-direction: row;
 }
 
+/*----------------------SEGUNDA PÁGINA----------------------*/
 .charactersScreen{
   background-image: url("img/blue-background.png");
   background-attachment: fixed;
@@ -94,11 +95,6 @@ img.logorick{
   overflow-y: scroll;
 }
 
-.nameStyle{
-  font-size: 30px;
-  height: 50px;
-}
-
 .charactersTittle{
   font-size: 44px;
   color:rgba(255, 255, 255, 1);
@@ -108,6 +104,33 @@ img.logorick{
   background: rgba(4, 86, 124, 0.44);
   width: 351px;
   height: 69px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+select{
+  font-family: 'Rum Raisin', sans-serif;
+  font-size: 24px;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(4, 86, 124, 0.44);
+  width: 180px;
+  height: 39px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.filtersStyle{
+  font-size: 24px;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(4, 86, 124, 0.44);
+  width: 180px;
+  height: 39px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
@@ -159,6 +182,23 @@ img.logorick{
   transform: rotateY(180deg);
 }
 
+.backCardProperty{
+  padding: 5px;
+  margin: 8px;
+}
+
+.propertyStyle{
+  color: #BEDCEC;
+  font-size: 24px;
+}
+
+.propertyFlex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
 .charactersContainer{
   width: 1400px;
   display: flex;
@@ -170,18 +210,26 @@ img.logorick{
   -webkit-text-stroke-color:white;
 }
 
-.descriptionCard{
-  font-size: 18px;
-  color: #BEDCEC;
+.cardText{
+  font-size: 30px;
+  color: #ffffff;
 }
 
-.cardText{
-  font-size: 24px;
-  color: #FFFFFF;
+.nameStyle{
+  font-size: 40px;
+  padding: 10px;
+  text-align: center;
+  color: #091332;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color:white;
 }
 
 .name-character{
   margin-top: -14px;
+}
+
+.wrap-filter-order{
+  display: flex;
 }
 
 .wrap-characters{
@@ -198,3 +246,5 @@ img.logorick{
 .returnButton:hover{
   cursor: pointer;
 }
+
+/*----------------------RESPONSIVE----------------------*/
