@@ -43,9 +43,5 @@ export const filtrar = (arrayrickymorty, nombreElemento, valoraFiltrar) => {
   // console.log (JSON.stringify(arrayrickymorty));
   return arrayrickymorty;
 };
-// export const encontrar = (arrayrickymorty, nombreElemento, valorEncontrar) => {
-//   arrayrickymorty = arrayrickymorty.find(
-//     (elemento) => elemento[nombreElemento] == valorEncontrar
-//   );
-//   return arrayrickymorty;
-// };
+
+
