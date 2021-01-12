@@ -6,7 +6,6 @@ const pokemons = data.pokemon;
 const spacePokeballs=document.getElementById('spacePokeballs');
 
 document.getElementById('button').addEventListener("click",function(){
-//spacePokeballs.innerHTML="";//
 console.log(spacePokeballs);
 
 

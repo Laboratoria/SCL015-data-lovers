@@ -65,17 +65,17 @@ body {
                 background-color: cyan;    
             }
 .introduccion {
-    display: inline-block;
+    display: block; 
     background-color:#EECC17;
-    font-family:righteous sans-serif ;
+    font-family: 'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
     text-decoration: none;
 }
 .pokemon {
-    display: inline-block;
+    display: block;
     background-color:#2E2BD0;    
-    font-family:righteous sans-serif;
+    font-family: 'Righteous', cursive;
     color: #f5d104;
     justify-content: space-between;
     text-decoration: none;
@@ -83,7 +83,7 @@ body {
 .topPokemon {
     display: block;
     background-color:#EECC17;
-    font-family:righteous sans-serif ;
+    font-family: 'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
     text-decoration: none;

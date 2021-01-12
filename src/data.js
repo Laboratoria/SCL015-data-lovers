@@ -1,10 +1,10 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const filter = () => {
+  return 'pokemons';
 };
 
-export const anotherExample = () => {
+export const  = () => {
   return 'OMG';
 };
 
