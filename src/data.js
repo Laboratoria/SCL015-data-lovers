@@ -1,47 +1,34 @@
-// estas funciones son de ejemplo
-// export const example = () => {
-//   return "example";
-// };
-
-// export const anotherExample = () => {
-//   return "OMG";
-// };
-//se crea la funcion ordenar y filtrar
-export const ordenarAZ = (arrayrickymorty, tipodeorden) => {
-  if (tipodeorden == 1) sortJSON(arrayrickymorty, "name", "asc");
+//Creamos la función ordenar para el select
+export const toOrderAZ = (arrayrickymorty, orderType) => {
+  if (orderType == 1) sortJSON(arrayrickymorty, "name", "asc");
   else sortJSON(arrayrickymorty, "name", "desc");
 
   return arrayrickymorty;
 };
-const sortJSON = (data, key, orden) => {
+export const sortJSON = (data, key, order) => {
   return data.sort(function (a, b) {
-    var x = a[key],
+    let x = a[key],
       y = b[key];
-    if (orden === "asc") {
+    if (order === "asc") {
       return x < y ? -1 : 1;
     }
-// if (x < y) {
-    //  return -1;
-    // } else {
-    //   if (x > y) {
-    //   return  1;
-    //   } else {
-    //   return  0;
-    //   }
-    // }
-    // if (orden === "desc") {
-      else{
+    else{
       return x > y ? -1 : 1;
     }
   });
 };
-
-export const filtrar = (arrayrickymorty, nombreElemento, valoraFiltrar) => {
-  arrayrickymorty = arrayrickymorty.filter(
-    (elemento) => elemento[nombreElemento] == valoraFiltrar
-  );
-  // console.log (JSON.stringify(arrayrickymorty));
+//Creamos la función para filtrar con los otros dos select
+export const toFilter = (arrayrickymorty, elementName, filterValue) => {
+  arrayrickymorty = arrayrickymorty.filter((theElement) => theElement[elementName] === filterValue);
   return arrayrickymorty;
 };
+<<<<<<< HEAD
 
 
+=======
+//Creamos la función para el buscador para el select
+export const search = (arrayrickymorty, characterName) => {
+  let arrayrickymortyTwo = arrayrickymorty.filter(element => element.name.includes(characterName));
+  return arrayrickymortyTwo;
+};
+>>>>>>> CatalinaFGH-master

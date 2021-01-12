@@ -1,4 +1,8 @@
-import { ordenarAZ, filtrar } from "../src/data.js";
+//describe : es el test.
+// it : es el caso. El ejemplo. Pueden ser varios casos
+// expect: se espera que... (evalúa la función)
+// toBe: que sea...
+import { toOrderAZ, toFilter } from "../src/data.js";
 import data from "../src/data/rickandmorty/rickandmorty.js";
 
 const rickandmorty = data.results;
@@ -175,37 +179,32 @@ const resultZA = [
   },
 ];
 
-describe("filtrar", () => {
+describe("filters", () => {
   it("is a function", () => {
-    expect(typeof filtrar).toBe("function");
+    expect(typeof toFilter).toBe("function");
   });
 
   it("gender filter return Genderless", () => {
-    expect(filtrar(rickandmorty, "gender", "Genderless")).toEqual(dataGenderless);
+    expect(toFilter(rickandmorty, "gender", "Genderless")).toEqual(dataGenderless);
   });
 });
 
-describe("ordenarAZ", () => {
+describe("orderAZ", () => {
   it("is a function", () => {
-    expect(typeof ordenarAZ).toBe("function");
+    expect(typeof toOrderAZ).toBe("function");
   });
 
-  it("returns ordenaz", () => {
-    expect(ordenarAZ(toAZorder, 1)).toEqual(resultAZ);
+  it("returns orderAZ", () => {
+    expect(toOrderAZ(toAZorder, 1)).toEqual(resultAZ);
   });
 });
 
-describe("ordenarAZ", () => {
+describe("orderAZ", () => {
   it("is a function", () => {
-    expect(typeof ordenarAZ).toBe("function");
+    expect(typeof toOrderAZ).toBe("function");
   });
 
-  it("returns ordenaz", () => {
-    expect(ordenarAZ(toAZorder, 2)).toEqual(resultZA);
+  it("returns orderAZ", () => {
+    expect(toOrderAZ(toAZorder, 2)).toEqual(resultZA);
   });
 });
-
-//describe : es el test.
-// it : es el caso. El ejemplo. Pueden ser varios casos
-// expect: se espera que... (evalúa la función)
-// toBe: que sea...

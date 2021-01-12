@@ -2,20 +2,19 @@
   padding: 0px;
   margin: 0px;
 }
-body {
-  background-color: black;
+/* Fijamos la imagen de bienvenida y al fondo le agregamos una imagen con animación */
+body{
   background-image: url(../src/images/fondos/estrellas3.jpg);
-  /* background-size: 100%; */
   animation: muv 5s infinite linear alternate;
 }
-@keyframes muv {
-  from {
+@keyframes muv{
+  from{
     background-position: top;
   }
-  to {
+  to{
     background-position: center;
   }
-  container {
+  container{
     display: flex;
     width: 100%;
     height: 600px;
@@ -23,18 +22,19 @@ body {
     align-content: center;
   }
 }
-.pages1 {
+/* Creamos la primera página */
+.pages1{
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
-.contentimage1 {
+.welcome-image{
   display: flex;
   padding: 15%;
   background-position: bottom;
   background-size: cover;
-  background-image: url(../src/images/fondos/rickymorty.jpg);
+  background-image: url(../src/images/fondos/rickymorty1apachurrado.jpg);
   background-position-x: center;
   background-position-y: center;
   border-radius: 15px;
@@ -42,31 +42,30 @@ body {
   margin-right: 50px;
   margin-top: 10px;
 }
-
-.container-welcome {
+.container-welcome{
   justify-content: center;
   align-content: center;
   text-align: center;
   display: flex;
 }
-
-h1 {
+h1{
   font-family: "orbitron";
   text-align: justify;
   color: #ffffff;
   text-align: center;
   max-width: 850px;
   width: 100%;
-  font-size: 240%;
+  font-size: 175%;
+  margin-top: 20px;
 }
-.containerbutton {
+.container-enter-button{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
   max-width: 100%;
+  margin-top: 20px;
 }
-.enterbutton {
+.enter-button{
   background-color: #ffffff;
   color: black;
   padding: 15px 30px;
@@ -84,39 +83,26 @@ h1 {
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  overflow: hidden;
+  overflow: hidden;/* con overflow:hidden creamos la funcionalidad neón para el botón */
 }
-/* con overflow:hidden se crea la funcionalidad neon para el boton */
-.enterbutton:hover {
-  color: #111;
+.enter-button:hover{
   background: #39ff14;
   box-shadow: 0 0 50px #39ff14;
 }
-/* se crean filtros */
-filter {
+/* Creamos la segunda página que al principio está oculta*/
+pages2{
+  display: none;
+}
+/* Creamos los filtros */
+.filter{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
-  align-items: center;
-  padding: 10px;
-  /* padding: 5%; */
 }
-.filter-especie {
-  /* width: 15%; */
-}
-.filter-origen {
-  /* width: 15%; */
-}
-.filter-az {
-  /* width: 15%; */
-}
-select {
-  display: block;
+.select-filter{
   font-size: 16px;
   font-family: "ORBITRON", sans-serif;
   font-weight: bold;
-  font-weight: 400;
   color: rgb(0, 0, 0);
   line-height: 1.3;
   padding: 0.4em 1.4em 0.3em 0.8em;
@@ -136,48 +122,49 @@ select {
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-
-select:hover {
-  color: #111;
+.select-filter:hover{
   background: #39ff14;
   box-shadow: 0 0 50px #39ff14;
 }
-pages2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+/* Le cambiamos la imagen al buscador y le agregamos la sombra neón */
+#searchInput{
+  background-image: url("../src/images/diseño/lupa.png"),
+    linear-gradient(to bottom, #8bb41b 0%, #f7f7f7 100%);
 }
-.cards-container {
+#searchInput:hover{
+  background: #39ff14;
+  box-shadow: 0 0 50px #39ff14;
+}
+/* Creamos los estilos del contenedor y las cartas */
+.cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-items: center; */
-  /* align-self: center; */
   overflow-y: scroll;
   width: 95%;
   height: 80vh;
+<<<<<<< HEAD
   /* background-color: gray; */
   /* height: 100vh; */
+=======
+>>>>>>> CatalinaFGH-master
 }
-
-.card {
+.card{
   width: 200px;
   height: 200px;
   display: flex;
   flex-direction: column;
   margin: 40px;
 }
-
-.image-style {
+.card-image{
   height: 200px;
   border-radius: 20px;
   border: solid;
   border-color: #77b649;
 }
-
-.name-style {
+.card-name{
   font-size: 16px;
   font-family: "ORBITRON", sans-serif;
   font-weight: bold;
@@ -188,31 +175,28 @@ pages2 {
   padding: 5px;
   width: 190px;
 }
-
-/* width */
-::-webkit-scrollbar {
+/* Creamos el scroll del contenedor de los personajes */
+/* width */ 
+::-webkit-scrollbar{
   width: 20px;
   height: 100px;
 }
-
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   box-shadow: inset 0 0 5px #77b649;
   border-radius: 10px;
 }
-
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background: #77b649;
   border-radius: 10px;
 }
-
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
   background: #39ff14;
 }
-/* se crea modal */
-.modalDialog {
+/* Creamos modal */
+.modal-style{
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
   top: 0;
@@ -227,14 +211,14 @@ pages2 {
   transition: opacity 400ms ease-in;
   pointer-events: none;
 }
-.modalDialog:target {
+.modal-style:target{
   opacity: 1;
   pointer-events: auto;
 }
-.modalDialog > div {
+.modal-style > div{
   width: 400px;
   position: relative;
-  margin: 10% auto;
+  margin: 3% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: #fff;
@@ -245,17 +229,17 @@ pages2 {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
 }
-.close {
+.modal-close{
   background: #606061;
   color: #ffffff;
   line-height: 25px;
+  font-size: 25px;
   position: absolute;
   right: -12px;
   text-align: center;
   top: -10px;
   width: 24px;
   text-decoration: none;
-  font-weight: bold;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -263,45 +247,30 @@ pages2 {
   -webkit-box-shadow: 1px 1px 3px #000;
   box-shadow: 1px 1px 3px #000;
 }
-.close:hover {
+.modal-close:hover{
   background: #39ff14;
+  color: #000000;
 }
-
-.modal-image-style{
+.modal-image{
   width: 70%;
   padding-top: 25px;
 }
-/* .modal-font-style{
-  font-family: "Orbitron";
-} */
 h2{
   font-family: "Orbitron";
 }
-
-
-
-/* Se crea la parte Responsive */
-/*formato para Escritorio*/
-/* @media (min-width: 991.98px) { */
-  /* body {
-    /* background: red; */
-  /* } 
-}  */
-/*Fin formato Escritorio
-
+/* Creamos la parte Responsive */
 /*formato para Tablet*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait){
-
   h1{
     font-size: 210%;
     width: 95%;
     padding-top: 10px;
   }
-  .enterbutton{
+  .enter-button{
     background: #39ff14;
     box-shadow: 0 0 50px #39ff14;
   }
-  .contentimage1{
+  .welcome-image{
     padding: 30%;
     margin-left: 20px;
     margin-right: 20px;
@@ -318,45 +287,45 @@ h2{
     align-items: center;
     align-content: center;
   }
-  .image-style{
+  .card-image{
     width: 160px;
     height: 160px;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-  .name-style{
+  .card-name{
     width: 150px;
     height: 150px;
   }
-  .contentcardunic{
+  .cardsDinamicContainer{
     width: 30%;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-   select{
-      font-size: 13px;
-   
-  }
-   filter{
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .filter-especie{
+  .select-filter{
+    font-size: 13px;
     margin: 10px;
   }
-  .filter-origen{
+  .filter{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .filter-species{
+    margin: 10px;
+  }
+  .filter-origin{
     margin: 10px;
   }
   .filter-az{
     margin: 10px;
-  }
-  .modalDialog > div{
+  } 
+  .modal-style > div{
     margin: 30% auto;
   }
-  .close{
+  .modal-close{
     background: #39ff14;
     color: #000000;
     font-size: 40px;
@@ -368,28 +337,23 @@ h2{
   option{
     font-size: 8px;
     font-weight: bold;
-    
   }
 }
 /*fin formato tablet*/
-
 /* formato para celular */
 @media (max-width: 575.98px) and (orientation: portrait){
-  /* body {
-    background: green;
-  } */
   h1{
     font-size: 120%;
     width: 90%;
     padding-top: 10px;
   }
-  .enterbutton{
+  .enter-button{
     padding: 10px 20px;
     font-size: 100%;
     background: #39ff14;
     box-shadow: 0 0 50px #39ff14;
   }
-  .contentimage1{
+  .welcome-image{
     padding: 30%;
     margin-left: 0px;
     margin-right: 0px;
@@ -398,8 +362,7 @@ h2{
   .cards-container{
     width: 100%;
     justify-content: center;
-    /* height:100%; */
-    /* background-color: red; */
+    height: 75vh;
   }
   .card{
     width: 50px;
@@ -412,32 +375,28 @@ h2{
     align-items: center;
     align-content: center;
   }
-  .image-style{
+  .card-image{
     width: 130px;
     height: 130px;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-  .name-style{
+  .card-name{
     width: 140px;
     height: 140px;
   }
-  filter{
+  .filter{
     justify-content: center;
     align-content: center;
     align-items: center;
     padding: 0px;
   }
-  select{
+  .select-filter{
     margin: 10px auto;
     font-size: 13px;
-   
-   
-   
-   
   }
-  .contentcardunic{
+  .cardsDinamicContainer{
     width: 50%;
     justify-content: center;
     align-items: center;
@@ -446,7 +405,7 @@ h2{
  ::-webkit-scrollbar{
     width: 10px;
   }
-  .modalDialog > div{
+  .modal-style > div{
     margin: 30% auto;
     width: 280px;
     padding: 5px 10px 1px 10px;
@@ -454,7 +413,7 @@ h2{
   h2{
     font-size: 20px;
   }
-  .close {
+  .modal-close {
     background: #39ff14;
     color: #000000;
     font-size: 30px;
