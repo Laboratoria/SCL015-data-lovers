@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Creamos el modal -->
+    <div id="openModal" class="modal-style">
+      <div>
+        <a href="#close" title="Close" class="modal-close">&times;</a>
+        <center id="createModal"></center>
+      </div>
+    </div>
+    <!-- Creamos la primera página -->
+    <pages1 id="pages1">
+      <container>
+        <div class="welcome-image"></div>
+      </container>
+      <welcome class="container-welcome">
+        <h1>
+          “Bienvenido al portal de Rick y Morty, aquí encontrarás toda la
+          información de tus personajes favoritos”.
+        </h1>
+      </welcome>
+      <div class="container-enter-button">
+        <button class="enter-button" id="enterButton">INGRESAR</button>
+      </div>
+    </pages1>
+     <!-- Creamos la segunda página -->
+     <!-- Creamos los filtros -->
+    <pages2 id="pages2">
+      <filter class="filter">
+        <div class="filter-species">
+          <select name="select" id="selectSpecies" class="select-filter">
+            <option value="" selected>SELECCIONE ESPECIE</option>
+            <option value="Human">HUMANS</option>
+            <option value="Alien">ALIENS</option>
+            <option value="Humanoid">HUMANOID</option>
+            <option value="Robot">ROBOT</option>
+            <option value="Parasite">PARASITE</option>
+            <option value="Animal">ANIMAL</option>
+            <option value="Vampire">VAMPIRE</option>
+            <option value="Cronenberg">CRONENBERG</option>
+            <option value="Mytholog">MYTHOLOG</option>
+            <option value="Disease">DISEASE</option>
+            <option value="unknown">UNKNOWN</option>
+            <option value="Poopybutthole">POOPYBUTTHOLE</option>
+          </select>
+        </div>
+        <div class="filter-origin">
+          <select name="select " id="selectGender" class="select-filter">
+            <option value="" selected>SELECCIONE GÉNERO</option>
+            <option value="Female">FEMENINO</option>
+            <option value="Male">MASCULINO</option>
+            <option value="unknown">UNKNOWN</option>
+            <option value="Genderless">GENDERLESS</option>
+          </select>
+        </div>
+        <div class="filter-az">
+          <select name="select" id="selectOrderAZ" class="select-filter">
+            <option value="" selected>ORDEN ALFABÉTICO</option>
+            <option value="1">A-Z</option>
+            <option value="2">Z-A</option>
+          </select>
+        </div>
+        <div>
+          <input type="text" id= "searchInput" class="select-filter" placeholder="BUSCAR">
+        </div>
+      </filter>
+       <!-- Creamos un contenedor vacío, que se llenará con la data usando javascript -->
+      <div class="cards-container" id="cardsContainer">
+      </div>
+    </pages2>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
