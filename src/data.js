@@ -22,13 +22,8 @@ export const toFilter = (arrayrickymorty, elementName, filterValue) => {
   arrayrickymorty = arrayrickymorty.filter((theElement) => theElement[elementName] === filterValue);
   return arrayrickymorty;
 };
-<<<<<<< HEAD
-
-
-=======
 //Creamos la función para el buscador para el select
 export const search = (arrayrickymorty, characterName) => {
   let arrayrickymortyTwo = arrayrickymorty.filter(element => element.name.includes(characterName));
   return arrayrickymortyTwo;
 };
->>>>>>> CatalinaFGH-master
