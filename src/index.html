@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <title>Data Lovers</title>
+    <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,17 +12,17 @@
     />
   </head>
   <body>
-    <!-- se crea modal -->
-    <div id="openModal" class="modalDialog">
+    <!-- Creamos el modal -->
+    <div id="openModal" class="modal-style">
       <div>
-        <a href="#close" title="Close" class="close">X</a>
-        <center id="createmodal"></center>
+        <a href="#close" title="Close" class="modal-close">&times;</a>
+        <center id="createModal"></center>
       </div>
     </div>
-
+    <!-- Creamos la primera página -->
     <pages1 id="pages1">
       <container>
-        <div class="contentimage1"></div>
+        <div class="welcome-image"></div>
       </container>
       <welcome class="container-welcome">
         <h1>
@@ -30,15 +30,16 @@
           información de tus personajes favoritos”.
         </h1>
       </welcome>
-      <div class="containerbutton">
-        <button class="enterbutton" id="enterbutton">INGRESAR</button>
+      <div class="container-enter-button">
+        <button class="enter-button" id="enterButton">INGRESAR</button>
       </div>
     </pages1>
-
-    <pages2 id="pages2" style="display: none">
-      <filter>
-        <div class="filter-especie">
-          <select name="select" id="select_especie">
+     <!-- Creamos la segunda página -->
+     <!-- Creamos los filtros -->
+    <pages2 id="pages2">
+      <filter class="filter">
+        <div class="filter-species">
+          <select name="select" id="selectSpecies" class="select-filter">
             <option value="" selected>SELECCIONE ESPECIE</option>
             <option value="Human">HUMANS</option>
             <option value="Alien">ALIENS</option>
@@ -54,8 +55,8 @@
             <option value="Poopybutthole">POOPYBUTTHOLE</option>
           </select>
         </div>
-        <div class="filter-origen">
-          <select name="select " id="select_genero">
+        <div class="filter-origin">
+          <select name="select " id="selectGender" class="select-filter">
             <option value="" selected>SELECCIONE GÉNERO</option>
             <option value="Female">FEMENINO</option>
             <option value="Male">MASCULINO</option>
@@ -64,25 +65,18 @@
           </select>
         </div>
         <div class="filter-az">
-          <select name="select" id="select_az">
+          <select name="select" id="selectOrderAZ" class="select-filter">
             <option value="" selected>ORDEN ALFABÉTICO</option>
             <option value="1">A-Z</option>
             <option value="2">Z-A</option>
           </select>
         </div>
+        <div>
+          <input type="text" id= "searchInput" class="select-filter" placeholder="BUSCAR">
+        </div>
       </filter>
-
-      <div class="cards-container" id="cards-container">
-        <!-- <li class="cards-item">
-            <div class="card">
-              <div class="card-images">
-                <img src="images/fondos/rick.jfif" />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Nombre</div>
-              </div>
-            </div>
-          </li> -->
+       <!-- Creamos un contenedor vacío, que se llenará con la data usando javascript -->
+      <div class="cards-container" id="cardsContainer">
       </div>
     </pages2>
 
