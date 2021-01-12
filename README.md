@@ -43,10 +43,10 @@ El proceso de diseño del producto siguió la siguiente planificación:
 ![pantalla2B](/src/images/diseño/pantalla2B.jpg)
 
 ### Bocetos en Figma
-![sin color figma](/src/images/diseño/figmanocolor.jpg)
-![color figma1](/src/images/diseño/figmacolor1.jpg)
+![sin color figma](/src/images/diseño/figmanocolor.png)
+![color figma1](/src/images/diseño/figmacolor1.png)
 
 ## 5. Historias de usuario
-![historia1a3](/src/images/diseño/historia1.jpg)
-![historia4a5](/src/images/diseño/historia2.jpg)
-![historia6a7](/src/images/diseño/historia3.jpg)
+![historia1](/src/images/diseño/historia1.png)
+![historia2](/src/images/diseño/historia2.png)
+![historia3](/src/images/diseño/historia3.png)
