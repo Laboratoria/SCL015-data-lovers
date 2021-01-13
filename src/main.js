@@ -1,7 +1,8 @@
-import { example } from './data.js';
+import { alphabetOrderAZ } from './data.js';
+import { alphabetOrderZA } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+console.log(alphabetOrderAZ, data);
 
 
 //FUNCION HIDDEN-----------------------------------
