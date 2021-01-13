@@ -2,7 +2,7 @@ import { alphabetOrderAZ } from './data.js';
 import { alphabetOrderZA } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(alphabetOrderAZ, data);
+// console.log(alphabetOrderAZ, data);
 
 
 //FUNCION HIDDEN-----------------------------------
@@ -61,3 +61,4 @@ const charactersList = () => {
   return list;
 }
 document.getElementById("listCharacters").innerHTML = charactersList();
+

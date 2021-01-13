@@ -10,6 +10,7 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
 //Función para ordenar A-Z
+
 export const alphabetOrderAZ = (a, b) => {
   if (a.name < b.name){
     return -1;
@@ -33,4 +34,4 @@ export const alphabetOrderZA = (a, b) => {
   return 0;
 }
 data.results.sort(alphabetOrderZA);
-console.log(1,data.results);
+console.log(2,data.results);
