@@ -26,10 +26,10 @@ console.log(1,data.results);
 //Función para ordenar Z-A
 export const alphabetOrderZA = (a, b) => {
   if (a.name > b.name){
-    return -1;
+    return 1;
   }
   if (a.name < b.name){
-    return 1;
+    return -1;
   }
   return 0;
 }
