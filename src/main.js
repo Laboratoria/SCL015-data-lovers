@@ -4,9 +4,16 @@ import data from './data/pokemon/pokemon.js';
 const pokemons = data.pokemon;
 
 const spacePokeballs=document.getElementById('spacePokeballs');
-
-document.getElementById('button').addEventListener("click",function(){
-console.log(spacePokeballs);
+function ocultar() {
+    
+}
+const title = document.createComment("PokeTipo");
+document.getElementById('btn_types').addEventListener("click",function () {
+    document.getElementById("btn_initial").hidden = true;
+    document.getElementById("spacePokeballs").hidden = false;
+    
+},false);
+console.log(title);
 
 
 let smallPokeball= document.createElement('button');
@@ -21,10 +28,6 @@ spacePokeballs.appendChild(smallPokeball);
 
 
 
-
-
-})
- 
 //llamo e invoco las funciones 
 //DOM - tomo los valores 
 // creacion de documento html dinamico
