@@ -1,7 +1,19 @@
 *{  
     margin: 0;
     padding: 0;
+    font:20px;
+  
 }
+h3{
+    color: blue;
+    margin-left: 25px;
+    text-decoration: underline;
+    
+}
+/*.hidden{ 
+
+}
+*/
 body {
     background-image: url(image/Johto.png); 
     background-position: center center;
@@ -18,6 +30,8 @@ body {
     width: 40%;
     max-width: 850px;
     margin: 0 auto;
+    display: flex;
+    align-items: column;
 }
 .header {
     display: flex;
@@ -28,7 +42,7 @@ body {
     left:0;
     top:0;
     right:0;
-    viewport-width:100vw;
+    border-right-width:100vw;
     background-color:#EECC17 ;
 }
     .header a {
@@ -52,6 +66,8 @@ body {
     padding: 0;
     list-style: none;
     justify-content: center;
+    list-style-type: none;
+    
 }
     .navigation ul li {
         display: inline-block;
@@ -64,8 +80,8 @@ body {
         }
             .navigation ul li a:hover {
                 background-color: cyan;    
-            }
-.introduccion {
+            }*/
+.introduction {
     display: block; 
     background-color:#EECC17;
     font-family: 'Righteous', cursive;
@@ -73,17 +89,23 @@ body {
     justify-content: space-between;
     text-decoration: none;
 }
+#search{
+    width: 100px;
+    height: 120px;
+    margin-left: 200px;
+   
+}
 .pokemon {
     display: block;
-    background-color:#2E2BD0;    
+    background:#194bb8;    
     font-family: 'Righteous', cursive;
-    color: #EECC17;
     justify-content: space-between;
-    text-decoration: none;
+    
+    
 }
 .topPokemon {
     display: block;
-    background-color:#EECC17;
+    background:#EECC17;
     font-family: 'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
@@ -97,13 +119,14 @@ body {
         margin: auto;
         justify-content: center;
     }  
-.btn_initial {
+/*.btn_initial {
     padding-top: 25rem;
     padding-bottom: 15rem;
     border: 15rem;
     margin: 15rem;
     display: flex;
     flex-direction: column;
+    margin: 50px;
 }     
 .btn_types {
     padding-top: 25rem;
@@ -111,22 +134,31 @@ body {
     display: flex;
     align-items: flex-start;
 }
-
-.poketipo {
-    position: relative;
+*/
+.poketype {
     background-image: url(image/poketipo.png);
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
     border: 0rem;
     background-position: center;
-    flex-direction: column;
-    align-items: center;
     display: flex;
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 5px 35px black;
+    padding: 5px;
+    transition: 1s;
+    outline: none;
 }  
-.links {
+.poketype:hover {
+    transform: scale(1.2,1.2);
+
+}
+.button_links {
     position: relative;
     background-image: url(image/klipartz.com.png);
     background-repeat: no-repeat;
@@ -138,6 +170,10 @@ body {
     display: flex;
     background-size: cover;
     border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 50px;
+
+    
 } 
 .spacePokeballs{
     display: flex;
@@ -167,4 +203,3 @@ body {
             background-color: cyan;
           }
 }
-

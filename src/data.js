@@ -1,12 +1,12 @@
 // estas funciones son de ejemplo
-
+/*
 export const filter = () => {
   return 'pokemons';
 };
 
 export const  = () => {
   return 'OMG';
-};
+};*/
 
 // creo las funciones para filtrar y ordenar
 //en esta función queremos que al presionar pokebola de agua, apareceran los de tipo agua

@@ -13,7 +13,9 @@
       <div class="container-nav">
         <nav class="navigation">
           <ul>
-            <li class="introduccion"><a href="#">INTRODUCCION</a></li><li class="pokemon"><a href="#">POKEMONES</a></li><li class="topPokemon"><a href="#">TOP POKEMON</a></li>               
+            <li class="introduction"><a href="#">INTRODUCCION</a></li>
+              <li class="pokemon"><a href="#">POKEMONES</a></li>
+              <li class="topPokemon"><a href="#">TOP POKEMON</a></li>               
           </ul>
         </nav>
       </div>    
@@ -23,21 +25,18 @@
         <h1>
           <img src="image/titulo.png"/>
         </h1>
+           <section>
+             <img src="image/lupa.png" alt="lupa" id="search">
+           </section>
       </div>
     </main>
-    <div class="button" id="btn_initial">
-      <button type="button" value="Poke Tipo" id="btn_types" class="poketipo"></button>
-    <!-- </div> -->
-    <!-- <div class="links"> -->
-      <button type="button" value="Links de Interés" id="links" class="button links"></button>
-    </div>
-    <div id="spacePokeballs" ></div>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-    <footer class="footer">
-      <div class="container">
-        <p>Copyright</p>
-      </div>
+       <div class="button hidden" id="btnInitial">
+          <button type="button" value="Poke Tipo" id="btnTypes" class="poketype"></button>
+          <div id="spacePokeballs"></div>
+       </div>
+    <footer>
+        <button type="button" value="Links de Interés" id="linksButton" class="button_links">Links de interés</button>
+        <h3>Links de Interés</h2>
     </footer>
   </body>
 </html>
