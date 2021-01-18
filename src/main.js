@@ -1,5 +1,5 @@
-import { alphabetOrderAZ } from './data.js';
-import { alphabetOrderZA } from './data.js';
+// import { alphabetOrderAZ } from './data.js';
+// import { alphabetOrderZA } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 // console.log(alphabetOrderAZ, data);
@@ -17,6 +17,10 @@ document.getElementById("returnButton")
     document.getElementById("charactersScreen").hidden = true;
     document.getElementById("welcomeScreen").hidden = false;
   }, false);
+
+
+let orderByName = data.results;
+let listOfCharacters = document.getElementById("listCharacters");
 
 //LLAMAR LISTA DE PERSONAJES
 
@@ -62,3 +66,96 @@ const charactersList = () => {
 }
 document.getElementById("listCharacters").innerHTML = charactersList();
 
+// const alphabetOrderAZ = (a, b) => {
+//   if (a.name < b.name){
+//     return -1;
+//   }
+//   if (a.name > b.name){
+//     return 1;
+//   }
+//   return 0;
+// }
+// data.results.sort(alphabetOrderAZ);
+// console.log(1, data.results);
+
+// Función para ordenar Z-A
+// export const alphabetOrderZA = (a, b) => {
+//   if (a.name < b.name){
+//     return -1;
+//   }
+//   if (a.name > b.name){
+//     return 1;
+//   }
+//   return 0;
+// }
+// data.results.reverse(alphabetOrderZA);
+// console.log(2,data.results);
+
+const orderFunctions = {
+
+    orderAZ(orderByName) {
+      let orderedResults = orderByName.sort(function (a, b) {
+        if (a.name > b.name) {
+          return 1;
+        }
+        { 
+          return -1;
+        }
+      });
+      console.log(1, orderedResults);
+      return orderedResults;
+    },
+
+    orderZA(orderByName) {
+      let orderedResults = orderByName.sort(function (a, b) {
+        if (a.name < b.name){
+          return 1;
+        }
+        {
+          return -1;
+        }
+      });
+      console.log(2, orderedResults);
+      return orderedResults;
+    },
+
+    orderDefault(orderByName) {
+      let orderedResults = orderByName.sort(function (a, b) {
+        if (a.id > b.id) {
+          return 1;
+        }
+
+        {
+          return -1;
+        }
+      });
+      console.log(3, orderedResults);
+      return orderedResults;
+    },
+    
+}
+
+
+let select = document.getElementById("selectOrderValue");
+select.addEventListener("change", function () {
+
+  if (select.value === "AZorder") {
+    listOfCharacters.innerHTML = "";
+    let array = orderFunctions.orderAZ(orderByName);
+    orderByName = array;
+    return charactersList(orderByName);
+  }
+
+  else if (select.value === "ZAorder") {
+    let array = orderFunctions.orderZA(orderByName);
+    orderByName = array;
+    return charactersList(orderByName);
+  }
+
+  else {
+    let array = orderFunctions.orderDefault(orderByName);
+    orderByName = array;
+    return charactersList(orderByName)
+  }
+
+});
