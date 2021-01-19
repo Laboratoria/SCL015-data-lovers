@@ -1,22 +1,7 @@
-/* *{
-  margin:0;
-  padding:0;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #FFFFFF;
-} */
-
 body{
   font-family: 'Lato', sans-serif;
   margin: 0;
-  /*font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  */
+  color: black;
   
 }
 
@@ -36,10 +21,6 @@ body{
   width: 50%;
   filter: drop-shadow(2px 4px 75px rgba(0, 0, 0, 0.75));
 }
-/*#ContenedorBoton{
-
-padding-top: 100px;
-}**/
 
 .letrasLol{
 width: 40%;
@@ -56,17 +37,24 @@ margin-left: 20%;
 margin-bottom: 5%;
 }
 
-/*#ingresar{
-  background-image: url(./assets/BotonEntrarT.png);
-  padding: 5%;
-}*/
-/* segundo div */
-#Tablero{
+#BotonEntrar:hover {
+  transform : scale(1.1);
+  -webkit-transform : scale(1.1);
+}
+
+/*Segunda página */
+
+#Principal{
  display: none;
  background-image: url(assets/fondolimpio.jpg);
  background-size: cover;
  height: 100vh;
  
+}
+
+#Tablero{
+  display: none;
+  height: 100vh;
 }
 
 
@@ -76,48 +64,86 @@ margin-bottom: 5%;
   top: 34px;
   
   }
+  .logoPequeño:hover {
+    transform : scale(1.1);
+    -webkit-transform : scale(1.1);
+  }
 
-
-  .oromenu{
+.oromenu{
     display: inline-block;
     margin: 0px 25px 10px 25px;
     }
   
 .oro{
   width: 110px;
+
+}
+
+.oro:hover {
+  transform : scale(1.1);
+  -webkit-transform : scale(1.1);
 }
 
 
-/* #Cabecera{
-width: 100%;
-height: 300px;
-} */
+.card-filter{
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 20px;
+  width: 202px;
+  font-weight: bold;
+  background:rgba(113, 106, 106, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+::placeholder { 
+  color: rgba(255, 255, 255, 1);
+  opacity: 1; 
+}
+
+.selects{
+  border-radius: 5px;
+  align-content: center;
+  margin-top: 10%;
+  margin-left: 5%;
+  height: 25px;
+  width: 210px;
+  font-weight: bold;
+  background: rgba(113, 106, 106, 1);
+  color: rgba(255, 255, 255, 1)
+}
 
 
+.texto-filtros{
+  margin-top: 20%;
+  margin-left: 5%;
+  width: 210px ;
+  color: white;
+  font-size: 13px;
+  
+}
 
 #contenedorTableros{
  height: 360px;
-
  align-content: flex-start;
- 
+
 }
 
 #cajaFiltros {
   width: 250px;
-  height: 376px;
+  height: 394px;
   border: 2px solid #8985FB;
   margin: 10px;
   border-radius: 8px;
   float: left;
   
-  
-
 }
 
 #cajaFiltros .Filtros{
   background: linear-gradient(to bottom, #000000, #8985FB);
   border: 8px solid black;
-  height: 360px;
+  width: 235px;
+  height: 378px;
   border-radius: 8px;
   float: left;
 
@@ -125,7 +151,7 @@ height: 300px;
 
 #bordeTablero {
   width: 1016px;
-  height: 376px;
+  height: 394px;
   border: 2px solid #8985FB;
   margin: 10px;
   border-radius: 8px;
@@ -135,10 +161,10 @@ height: 300px;
 
 #bordeTablero .cajaTablero{
   background: linear-gradient(to bottom, #000000, #8985FB);
-  /*opacity: 0.8;*/
+ 
   border: 8px solid black;
   width: 1000px;
-  height: 360px ;
+  height: 378px ;
   overflow-y: scroll;
   border-radius: 8px;
   display: flex;
@@ -152,46 +178,142 @@ height: 300px;
 
 }
 .card{
- margin: 10px 10px 0px 10px;
+ margin: 10px 10px 15px 10px;
+ transition: .5s;
+ cursor: pointer;
+ -webkit-transition: all 1s ease;
+ transition: all 1s ease;
+ border: #8985FB 2px solid;
+}
+
+.card:hover {
+  transform : scale(1.1);
+  -webkit-transform : scale(1.1);
 }
 
 .card> img {
- width: 220px;
+ width: 220px; 
+ 
 }
 .char-name {
   width: 220wh;
   height: 5vh;
   background-color: #8985FB;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
+  border: #8985FB 2px solid;
+  grid-gap: 20px;
+ 
+}
+
+.title {
+  width: 220wh;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  grid-gap: 18px;
+}
+
+.tagsCampeones{
+  width: 220wh;
+  height: 5vh;
+  font-size: 18px;
+  text-align: center;
+  grid-gap: 18px;
+}
+
+#infoCampeones{
+  width: 220wh;
+  height: 3vh;
+  font-weight: black;
+  font-size: 18px;
+  text-align: center;
+  grid-gap: 18px;
+}
+
+
+/* Sección aprende a Jugar*/
+
+#AprendeaJugar{
+  display: none;
+}
+
+#bordeTablero1 {
+  margin-left: 12%;
+  margin-top: 2%;
+  width: 1016px;
+  height: 394px;
+  border: 2px solid #8985FB;
+  border-radius: 8px;
+  float: left;
   
+}
+
+#bordeTablero1 .cajaTablero1{
+  background: linear-gradient(to bottom, #000000, #8985FB);
+  border: 8px solid black;
+  width: 1000px;
+  height: 378px;
+  border-radius: 8px;
+  display: flex;
+  float: left;
+
+}
+
+.Tutorial{
+  width: 800px;
+  height: 370px;
+  margin-right: 2%;
+}
+.texto-tutorial{
+  margin-top: 18%;
+  color:white;
+  text-align: left;
+  margin-left: 2%;
+}
+
+/*Sección Sobre el Juego*/
+
+#SobreelJuego{
+  display: none;
+}
+
+.info-juego{
+  color:white;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 18px;
+}
+
+#bordeTablero2 {
+  margin-left: 12%;
+  margin-top: 2%;
+  width: 700px;
+  height: 200px;
+  border: 2px solid #8985FB;
+  border-radius: 8px;
+  float: left;
+  
+}
+
+#bordeTablero2 .cajaTablero2{
+  background: linear-gradient(to bottom, #000000, #8985FB);
+  border: 8px solid black;
+  width: 684px;
+  height: 185px;
+  border-radius: 8px;
+  display: flex;
+  float: left;
 
 }
 
 
 
-
-
-
-
-
-
-/*.containerData{
-  width: 500px;
-  height: 160px;
-  border: 5px solid black;
-  border-radius: 5%;
-  background-color:rgba(91, 94, 143, 0.76);
-  margin: 0;
-
-}*/
-
-
-
 /*media*/
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .logo {
     width: 90%;
     margin: 7%;
@@ -208,22 +330,183 @@ height: 300px;
     margin-left: 30%;
     }
 
-    .logoPequeño{
+    #BotonEntrar:hover {
+      transform : scale(1.1);
+      -webkit-transform : scale(1.1);
+    }
+
+
+  #Principal{
+    background-image: url(./assets/FondoInicio.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    }
+
+  .logoPequeño{
       width: 95%;
       margin-left: 5%;
       margin-top: 5%;
-      }
-
+ }
  .oromenu{
-  display: inline-block;
-  margin: 20px 0 60px 100px;
+  display: center;
   }
 
-  #Tablero{
-    background-image: url(assets/fondolimpio_mob.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    }
+ .oro{
+  width: 150px;
+  margin: 2% 20% 3% 20%;
+
+ }
+
+.oro:hover {
+transform : scale(1.1);
+-webkit-transform : scale(1.1);
+}
+
+
+.card-filter{
+border-radius: 5px;
+margin-top: 1%;
+margin-left: 5%;
+height: 33px;
+width: 300px;
+font-size: 18px;
+font-weight: bold;
+background:rgba(113, 106, 106, 1);
+color: rgba(255, 255, 255, 1);
+}
+
+::placeholder { 
+color: rgba(255, 255, 255, 1);
+opacity: 1; 
+}
+
+.selects{
+border-radius: 5px;
+font-size: 18px;
+align-content: center;
+margin-top: 5%;
+margin-left: 5%;
+height: 35px;
+width: 305px;
+font-weight: bold;
+background: rgba(113, 106, 106, 1);
+color: rgba(255, 255, 255, 1)
+}
+
+
+.texto-filtros{
+font-size: 0px;
+}
+
+#contenedorTableros{
+height: 360px;
+align-content: flex-start;
+
+}
+
+#cajaFiltros {
+width: 355px;
+height: 205px;
+border: 2px solid #8985FB;
+margin: 10px;
+border-radius: 8px;
+float: left;
+
+}
+
+#cajaFiltros .Filtros{
+background: linear-gradient(to bottom, #000000, #8985FB);
+border: 8px solid black;
+width: 338px;
+height: 188px;
+border-radius: 8px;
+float: left;
+
+}
+
+#bordeTablero {
+width: 350px;
+height: 100%;
+border: 2px solid #8985FB;
+margin: 10px;
+border-radius: 8px;
+float: left;
+
+}
+
+#bordeTablero .cajaTablero{
+background: linear-gradient(to bottom, #000000, #8985FB);
+border: 8px solid black;
+width: 348px;
+border-radius: 8px;
+display: flex;
+float: left;
+
+}
+#containerData{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.card{
+margin: 10px 10px 15px 10px;
+transition: .5s;
+cursor: pointer;
+-webkit-transition: all 1s ease;
+transition: all 1s ease;
+border: #8985FB 2px solid;
+}
+
+.card:hover {
+transform : scale(1.1);
+-webkit-transform : scale(1.1);
+}
+
+.card> img {
+width: 250px; 
+
+}
+.char-name {
+width: 220wh;
+height: 5vh;
+background-color: #8985FB;
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+border: #8985FB 2px solid;
+grid-gap: 20px;
+
+}
+
+.title {
+width: 220wh;
+height: 5vh;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+grid-gap: 18px;
+}
+
+.tagsCampeones{
+width: 220wh;
+height: 5vh;
+font-size: 18px;
+text-align: center;
+grid-gap: 18px;
+}
+
+#infoCampeones{
+width: 220wh;
+height: 3vh;
+font-weight: black;
+font-size: 18px;
+text-align: center;
+grid-gap: 18px;
+}
+
+
 }
 
 /*@media (max-width: 1680px){
