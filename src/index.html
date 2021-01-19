@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>League of Legends</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/Ele.ico"/>
+  </head>
+  <body>
+<!--Pagina de Inicio-->    
+<section id="Inicio">
+  <div id="logo" >
+    <img class="logo" src="./assets/logo.png">
+  </div>
+  <div id="letras">
+    <img class="letrasLol" src="./assets/letras.lol.png">
+    <input type="image" src="./assets/BotonEntrarT.png" id="BotonEntrar">
+  </div>
+</section>
+
+<main>
+<!--Pagina principal, muestra tablero, menú y filtros-->   
+<section id="Principal" >
+  <div>
+   <input type="image" id= "BotonVolver" class="logoPequeño" src="./assets/logo.png">
+    <div id="Cabecera" >
+     <div class="contenedorCabecera">
+       <div class="menu">
+          <div >
+            <a> <input type="image" id= "BotonAprende" class="oro" src="./assets/oroAprende.png"> </a>
+            <a> <input type="image" id= "BotonSobreJuego" class="oro" src="assets/oroSobreJuego.png"> </a>
+            <a href="https://na.leagueoflegends.com/es-ar/"> 
+              <input type="image" id= "BotonSitiof" class="oro" src="assets/oroSitioOf.png"></a>
+          </div>
+        </div>
+      </div>
+
+  <section id="Tablero"> 
+    <div id="contenedorTableros">
+    <div id="cajaFiltros">
+      <div class="Filtros"> 
+        <aside>
+          <br>
+          <input id="buscador" type="text" placeholder="Buscar Campeones" class="card-filter" >
+          <select name="orden" id="sltOrden" class="selects">
+          
+            <option>Ordenar</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+            <option>Aleatorio</option>
+          </select>
+           <br>
+          <select name="tipos" id="sltRoles" class= "selects">
+            
+            <option value="rols">Roles</option>
+            <option value="Support">Apoyo</option>
+            <option value="Assassin">Asesino</option>
+            <option value="Fighter">Luchador</option>
+            <option value="Mage">Mago</option>
+            <option value="Tank">Tanque</option>
+            <option value="Marksman">Tirador</option>
+            
+          </select>
+          <div class="texto-filtros">
+            <p> *Ingresa el nombre de tú campeón en el buscador </p>
+            <p> *Puedes ordenar los campeones de la A a la Z o de la Z a la A</p> 
+            <p> *Puedes filtrar y conocer todos los campeones según el tipo</p>
+          </div>
+         
+        </aside>
+      </div>
+     </div>
+  
+   <div id="bordeTablero">
+     <div class="cajaTablero"> 
+       <div id="containerData"></div>
+      </div>
+    </div>
+  
+  </section>    
+ 
+ 
+<!--Página que muestra el video tutorial para aprender a jugar-->
+  <section id= "AprendeaJugar" style="display: none;">
+    <div id="Cabecera" >
+      <div class="contenedorCabecera">
+         <div class="menu"></div>
+       </div>
+      
+       <div id="bordeTablero1">
+        <div class="cajaTablero1"> 
+          <p class="texto-tutorial"> Con este Tutorial podrás aprender lo básico para comenzar a jugar League of Legends</p>
+          <iframe class="Tutorial" src="https://www.youtube.com/embed/xMle1Xbu3HU" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       </div>
+
+  </section>
+<!--Página que muestra información sobre el juego--> 
+  <section id= "SobreelJuego" style="display: none;">
+   
+    <div id="Cabecera" >
+      <div class="contenedorCabecera">
+         <div class="menu"></div>
+      </div>
+    </div>  
+
+       <div id="bordeTablero2">
+        <div class="cajaTablero2"> 
+          <p class="info-juego"> League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se 
+            enfrentan para ver quién destruye antes la base del otro. Elige de entre un elenco de 140 campeones para
+             realizar jugadas épicas, asesinar rivales y derribar torretas para alzarte con la victoria.</p>
+        </div>
+       </div>
+       
+  
+
+   </section>
+
+</section>
+
+
+</main>      
+      <!--<footer id="RRSS">  
+        <div class="socialMedia">
+          <p>@2021 Laboratoria.Todos los derechos reservados.</p>
+        </div>
+      </footer>-->
+
+    
+  </body>
+  <script type="module" src="main.js"></script>
+</html>

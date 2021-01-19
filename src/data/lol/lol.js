@@ -8,7 +8,7 @@ export default {
       id: "Aatrox",
       key: "266",
       name: "Aatrox",
-      title: "the Darkin Blade",
+      title: "La Espada Oscura",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png",
       splash:
@@ -30,7 +30,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Tank"],
+      tags: ["Peleador" , "Tanque"],
       partype: "BloodWell",
       stats: {
         hp: 537.8,
@@ -60,7 +60,7 @@ export default {
       id: "Ahri",
       key: "103",
       name: "Ahri",
-      title: "the Nine-Tailed Fox",
+      title: "El Zorro de Nueve Colas",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png",
       splash:
@@ -82,7 +82,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Assassin"],
+      tags: ["Mago", "Asesino"],
       partype: "MP",
       stats: {
         hp: 514.4,
@@ -112,7 +112,7 @@ export default {
       id: "Akali",
       key: "84",
       name: "Akali",
-      title: "the Fist of Shadow",
+      title: "El Puño de Sombra",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
       splash:
@@ -134,7 +134,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Assassin"],
+      tags: ["Asesino"],
       partype: "Energy",
       stats: {
         hp: 587.8,
@@ -164,7 +164,7 @@ export default {
       id: "Alistar",
       key: "12",
       name: "Alistar",
-      title: "the Minotaur",
+      title: "El Minotauro",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png",
       splash:
@@ -186,7 +186,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Tank", "Support"],
+      tags: ["Tanque", "Soporte"],
       partype: "MP",
       stats: {
         hp: 613.36,
@@ -216,7 +216,7 @@ export default {
       id: "Amumu",
       key: "32",
       name: "Amumu",
-      title: "the Sad Mummy",
+      title: "La Momia Triste",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png",
       splash:
@@ -238,7 +238,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Tank", "Mage"],
+      tags: ["Tanque", "Mago"],
       partype: "MP",
       stats: {
         hp: 613.12,
@@ -268,7 +268,7 @@ export default {
       id: "Anivia",
       key: "34",
       name: "Anivia",
-      title: "the Cryophoenix",
+      title: "La Criofenix",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Anivia.png",
       splash:
@@ -290,7 +290,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Support"],
+      tags: ["Mago", "Soporte"],
       partype: "MP",
       stats: {
         hp: 467.6,
@@ -320,7 +320,7 @@ export default {
       id: "Annie",
       key: "1",
       name: "Annie",
-      title: "the Dark Child",
+      title: "La niña Oscura",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Annie.png",
       splash:
@@ -342,7 +342,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage"],
+      tags: ["Mago"],
       partype: "MP",
       stats: {
         hp: 511.68,
@@ -372,7 +372,7 @@ export default {
       id: "Ashe",
       key: "22",
       name: "Ashe",
-      title: "the Frost Archer",
+      title: "El Arquero de Escarcha",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Ashe.png",
       splash:
@@ -394,7 +394,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Marksman", "Support"],
+      tags: ["Tirador", "Asistencia"],
       partype: "MP",
       stats: {
         hp: 527.72,
@@ -424,7 +424,7 @@ export default {
       id: "AurelionSol",
       key: "136",
       name: "Aurelion Sol",
-      title: "The Star Forger",
+      title: "El falsificador de estrellas",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/AurelionSol.png",
       splash:
@@ -446,7 +446,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Fighter"],
+      tags: ["Mago", "Peleador"],
       partype: "MP",
       stats: {
         hp: 550,
@@ -476,7 +476,7 @@ export default {
       id: "Azir",
       key: "268",
       name: "Azir",
-      title: "the Emperor of the Sands",
+      title: "El Emperador de las Arenas",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Azir.png",
       splash:
@@ -498,7 +498,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Marksman"],
+      tags: ["Mago", "Tirador"],
       partype: "MP",
       stats: {
         hp: 524.4,
@@ -528,7 +528,7 @@ export default {
       id: "Bard",
       key: "432",
       name: "Bard",
-      title: "the Wandering Caretaker",
+      title: "El Cuidador Errante",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Bard.png",
       splash:
@@ -550,7 +550,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Support", "Mage"],
+      tags: ["Soporte" , "Mago"],
       partype: "MP",
       stats: {
         hp: 535,
@@ -580,7 +580,7 @@ export default {
       id: "Blitzcrank",
       key: "53",
       name: "Blitzcrank",
-      title: "the Great Steam Golem",
+      title: "El Gran Gólem de Vapor",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png",
       splash:
@@ -602,7 +602,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Tank", "Fighter"],
+      tags: ["Tanque", "Peleador"],
       partype: "MP",
       stats: {
         hp: 582.6,
@@ -632,7 +632,7 @@ export default {
       id: "Brand",
       key: "63",
       name: "Brand",
-      title: "the Burning Vengeance",
+      title: "La Venganza Ardiente",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Brand.png",
       splash:
@@ -654,7 +654,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage"],
+      tags: ["Mago"],
       partype: "MP",
       stats: {
         hp: 507.68,
@@ -684,7 +684,7 @@ export default {
       id: "Braum",
       key: "201",
       name: "Braum",
-      title: "the Heart of the Freljord",
+      title: "El Corazón de Freljord",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Braum.png",
       splash:
@@ -706,7 +706,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Support", "Tank"],
+      tags: ["Soporte", "Tanque"],
       partype: "MP",
       stats: {
         hp: 576.16,
@@ -736,7 +736,7 @@ export default {
       id: "Caitlyn",
       key: "51",
       name: "Caitlyn",
-      title: "the Sheriff of Piltover",
+      title: "La sheriff de Piltover",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Caitlyn.png",
       splash:
@@ -758,7 +758,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Marksman"],
+      tags: ["Tirador"],
       partype: "MP",
       stats: {
         hp: 524.4,
@@ -788,7 +788,7 @@ export default {
       id: "Camille",
       key: "164",
       name: "Camille",
-      title: "the Steel Shadow",
+      title: "La Sombra de Acero",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png",
       splash:
@@ -810,7 +810,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Tank"],
+      tags: ["Peleador", "Tanque"],
       partype: "MP",
       stats: {
         hp: 575.6,
@@ -840,7 +840,7 @@ export default {
       id: "Cassiopeia",
       key: "69",
       name: "Cassiopeia",
-      title: "the Serpent's Embrace",
+      title: "El abrazo de la Serpiente",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Cassiopeia.png",
       splash:
@@ -862,7 +862,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage"],
+      tags: ["Mago"],
       partype: "MP",
       stats: {
         hp: 525,
@@ -892,7 +892,7 @@ export default {
       id: "Chogath",
       key: "31",
       name: "Cho'Gath",
-      title: "the Terror of the Void",
+      title: "El Terror del Vacío",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Chogath.png",
       splash:
@@ -914,7 +914,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Tank", "Mage"],
+      tags: ["Tanque", "Mago"],
       partype: "MP",
       stats: {
         hp: 574.4,
@@ -944,7 +944,7 @@ export default {
       id: "Corki",
       key: "42",
       name: "Corki",
-      title: "the Daring Bombardier",
+      title: "El Bombardero Atrevido",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Corki.png",
       splash:
@@ -966,7 +966,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Marksman"],
+      tags: ["Tirador"],
       partype: "MP",
       stats: {
         hp: 512.76,
@@ -996,7 +996,7 @@ export default {
       id: "Darius",
       key: "122",
       name: "Darius",
-      title: "the Hand of Noxus",
+      title: "La Mano de Noxus",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Darius.png",
       splash:
@@ -1018,7 +1018,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Tank"],
+      tags: ["Peleador", "Tanque"],
       partype: "MP",
       stats: {
         hp: 582.24,
@@ -1048,7 +1048,7 @@ export default {
       id: "Diana",
       key: "131",
       name: "Diana",
-      title: "Scorn of the Moon",
+      title: "Desprecio de la Luna",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Diana.png",
       splash:
@@ -1070,7 +1070,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Mage"],
+      tags: ["Peleador", "Mago"],
       partype: "MP",
       stats: {
         hp: 589.2,
@@ -1100,7 +1100,7 @@ export default {
       id: "Draven",
       key: "119",
       name: "Draven",
-      title: "the Glorious Executioner",
+      title: "El Glorioso Verdugo",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Draven.png",
       splash:
@@ -1122,7 +1122,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Marksman"],
+      tags: ["Tirador"],
       partype: "MP",
       stats: {
         hp: 557.76,
@@ -1152,7 +1152,7 @@ export default {
       id: "DrMundo",
       key: "36",
       name: "Dr. Mundo",
-      title: "the Madman of Zaun",
+      title: "El Loco de Zaun",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/DrMundo.png",
       splash:
@@ -1174,7 +1174,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Tank"],
+      tags: ["Peleador", "Tanque"],
       partype: "None",
       stats: {
         hp: 582.52,
@@ -1204,7 +1204,7 @@ export default {
       id: "Ekko",
       key: "245",
       name: "Ekko",
-      title: "the Boy Who Shattered Time",
+      title: "El chico que destrozó el Tiempo",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Ekko.png",
       splash:
@@ -1226,7 +1226,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Assassin", "Fighter"],
+      tags: ["Asesino", "Peleador"],
       partype: "MP",
       stats: {
         hp: 580,
@@ -1256,7 +1256,7 @@ export default {
       id: "Elise",
       key: "60",
       name: "Elise",
-      title: "the Spider Queen",
+      title: "La Araña Reina",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Elise.png",
       splash:
@@ -1278,7 +1278,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Fighter"],
+      tags: ["Mago", "Peleador"],
       partype: "MP",
       stats: {
         hp: 529.4,
@@ -1308,7 +1308,7 @@ export default {
       id: "Evelynn",
       key: "28",
       name: "Evelynn",
-      title: "the Widowmaker",
+      title: "La Viuda",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Evelynn.png",
       splash:
@@ -1330,7 +1330,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Assassin", "Mage"],
+      tags: ["Asesino", "Mago"],
       partype: "MP",
       stats: {
         hp: 531.2,
@@ -1360,7 +1360,7 @@ export default {
       id: "Ezreal",
       key: "81",
       name: "Ezreal",
-      title: "the Prodigal Explorer",
+      title: "El Explorador Pródigo",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Ezreal.png",
       splash:
@@ -1382,7 +1382,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Marksman", "Mage"],
+      tags: ["Tirador", "Mago"],
       partype: "MP",
       stats: {
         hp: 484.4,
@@ -1412,7 +1412,7 @@ export default {
       id: "FiddleSticks",
       key: "9",
       name: "Fiddlesticks",
-      title: "the Harbinger of Doom",
+      title: "El Heraldo de la Perdición",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/FiddleSticks.png",
       splash:
@@ -1434,7 +1434,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Mage", "Support"],
+      tags: ["Mago", "Soporte"],
       partype: "MP",
       stats: {
         hp: 524.4,
@@ -1464,7 +1464,7 @@ export default {
       id: "Fiora",
       key: "114",
       name: "Fiora",
-      title: "the Grand Duelist",
+      title: "El Gran Duelista",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Fiora.png",
       splash:
@@ -1486,7 +1486,7 @@ export default {
         w: 48,
         h: 48
       },
-      tags: ["Fighter", "Assassin"],
+      tags: ["Peleador", "Asesino"],
       partype: "MP",
       stats: {
         hp: 550,
