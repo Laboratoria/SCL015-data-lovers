@@ -24,7 +24,7 @@ return array
           return el1.name < el2.name ? - 1 : 1
           
         });
-       // console.log(datosOrdenados);
+        //console.log(datosOrdenados);
 
       }
 
@@ -33,7 +33,7 @@ return array
             return el1.name < el2.name ? - 1 : 1
             
           });
-         // console.log(datosOrdenados);
+          //console.log(datosOrdenados);
   
         }
 
