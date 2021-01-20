@@ -28,11 +28,7 @@ function imprimirData (dataArray ){
     <br>
   </div>`;
   }
-  //const cartaInfo = obj.querySelectorAll("#carta")
-  //cartaInfo.forEach(divCampeon => {
-   // divCampeon.addEventListener("click", abrirModal, false);
-  //})
-
+  
 }
 
 //------FUNCION ENTRAR + MOSTRAR INFO EN PAGINA ---------
@@ -65,7 +61,7 @@ function ordenarCampeones() {
 
 //---------FUNCION INPUT BUSCADOR------------
 
- const buscador = document.getElementById("buscador")
+const buscador = document.getElementById("buscador")
 
 buscador.addEventListener("keyup", (event) => {
 
@@ -91,87 +87,6 @@ function filtrarPorRoles() {
            
  selectRoles.addEventListener("change", filtrarPorRoles); 
 
-
-
-// //<---------FUNCION PARA ABRIR MODAL ------------->
-
-// const abrirModal = (event) => {
-//     console.log(event.target)
-// let cerrar = document.querySelectorAll(".close")[0];
-// //let abrir = document.querySelector("#carta");
-// let modal = document.querySelectorAll(".modal")[0];
-// let modalC = document.querySelectorAll(".modal-container")[0];
-
-// modal.style.display="flex";
-// modalC.style.display="flex";
-
-// cerrar.addEventListener("click", function(){
-//   /*modal.classList.toggle("modal-close");*/
-//   modal.style.display="flex";
-//   modalC.style.display="flex";
-
-  
-
-//   setTimeout(function(){
-//     modalC.style.opacity = "0";
-//     modalC.style.opacity = "hidden";
-//   },900)
- 
-// })
-
-// abrir.addEventListener("click", modalFunction, false);
-// const modalFunction = (event) => {
-//      console.log(event.target)
-//}
-
-//abrir.addEventListener("click", function(e){
-  //console.log("hola")
-
-  //e.preventdefault();
-  //modalC.style.opacity ="1";
-  //modalC.style.visibility = "visible";
-  //modal.classList.toggle("modal-close");
-
-
-
-//});
-    
- //}
-/*Modal solo
-let cerrar = document.querySelectorAll(".close")[0];
-let abrir = document.querySelector("#carta");
-let modal = document.querySelectorAll(".modal")[0];
-let modalC = document.querySelectorAll(".modal-container")[0];
-
-abrir.addEventListener("click", function(e){
-  console.log("hola")
-
-  e.preventdefault();
-  modalC.style.opacity ="1";
-  modalC.style.visibility = "visible";
-  modal.classList.toggle("modal-close");
-
-
-
-});*/
-
-/*cerrar.addEventListener("click", function(){
-  modal.classList.toggle("modal-close");
-
-  setTimeout(function(){
-    modalC.style.opacity = "0";
-    modalC.style.opacity = "hidden";
-  },900)
- 
-})
-
-abrir.addEventListener("click", modalFunction, false);
-const modalFunction = (event) => {
-     console.log(event.target)
-}*/
-
-
-//  }
 
 // <------MENU BOTONES------->
 
@@ -205,16 +120,13 @@ const botonVolver=document.getElementById("BotonVolver")
 botonVolver.addEventListener("click", volver);
  
 function volver() {
-  document.getElementById("Inicio").style.display="block";
-  document.getElementById("Tablero").style.display= "none";
-  document.getElementById("Principal").style.display= "none";
+  document.getElementById("Inicio").style.display="none";
+  document.getElementById("Tablero").style.display= "block";
+  document.getElementById("Principal").style.display= "block";
   document.getElementById("AprendeaJugar").style.display="none"
   document.getElementById("SobreelJuego").style.display="none"
  }
 
-
-
-//console.log(data);
 
 
 
