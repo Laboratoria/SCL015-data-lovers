@@ -1,4 +1,3 @@
-
 import { ordenar, buscar, filtrar } from './data.js';
 import data from './data/lol/lol.js';
 
@@ -9,7 +8,6 @@ const botonEntrar = document.getElementById("BotonEntrar")
 const selectAz = document.getElementById("sltOrden")
 botonEntrar.addEventListener("click", entrar);
 const selectRoles = document.getElementById("sltRoles")
-
 
 
 //------FUNCION NUEVA--------
