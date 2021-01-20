@@ -28,10 +28,10 @@ function imprimirData (dataArray ){
     <br>
   </div>`;
   }
-  const cartaInfo = obj.querySelectorAll("#carta")
-  cartaInfo.forEach(divCampeon => {
-    divCampeon.addEventListener("click", abrirModal, false);
-  })
+  //const cartaInfo = obj.querySelectorAll("#carta")
+  //cartaInfo.forEach(divCampeon => {
+   // divCampeon.addEventListener("click", abrirModal, false);
+  //})
 
 }
 
@@ -93,36 +93,36 @@ function filtrarPorRoles() {
 
 
 
-//<---------FUNCION PARA ABRIR MODAL ------------->
+// //<---------FUNCION PARA ABRIR MODAL ------------->
 
-const abrirModal = (event) => {
-    console.log(event.target)
-let cerrar = document.querySelectorAll(".close")[0];
-//let abrir = document.querySelector("#carta");
-let modal = document.querySelectorAll(".modal")[0];
-let modalC = document.querySelectorAll(".modal-container")[0];
+// const abrirModal = (event) => {
+//     console.log(event.target)
+// let cerrar = document.querySelectorAll(".close")[0];
+// //let abrir = document.querySelector("#carta");
+// let modal = document.querySelectorAll(".modal")[0];
+// let modalC = document.querySelectorAll(".modal-container")[0];
 
-modal.style.display="flex";
-modalC.style.display="flex";
+// modal.style.display="flex";
+// modalC.style.display="flex";
 
-cerrar.addEventListener("click", function(){
-  /*modal.classList.toggle("modal-close");*/
-  modal.style.display="flex";
-  modalC.style.display="flex";
+// cerrar.addEventListener("click", function(){
+//   /*modal.classList.toggle("modal-close");*/
+//   modal.style.display="flex";
+//   modalC.style.display="flex";
 
   
 
-  setTimeout(function(){
-    modalC.style.opacity = "0";
-    modalC.style.opacity = "hidden";
-  },900)
+//   setTimeout(function(){
+//     modalC.style.opacity = "0";
+//     modalC.style.opacity = "hidden";
+//   },900)
  
-})
+// })
 
-abrir.addEventListener("click", modalFunction, false);
-const modalFunction = (event) => {
-     console.log(event.target)
-}
+// abrir.addEventListener("click", modalFunction, false);
+// const modalFunction = (event) => {
+//      console.log(event.target)
+//}
 
 //abrir.addEventListener("click", function(e){
   //console.log("hola")
@@ -136,7 +136,7 @@ const modalFunction = (event) => {
 
 //});
     
- }
+ //}
 /*Modal solo
 let cerrar = document.querySelectorAll(".close")[0];
 let abrir = document.querySelector("#carta");
