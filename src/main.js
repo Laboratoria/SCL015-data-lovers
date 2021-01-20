@@ -9,10 +9,12 @@ const spacePokeballs= document.getElementById('spacePokeballs');
 document.getElementById("btnTypes").addEventListener('click', ()=>{
     document.getElementById("btnInitial").style.display= "none";
     document.getElementById("spacePokeballs").style.display= "block";
+    // document.getElementsByClassName("miniP").style.display="block";
     const spaceFragment= document.createDocumentFragment();
-   console.log(pokemonTypes);
    
-;    pokemonTypes.forEach(typeOfPokemons=>{
+    console.log(pokemonTypes);
+   
+     pokemonTypes.forEach(typeOfPokemons=>{
         let smallPokeball= document.createElement('button');
         console.log(smallPokeball);
         smallPokeball.type= 'button';
@@ -23,10 +25,12 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
 console.log(smallPokeball);
         spaceFragment.appendChild(smallPokeball);
         console.log(spaceFragment);
+        
     });
    
 spacePokeballs.appendChild(spaceFragment);
 console.log(spacePokeballs);
+    
 })
 
 
