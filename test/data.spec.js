@@ -37,6 +37,17 @@ describe('ordenar de A-Z, Z-A y ALEATORIO', () => {
    {name: "Xin Zhao", title: "the Seneschal of Demacia", info: {attack: 8, defense: 6, magic: 3, difficulty: 2}, tags: ["Fighter", "Assassin"]},
    {name: "Zyra", title: "Rise of the Thorns", info: {attack: 4, defense: 3, magic: 8, difficulty: 7}, tags: ["Mage", "Support"]}]);
 });
+
+it('deberia ordenar de A-Z', () => {
+  expect(ordenar("Ordenar", arrayTest)).toEqual([{name: "Aatrox", title: "the Darkin Blade", info: {attack: 8, defense: 4, magic: 3, difficulty: 4},tags: ["Fighter", "Tank"]},
+  {name: "Akali", title: "the Fist of Shadow", info: {attack: 5, defense: 3, magic: 8, difficulty: 7}, tags: ["Assassin"]},
+  {name: "Gnar", title: "the Missing Link", info: {attack: 6, defense: 5, magic: 5, difficulty: 8}, tags:["Fighter", "Tank"]},
+  {name: "Jhin", title: "the Virtuoso", info: {attack: 10, defense: 2, magic: 6, difficulty: 6}, tags:["Marksman", "Assassin"]},
+  {name: "Jinx", title: "the Loose Cannon", info: {attack: 9, defense: 2, magic: 4, difficulty: 6}, tags: ["Marksman"]},
+  {name: "Xin Zhao", title: "the Seneschal of Demacia", info: {attack: 8, defense: 6, magic: 3, difficulty: 2}, tags: ["Fighter", "Assassin"]},
+  {name: "Zyra", title: "Rise of the Thorns", info: {attack: 4, defense: 3, magic: 8, difficulty: 7}, tags: ["Mage", "Support"]}]);
+});
+
 });
 
 
