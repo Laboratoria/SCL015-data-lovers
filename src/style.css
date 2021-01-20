@@ -69,7 +69,7 @@ margin-bottom: 5%;
     -webkit-transform : scale(1.1);
   }
 
-.oromenu{
+  .oromenu{
     display: inline-block;
     margin: 0px 25px 10px 25px;
     }
@@ -146,6 +146,7 @@ margin-bottom: 5%;
   height: 378px;
   border-radius: 8px;
   float: left;
+  opacity: 0.8;
 
 }
 
@@ -234,7 +235,57 @@ margin-bottom: 5%;
 }
 
 
+/* 
+.modal-container{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(111, 111, 111, 0.73);
+  /*display: flex;*/
+  /* justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  display: none;
+  width: 25%;
+  height: 65%;
+  background: linear-gradient(to bottom, #000000, #313979);
+  border: #8985FB solid 3px;
+  text-align: center;
+  /*display: flex;*/
+  /* flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 8px;
+  overflow: hidden;
+} */
+/*.modal-close{ 
+ /* transform: translateY(-200%);*/
+/*
+
+.close{
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #8985FB;
+  color: #000000;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+} */
+
 /* Sección aprende a Jugar*/
+
 
 #AprendeaJugar{
   display: none;
@@ -313,7 +364,7 @@ margin-bottom: 5%;
 
 /*media*/
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .logo {
     width: 90%;
     margin: 7%;
@@ -330,183 +381,22 @@ margin-bottom: 5%;
     margin-left: 30%;
     }
 
-    #BotonEntrar:hover {
-      transform : scale(1.1);
-      -webkit-transform : scale(1.1);
-    }
-
-
-  #Principal{
-    background-image: url(./assets/FondoInicio.png);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    }
-
-  .logoPequeño{
+    .logoPequeño{
       width: 95%;
       margin-left: 5%;
       margin-top: 5%;
- }
+      }
+
  .oromenu{
-  display: center;
+  display: inline-block;
+  margin: 20px 0 60px 100px;
   }
 
- .oro{
-  width: 150px;
-  margin: 2% 20% 3% 20%;
-
- }
-
-.oro:hover {
-transform : scale(1.1);
--webkit-transform : scale(1.1);
-}
-
-
-.card-filter{
-border-radius: 5px;
-margin-top: 1%;
-margin-left: 5%;
-height: 33px;
-width: 300px;
-font-size: 18px;
-font-weight: bold;
-background:rgba(113, 106, 106, 1);
-color: rgba(255, 255, 255, 1);
-}
-
-::placeholder { 
-color: rgba(255, 255, 255, 1);
-opacity: 1; 
-}
-
-.selects{
-border-radius: 5px;
-font-size: 18px;
-align-content: center;
-margin-top: 5%;
-margin-left: 5%;
-height: 35px;
-width: 305px;
-font-weight: bold;
-background: rgba(113, 106, 106, 1);
-color: rgba(255, 255, 255, 1)
-}
-
-
-.texto-filtros{
-font-size: 0px;
-}
-
-#contenedorTableros{
-height: 360px;
-align-content: flex-start;
-
-}
-
-#cajaFiltros {
-width: 355px;
-height: 205px;
-border: 2px solid #8985FB;
-margin: 10px;
-border-radius: 8px;
-float: left;
-
-}
-
-#cajaFiltros .Filtros{
-background: linear-gradient(to bottom, #000000, #8985FB);
-border: 8px solid black;
-width: 338px;
-height: 188px;
-border-radius: 8px;
-float: left;
-
-}
-
-#bordeTablero {
-width: 350px;
-height: 100%;
-border: 2px solid #8985FB;
-margin: 10px;
-border-radius: 8px;
-float: left;
-
-}
-
-#bordeTablero .cajaTablero{
-background: linear-gradient(to bottom, #000000, #8985FB);
-border: 8px solid black;
-width: 348px;
-border-radius: 8px;
-display: flex;
-float: left;
-
-}
-#containerData{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
-}
-.card{
-margin: 10px 10px 15px 10px;
-transition: .5s;
-cursor: pointer;
--webkit-transition: all 1s ease;
-transition: all 1s ease;
-border: #8985FB 2px solid;
-}
-
-.card:hover {
-transform : scale(1.1);
--webkit-transform : scale(1.1);
-}
-
-.card> img {
-width: 250px; 
-
-}
-.char-name {
-width: 220wh;
-height: 5vh;
-background-color: #8985FB;
-font-weight: bold;
-font-size: 20px;
-text-align: center;
-border: #8985FB 2px solid;
-grid-gap: 20px;
-
-}
-
-.title {
-width: 220wh;
-height: 5vh;
-font-weight: bold;
-font-size: 18px;
-text-align: center;
-grid-gap: 18px;
-}
-
-.tagsCampeones{
-width: 220wh;
-height: 5vh;
-font-size: 18px;
-text-align: center;
-grid-gap: 18px;
-}
-
-#infoCampeones{
-width: 220wh;
-height: 3vh;
-font-weight: black;
-font-size: 18px;
-text-align: center;
-grid-gap: 18px;
-}
-
-
+  #Tablero{
+    background-image: url(assets/fondolimpio_mob.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
 }
 
 /*@media (max-width: 1680px){

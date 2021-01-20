@@ -1,8 +1,7 @@
-import data from './data/lol/lol.js';
 export const ordenar = (ordenarPor, arrayDataLol) => {
   
   let datosOrdenados;
-  console.log("variable ordenar por", ordenarPor);
+  //console.log("variable ordenar por", ordenarPor);
   const ordenAleatorio = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -18,14 +17,14 @@ return array
       return (el1.name > el2.name) ? - 1 : 1
       
     });
-    console.log(datosOrdenados);
+    //console.log(datosOrdenados);
       }
      else if (ordenarPor == "A-Z"){
       datosOrdenados = arrayDataLol.sort((el1,el2) =>{
           return el1.name < el2.name ? - 1 : 1
           
         });
-        console.log(datosOrdenados);
+       // console.log(datosOrdenados);
 
       }
 
@@ -34,13 +33,13 @@ return array
             return el1.name < el2.name ? - 1 : 1
             
           });
-          console.log(datosOrdenados);
+         // console.log(datosOrdenados);
   
         }
 
       else if (ordenarPor == "Aleatorio"){
         datosOrdenados = ordenAleatorio(arrayDataLol)
-        console.log(datosOrdenados);
+        //console.log(datosOrdenados);
       }
       return datosOrdenados
       
