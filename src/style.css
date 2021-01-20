@@ -82,6 +82,10 @@ img.logorick{
   flex-direction: row;
 }
 
+.letsExploreButton :focus:not(:focus-visible) { 
+  outline: 0; 
+}
+
 /*----------------------SEGUNDA PÁGINA----------------------*/
 .charactersScreen{
   background-image: url("img/blue-background.png");
@@ -113,6 +117,15 @@ img.logorick{
   margin-bottom: 2%;
 }
 
+.order-tittle{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
 select{
   font-family: 'Rum Raisin', sans-serif;
   font-size: 24px;
@@ -123,8 +136,8 @@ select{
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
-  text-align: center;
-  margin-bottom: 2%;
+  margin-right: 340px;
+  margin-left: 15px;
 }
 
 .filtersStyle{
@@ -137,7 +150,44 @@ select{
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  margin-bottom: 2%;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+}
+.specieStyle{
+  font-size: 24px;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(4, 86, 124, 0.44);
+  width: 180px;
+  height: 170px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stateStyle{
+  font-size: 24px;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(4, 86, 124, 0.44);
+  width: 180px;
+  height: 170px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardContainer:hover .cardContainer-inner {
@@ -146,9 +196,10 @@ select{
 
 .cardContainer{
   background-color: transparent;
-  width: 300px;
-  height: 369px;
+  width: 180px;
+  height: 300px;
   perspective: 1000px;
+  margin:4px;
 }
 
 .cardContainer-inner{
@@ -175,18 +226,15 @@ select{
   display: flex;
   text-align: left;
   flex-direction: column;
-  height: 350px;
-  width: 300px;
+  width: 180px;
+  height: 240px;
   background-color: rgba(51, 66, 98, 1);
   border: 2px solid #E5EC2E;
   border-radius: 6px;
   color: white;
   transform: rotateY(180deg);
-}
-
-.backCardProperty{
   padding: 5px;
-  margin: 8px;
+  margin: 5px;
 }
 
 .propertyStyle{
@@ -198,11 +246,12 @@ select{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  text-align: left;
+  text-align: right;
 }
 
 .charactersContainer{
-  width: 1400px;
+  width: 90%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -212,31 +261,47 @@ select{
   -webkit-text-stroke-color:white;
 }
 
+.photo{
+  height: 180px;
+  width: 180px;
+}
+
 .cardText{
-  font-size: 30px;
+  font-size: 26px;
   color: #ffffff;
 }
 
-.nameStyle{
-  height: 50px;
-  font-size: 40px;
-  padding: 10px;
-  text-align: center;
+.name-backcard{
+  height: 95px;
+  width: 180px;
+  font-size: 26px;
+  margin: 1px;
   color: #091332;
   -webkit-text-stroke-width: 0.9px;
   -webkit-text-stroke-color:white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
-.name-character{
-  margin-top: -14px;
+.name-frontcard{
+  font-size: 24px;
 }
 
 .wrap-filter-order{
   display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.order-filter-characters{
+  display: flex;
+  flex-direction: row;
 }
 
 .wrap-characters{
-  display:flex
+  display:flex;
+  justify-content: space-between;
 }
 
 .charactersMain{
@@ -250,11 +315,13 @@ select{
   cursor: pointer;
 }
 
+
+/* 
 nav{
   font: size 1.5em;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /*----------------------RESPONSIVE----------------------*/
 

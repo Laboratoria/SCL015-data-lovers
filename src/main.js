@@ -17,7 +17,7 @@ document.getElementById("returnButton")
     document.getElementById("welcomeScreen").hidden = false;
   }, false);
 
-
+//
 let printCharacters = data.results;
 let listOfCharacters = document.getElementById("listCharacters");
 
@@ -28,34 +28,29 @@ const charactersList = () => {
   let list = "";
   //Incio el bucle
   for (let i = 0; i < printCharacters.length; i++) {
-    list += `<div class= "cardContainer">
-    <div id="printCharacters" class="cardContainer-inner">
-    <div class="frontCard">
-      <img id="photo" class="photo" src="${printCharacters[i].image}"/>
-      <p id="nameChar" class="name-character">${printCharacters[i].name}</p>
-    </div>
-    <div class="backCard">
-    <p id="nameChar" class="nameStyle">${printCharacters[i].name}</p>
-      <div class="backCardProperty">
-        <div class="propertyFlex">
-          <p class="propertyStyle">Status:</p>
-          <p id="statusChar" class="cardText">${printCharacters[i].status}</p><br>
+    list += `
+    <div class= "cardContainer">
+      <div id="printCharacters" class="cardContainer-inner">
+        <div class="frontCard">
+          <img id="photo" class="photo" src="${printCharacters[i].image}"/>
+          <p id="nameChar" class="name-frontcard">${printCharacters[i].name}</p>
         </div>
-        <div class="propertyFlex">
-          <p class="propertyStyle">Specie: </p>
-          <p id="specieChar" class="cardText">${printCharacters[i].species}</p><br>
-        </div>
-        <div class="propertyFlex">
-          <p class="propertyStyle">Gender: </p>
-          <p id="genderChar" class="cardText">${printCharacters[i].gender}</p><br>
-        </div>
-        <div class="propertyFlex">
-          <p class="propertyStyle">Last known location: </p>
-          <p id="locationChar" class="cardText">${printCharacters[i].location.name}</p><br>
+        <div class="backCard">
+              <p id="nameChar" class="name-backcard">${printCharacters[i].name}</p>
+              <div class="propertyFlex">
+                <p class="propertyStyle">Status:</p>
+                <p id="statusChar" class="cardText">${printCharacters[i].status}</p><br>
+              </div>
+              <div class="propertyFlex">
+                <p class="propertyStyle">Specie: </p>
+                <p id="specieChar" class="cardText">${printCharacters[i].species}</p><br>
+              </div>
+              <div class="propertyFlex">
+                <p class="propertyStyle">Gender: </p>
+                <p id="genderChar" class="cardText">${printCharacters[i].gender}</p><br>
+              </div>
         </div>
       </div>
-    </div>
-    </div>
     </div>`;
     // console.log(printCharacters[i]);
   }
@@ -91,3 +86,65 @@ select.addEventListener("change", function () {
   }
 
 });
+
+
+//------------------CHECKSQUARE PARA FILTRAR----------------
+  //Creamos un array vacío que llamarémos OnlyAlive
+  let onlyAlive = [];
+  //Recorremos el array printCharacters con el ciclo for
+  for (let i = 0; i< printCharacters.length; i++) {
+    //Creamos una variable para llamar a la especificación del filtro, en este caso el Status
+    let currentStatus= printCharacters[i].status;
+    //En cada repetición del ciclo preguntamos si el valor actual es igual a ''Alive''
+    if (currentStatus === "Alive") {
+      //En caso de serlo, se le agrega al Array el OnlyAlive
+      onlyAlive.push(currentStatus)
+    }
+  }
+  console.log(4, onlyAlive);
+
+  let onlyDead = [];
+  for (let i = 0; i< printCharacters.length; i++) {
+    let currentStatus = printCharacters[i].status;
+    if (currentStatus === "Dead") {
+      onlyDead.push(currentStatus)
+    }
+  }
+  // console.log(5, onlyDead);
+
+  let onlyStatusUnk = [];
+  for (let i = 0; i< printCharacters.length; i++) {
+    let currentStatus = printCharacters[i].status;
+    if (currentStatus === "unknown") {
+      onlyStatusUnk.push(currentStatus)
+    }
+  }
+  // console.log(6, onlyStatusUnk);
+
+  let onlyHuman = [];
+  for (let i = 0; i< printCharacters.length; i++) {
+    let currentSpecie = printCharacters[i].species;
+    if (currentSpecie === "Human") {
+      onlyHuman.push(currentSpecie)
+    }
+  }
+  // console.log(7, onlyHuman);
+
+  let onlyAlien = [];
+  for (let i = 0; i< printCharacters.length; i++) {
+    let currentSpecie = printCharacters[i].species;
+    if (currentSpecie === "Alien") {
+      onlyAlien.push(currentSpecie)
+    }
+  }
+  // console.log(8, onlyAlien);
+
+  let onlySpecieUnk = [];
+  for (let i = 0; i< printCharacters.length; i++) {
+    let currentSpecie = printCharacters[i].species;
+    if (currentSpecie === "unknown") {
+      onlySpecieUnk.push(currentSpecie)
+    }
+  }
+  // console.log(9, onlySpecieUnk);
+

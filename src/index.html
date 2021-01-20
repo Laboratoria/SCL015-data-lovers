@@ -39,44 +39,56 @@
         <a href="Search">Search</a> -->
       </nav>
       <main class="charactersMain">
+        <div class="order-tittle">
+        <div class="selectStyle">
+          <select value="slct" id="selectOrderValue" class="selectOrder">
+            <option selected disabled>Order</option>
+            <option value="AZorder" id="orderAZ" >Alphabetically A-Z</option>
+            <option value="ZAorder" id="orderZA">Alphabetically Z-A</option>
+            <option value="orderDefault" id="orderDefault">Default</option>
+          </select>
+        </div>
         <div class="backgroundTittle">
           <tittle class="charactersTittle">Characters</tittle>
         </div>
-
+      </div>
+      <div class="order-filter-characters">
         <div class="wrap-filter-order">
 
-          <div class="select">
-            <select value="slct" id="selectOrderValue" class="selectOrder">
-              <option selected disabled>Order</option>
-              <option value="AZorder" id="orderAZ" >Alphabetically A-Z</option>
-              <option value="ZAorder" id="orderZA">Alphabetically Z-A</option>
-              <option value="orderDefault" id="orderDefault">Defaul</option>
-            </select>
-          </div>
+          <div class="filtersStyle" id="filterID">Filters
+            <div class="specieStyle">Species
+              <input type="checkbox" value="Human" id="humanCheck"/>
+              <label for="humanCheck">Human</label>
+              <input type="checkbox" value="Alien" id="alienCheck"/>
+              <label for="alienCheck">Alien</label>
+              <input type="checkbox" value="UnknownSpecie" id="unknownSpecieCheck"/>
+              <label for="unknownSpecieCheck">Unknown</label>
+            </div>
+            <div class="stateStyle">State of life:
+              <input type="checkbox" value="Alive" id="aliveCheck"/>
+              <label for="aliveCheck">Alive</label>
+              <input type="checkbox" value="Dead" id="deadCheck"/>
+              <label for="deadCheck">Dead</label>
+              <input type="checkbox" value="UnknownState" id="unknownStateCheck"/>
+              <label for="unknownStateCheck">Unknown</label>
+            </div>
+        </div>
 
-          <div class="filtersStyle">Filters</div>
+          
+          
+
         </div>
 
         <div class="wrap-characters">
           <div id="listCharacters" class="charactersContainer"></div>
         </div>
-
+      </div>
       </main>
 
     </div>
 
   </div>
 
-  </div>
-
-
-
-
-
-
-
-
-  </div>
   <script src="main.js" type="module"></script>
 </body>
 
