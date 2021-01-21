@@ -17,12 +17,15 @@ export const ordenar = (ordenarPor, arrayDataLol) => {
 
     });
 
+ 
+
   }
   else if (ordenarPor == "A-Z") {
     datosOrdenados = arrayDataLol.sort((el1, el2) => {
       return el1.name < el2.name ? - 1 : 1
 
     });
+
 
   }
 
