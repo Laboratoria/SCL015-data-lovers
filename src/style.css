@@ -4,6 +4,12 @@
     font:20px;
   
 }
+h2{
+    color: blue;
+    margin-left: 25px;
+    font-size: 45px;
+    display: flex;
+}
 h3{
     color: blue;
     margin-left: 25px;
@@ -84,7 +90,7 @@ body {
 .introduction {
     display: block; 
     background-color:#EECC17;
-    font-family: 'Righteous', cursive;
+    font-family:'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
     text-decoration: none;
@@ -168,7 +174,7 @@ body {
     display: flex;
     background-size: cover;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 80px;
     margin-left: 50px;
     outline: none;
 } 
@@ -189,13 +195,60 @@ body {
     margin-left: 50px;
     outline: none;
 }
+
 #fire{
     background-image: url(image/FUEGO.png);
-   
 }
 #normal{
     background-image: url(image/NORMAL.png);
-
+}
+#acero{
+    background-image: url(image/ACERO.png);
+}
+#hada{
+    background-image: url(image/HADA.png);
+}
+#hielo{
+    background-image: url(image/HIELO.png);
+}
+#lucha{
+    background-image: url(image/LUCHA.png);
+}
+#planta{
+    background-image: url(image/PLANTA.png);
+}
+#posion{
+    background-image: url(image/POISON.png);
+}
+#psiquico{
+    background-image: url(image/PSIQUICO.png);
+}
+#roca{
+    background-image: url(image/ROCA.png);
+}
+#siniestro{
+    background-image: url(image/SINIESTRO.png);
+}
+#tierra{
+    background-image: url(image/TIERRA.png);
+}
+#volador{
+    background-image: url(image/VOLADOR.png);
+}
+#agua{
+    background-image: url(image/AGUA.png);
+}
+#bicho{
+    background-image: url(image/BICHO.png);
+}
+#dragon{
+    background-image: url(image/DRAGON.png);
+}
+#electrico{
+    background-image: url(image/ELECTRICO.png);
+}
+#fantasma{
+    background-image: url(image/FANTASMA.png);
 }
 .footer {
     font-family: serif;
