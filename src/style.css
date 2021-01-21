@@ -71,9 +71,9 @@ img.logorick{
   transform: matrix(1, -0.09, 0.09, 1, 0, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  /* position: relative;
+  position: relative;
   margin-left: 27.5rem;
-  margin-top: 149px; */
+  margin-top: 149px;
 }
 
 .letsExploreButton{
