@@ -28,20 +28,19 @@ function imprimirData (dataArray ){
     <br>
   </div>`;
   }
-  
+
 }
 
 //------FUNCION ENTRAR + MOSTRAR INFO EN PAGINA ---------
 
 function entrar(){
-  //console.log ("entré")
    document.getElementById("Inicio").style.display="none";
    document.getElementById("AprendeaJugar").style.display="none";
    document.getElementById("SobreelJuego").style.display="none";
    document.getElementById("Tablero").style.display="block";
    document.getElementById("Principal").style.display= "block";
   
-   //let listaData = "";
+
    imprimirData(arrayDataLol)
 }
 
@@ -94,7 +93,6 @@ const botonSobreJuego=document.getElementById("BotonSobreJuego")
 botonSobreJuego.addEventListener("click", infoJuego);
  
 function infoJuego() {
-  //console.log ("Funciona")
   document.getElementById("Inicio").style.display="none";
   document.getElementById("Tablero").style.display= "none";
   document.getElementById("AprendeaJugar").style.display= "none";
@@ -106,7 +104,6 @@ function infoJuego() {
  botonAprende.addEventListener("click", desplegarLink);
   
  function desplegarLink() {
-   //console.log ("Funciona")
    document.getElementById("Inicio").style.display="none";
    document.getElementById("Tablero").style.display= "none";
    document.getElementById("SobreelJuego").style.display= "none";
