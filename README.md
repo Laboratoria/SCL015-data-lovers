@@ -31,6 +31,7 @@ También cuenta con la opción de filtrar todos estos personajes por  “roles�
 
 Esta forma de visualizar la información permite al jugador conocer mejor al campeón antes de elegirlo y facilitar su juego. 
 
+https://llaira.github.io/SCL015-data-lovers/src/ link a la página final.
 
 ## 3. Encuesta
 
