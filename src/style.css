@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font:20px;
-  
 }
 h2{
     color: blue;
@@ -13,21 +12,21 @@ h2{
 h3{
     color: blue;
     margin-left: 25px;
-    text-decoration: underline;
-    
+    text-decoration: underline;    
 }
 /*.hidden{ 
 
 }
 */
 body {
-    background-image: url(image/Johto.png); 
+    background-image: url(image/65.jpg); 
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #00ffff;
     margin: 0%;
+    
 }
 .page-background {
     background-size: cover;
@@ -49,7 +48,7 @@ body {
     top:0;
     right:0;
     border-right-width:100vw;
-    background-color:#EECC17 ;
+    background-color:#f1f095 ;
 }
     .header a {
     text-decoration: none;
@@ -85,11 +84,11 @@ body {
             border-radius: 5px ;
         }
             .navigation ul li a:hover {
-                background-color: cyan;    
+                background-color:#EECC17;    
             }*/
 .introduction {
     display: block; 
-    background-color:#EECC17;
+    background-color:#f1f095;
     font-family:'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
@@ -103,7 +102,7 @@ body {
 }
 .topPokemon {
     display: block;
-    background:#EECC17;
+    background:#f1f095
     font-family: 'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
@@ -121,8 +120,13 @@ body {
     width: 80px;
     height: 60px;
     margin-left: 200px;
-   
+    padding: 5px;
+    transition: 1s;
+    outline: none;
 }    
+#search:hover {
+    transform: scale(1.4,1.4);
+}
 /*.btn_initial {
     padding-top: 25rem;
     padding-bottom: 15rem;
@@ -176,9 +180,30 @@ body {
     border-radius: 50%;
     margin-top: 80px;
     margin-left: 50px;
+    box-shadow: 3px 20px 35px black;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 50px;
+    outline: none;
+    transition: 1s;
     outline: none;
 } 
-.spacePokeballs{
+.button_links:hover {
+    transform: scale(1.2,1.2);
+}
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 1100px;
+    margin:50px auto;
+}
+.cards{
+    background-color: teal;
+    width: 300px;
+    height: 350px;
+}
+#spacePokeballs{
     display: flex;
     flex-wrap: wrap;
 }
@@ -190,12 +215,16 @@ body {
     background-position: center;
     align-items: flex-end;
     background-size: cover;
+    box-shadow: 3px 20px 35px black;
     border-radius: 50%;
     margin-top: 25px;
     margin-left: 50px;
     outline: none;
+    transition: 1s;
 }
-
+.miniP:hover{
+    transform: scale(1.5,1.5);
+}
 #fire{
     background-image: url(image/FUEGO.png);
 }
