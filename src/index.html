@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> <!-- Fuente de nav --> 
   </head>
-  <body>
+  <body class="page-background">
+
       <header class="header">
       <div class="container-nav">
         <nav class="navigation">
           <ul>
             <li class="introduction"><a href="#">INTRODUCCION</a></li>
-              <li class="pokemon"><a href="#">POKEMONES</a></li>
+              <li class="pokemon" id="allPokemon"><a href="#">POKEMONES</a></li>
               <li class="topPokemon"><a href="#">TOP POKEMON</a></li>               
           </ul>
         </nav>
@@ -33,6 +34,7 @@
        <div class="button hidden" id="btnInitial">
           <button type="button" value="Poke Tipo" id="btnTypes" class="poketype"></button>
        </div>
+       <div id="cardContainer"></div>
        <div id="spacePokeballs"></div>
      <footer>
         <button type="button" value="Links de Interés" id="linksButton" class="button_links"></button>
