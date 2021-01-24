@@ -102,7 +102,7 @@ body {
 }
 .topPokemon {
     display: block;
-    background:#f1f095
+    background:#f1f095;
     font-family: 'Righteous', cursive;
     color: #2E2BD0;
     justify-content: space-between;
