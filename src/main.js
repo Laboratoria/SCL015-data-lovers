@@ -12,8 +12,7 @@ document.getElementById("allPokemon").addEventListener('click', ()=>{
     contDivCard.value="card";
     contDivCard.setAttribute('id','cards');
     contDivCard.setAttribute('class','cards');
-
-   
+  
 });
 
 const pokemonTypes= ['fire','normal','acero','hada','hielo','lucha','planta','posion','psiquico','roca','siniestro','tierra','volador','agua','bicho','dragon','electrico','fantasma'];
@@ -24,11 +23,11 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
     // document.getElementsByClassName("miniP").style.display="block";
     const spaceFragment= document.createDocumentFragment();
    
-    console.log(pokemonTypes);
+    // console.log(pokemonTypes);
    
      pokemonTypes.forEach(typeOfPokemons=>{
         let smallPokeball= document.createElement('button');
-        console.log(smallPokeball);
+        // console.log(smallPokeball);
         
         smallPokeball.type= 'button';
         smallPokeball.value= typeOfPokemons;
@@ -36,12 +35,12 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
         smallPokeball.setAttribute('class', "miniP");
 console.log(smallPokeball);
         spaceFragment.appendChild(smallPokeball);
-        console.log(spaceFragment);
+        // console.log(spaceFragment);
         
     });
    
 spacePokeballs.appendChild(spaceFragment);
-console.log(pokemons);
+// console.log(pokemons);
 const h2= document.createElement("h2");
 h2.innerHTML="Poke Tipo";
 spacePokeballs.appendChild(h2);
