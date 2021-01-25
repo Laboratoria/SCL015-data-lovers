@@ -72,8 +72,8 @@ img.logorick{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   position: relative;
-  margin-left: 27.5rem;
-  margin-top: 149px;
+  /* margin-left: 27.5rem;
+  margin-top: 149px; */
 }
 
 .letsExploreButton{
@@ -132,6 +132,19 @@ select{
   color:rgba(255, 255, 255, 1);
   background: rgba(4, 86, 124, 0.44);
   width: 180px;
+  height: 39px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-right: 340px;
+  margin-left: 15px;
+}
+.searchStyle{
+  font-family: 'Rum Raisin', sans-serif;
+  font-size: 24px;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(4, 86, 124, 0.44);
+  width: 300px;
   height: 39px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
@@ -311,20 +324,21 @@ select{
   align-items: center;
 }
 
+.returnButton{
+  margin: 3% 3% 2%;
+}
+
 .returnButton:hover{
   cursor: pointer;
 }
 
-
+/*----------------------NAV----------------------*/
 /* 
 nav{
   font: size 1.5em;
   display: flex;
   justify-content: space-between;
 } */
-
-/*----------------------RESPONSIVE----------------------*/
-
 ul{
   border:#12B0C9;
   flex:1;
@@ -332,96 +346,43 @@ ul{
   display:flex;
   justify-content:space-evenly
 }
-
 nav ul li {
 list-style: none;
 margin: 0 5px;
 }
-
 nav ul li a {
   text-decoration: none;
 }
-
 nav ul li .active, nav ul li a:hover {
   background: #009BDB;
   color: #fff;
   border-radius: 25px;
 }
-
-
-/* /____MEDIA____/
-
+/*----------------------RESPONSIVE----------------------*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-  
   body{
     background-image: url("img/wellcome-iphone.jpg");
   }
-
-  //esto estaba comentado a parte
-  .welcomeScreen{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    height: 100%;
-  }
-
   .welcomeText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-self: baseline;
     margin-top: 12vh;
   }
-
-  h2 {
-    align-items: center;
-  }
-
   .logoText{
     font-size: 91px;
-    font-family: 'Lacquer', cursive;
-    color: #12B0C9;
-    text-shadow: 0px 2px 8px #C8DD5D;
-    transform: rotate(-3.84deg);
-    margin-left: 80px;
-    letter-spacing: 2px;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
   }
-
   img.logorick{
-    transform: rotate(-3.84deg);
-    margin-left: 80px;
     width: 100%;
   }
-
   .exploreButton {
-    display: flex;
-    align-self: center;
-    align-items: center;
-    font-family: 'Lacquer', cursive;
     font-size: 58px;
     color: #D6E3FB;
-    border-radius: 50%;
-    border: 3px solid;
     height: 294.023421px;
     width: 271.810726px;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 72.4%);
-    cursor: pointer;
-    background: radial-gradient(60% 60% at 50% 50%, rgba(242, 255, 0, 0.89) 24.48%, rgba(242, 255, 0, 0) 100%);
-    box-shadow: inset 0px 4px 6px #d6e3fb;
-    transform: matrix(1, -0.09, 0.09, 1, 0, 0);
-    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #092740;
     position: relative;
   }
-
   .letsExploreButton{
     display: flex;
     justify-content: center;
@@ -430,4 +391,51 @@ nav ul li .active, nav ul li a:hover {
     bottom: 302px;
     right: -56%;
   }
-} */
+  /*----------------------SEGUNDA PÁGINA----------------------*/
+  .charactersScreen{
+    background-image: url("img/wall-iphone.jpg");
+  }
+  .charactersTittle {
+    font-size: 47px;
+  }
+  .backgroundTittle{
+    width: 281px;
+    margin-left: -11%;
+  }
+  .order-tittle{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  select{
+    font-size: 33px;
+    width: 170px;
+    height: 63px;
+    margin-left: 26px;
+  }
+  .filtersStyle{
+    font-size: 41px;
+    width: 173px;
+    height: 54px;
+    margin-left: 26px;
+  }
+  .specieStyle{
+    font-size: 36px;
+    width: 165px;
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 2px;
+    margin-bottom: 16px;
+  }
+  .stateStyle{
+    font-size: 36px;
+    width: 165px;
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 2px;
+    margin-bottom: 16px;
+  }
+  .photo {
+    height: 230px;
+    width: 230px;
+  }
+}

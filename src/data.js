@@ -41,4 +41,5 @@ const orderFunctions = {
     return orderedResults;
   },
 }
-  export default orderFunctions
+
+export default orderFunctions

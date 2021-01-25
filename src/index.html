@@ -37,6 +37,9 @@
           </li>
         </ul>
         <a href="Search">Search</a> -->
+        <div class="searchrapper">
+          <input type="text" name="searchBar" id="searchBar" class="searchStyle" placeholder="Search for a character"/>
+        </div>
       </nav>
       <main class="charactersMain">
         <div class="order-tittle">
@@ -56,14 +59,6 @@
         <div class="wrap-filter-order">
 
           <div class="filtersStyle" id="filterID">Filters</div>
-            <div class="specieStyle">Species
-              <input type="checkbox" value="Human" id="humanCheck" />
-              <label for="humanCheck">Human</label>
-              <input type="checkbox" value="Alien" id="alienCheck" />
-              <label for="alienCheck">Alien</label>
-              <input type="checkbox" value="UnknownSpecie" id="unknownSpecieCheck" />
-              <label for="unknownSpecieCheck">Unknown</label>
-            </div>
             <div class="stateStyle">State of life:
               <input type="checkbox" value="Alive" id="aliveCheck" />
               <label for="aliveCheck">Alive</label>
@@ -71,12 +66,17 @@
               <label for="deadCheck">Dead</label>
               <input type="checkbox" value="UnknownState" id="unknownStateCheck" />
               <label for="unknownStateCheck">Unknown</label>
-        </div>
+            </div>
+            <div class="specieStyle">Species:
+              <input type="checkbox" value="Human" id="humanCheck" name="check"/>
+              <label for="humanCheck">Human</label>
+              <input type="checkbox" value="Alien" id="alienCheck" name="check"/>
+              <label for="alienCheck">Alien</label>
+              <input type="checkbox" value="UnknownSpecie" id="unknownSpecieCheck" name="check"/>
+              <label for="unknownSpecieCheck">Unknown</label>
+            </div>
 
-          
-          
-
-        </div>
+          </div>
 
         <div class="wrap-characters">
           <div id="listCharacters" class="charactersContainer"></div>
