@@ -1,7 +1,11 @@
 
 import data from './data/pokemon/pokemon.js';
+import {filterTypes} from './data.js';
+import {helloPokemons} from './data.js';
 
 const pokemons = data.pokemon;
+filterTypes(pokemons);
+helloPokemons(pokemons);
 
 const cardContainer= document.getElementById('cardContainer');
 document.getElementById("allPokemon").addEventListener('click', ()=>{
@@ -12,7 +16,9 @@ document.getElementById("allPokemon").addEventListener('click', ()=>{
     contDivCard.value="card";
     contDivCard.setAttribute('id','cards');
     contDivCard.setAttribute('class','cards');
-  
+  pokemons.forEach(elements=>{
+      cardContainer.innerHTML+=elements.name
+  })
 });
 
 const pokemonTypes= ['fire','normal','acero','hada','hielo','lucha','planta','posion','psiquico','roca','siniestro','tierra','volador','agua','bicho','dragon','electrico','fantasma'];
