@@ -11,15 +11,29 @@ const cardContainer= document.getElementById('cardContainer');
 document.getElementById("allPokemon").addEventListener('click', ()=>{
     document.getElementById("btnInitial").style.display= "none";
     document.getElementById("cardContainer").style.display= "block"; 
-    const contDivCard= document.createElement("div");
-    contDivCard.type="div";
-    contDivCard.value="card";
-    contDivCard.setAttribute('id','cards');
-    contDivCard.setAttribute('class','cards');
-  pokemons.forEach(elements=>{
-      cardContainer.innerHTML+=elements.name
-  })
+    // const contDivCard= document.createElement("div");
+    // contDivCard.type="div";
+    // contDivCard.value="card";
+    // contDivCard.setAttribute('class','cards');
+//   pokemons.forEach(elements=>{
+//       cardContainer.innerHTML+=elements.name
+//       cardContainer.
+//     ,false;
+//   });
+    for(let i=0;i<= pokemons.length;i++){
+        document.getElementById("cardContainer").innerHTML+= `<div class="cards">${i}</div>`;  
+    }    
+const back= document.createElement("button");
+back.type="button;"
+back.addEventListener('click',function() {
+    back.setAttribute('id',back);
+    buttonBack.appendChild(back);
+    window.history.back();
+    }
+    ,false);
+    console.log(buttonBack);
 });
+
 
 const pokemonTypes= ['fire','normal','acero','hada','hielo','lucha','planta','posion','psiquico','roca','siniestro','tierra','volador','agua','bicho','dragon','electrico','fantasma'];
 const spacePokeballs= document.getElementById('spacePokeballs');
@@ -39,7 +53,7 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
         smallPokeball.value= typeOfPokemons;
         smallPokeball.setAttribute('id',typeOfPokemons);
         smallPokeball.setAttribute('class', "miniP");
-console.log(smallPokeball);
+// console.log(smallPokeball);
         spaceFragment.appendChild(smallPokeball);
         // console.log(spaceFragment);
         
@@ -57,4 +71,4 @@ spacePokeballs.appendChild(h2);
 
 //llamo e invoco las funciones 
 //DOM - tomo los valores 
-/*creacion de documento html dinamico*/
+//creacion de documento html dinamico
