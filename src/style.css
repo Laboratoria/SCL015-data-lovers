@@ -2,24 +2,45 @@
   padding: 0;
   margin: 0;
 }
+
 /*----------------------PRIMERA PÁGINA----------------------*/
 body{
   font-family: 'Rum Raisin', sans-serif;
-  background-image: url("img/welcome-background.jpg");
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+
+}
+*{
+  box-sizing: inherit;
+}
+
+nav#navrick {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 100%;
+  background: rgba(0,0,0,0.15);
+}
+
+nav#navrick .searchwrapper {
+  width: 20%;
 }
 
 .welcomeScreen{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  /* width: 100%; */
-  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  background: url("img/welcome-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 100vw;
+  height: 100vh;
 }
 
 .welcomeText{
@@ -30,6 +51,8 @@ body{
   /* margin-bottom: 44.5rem; */
   align-self: baseline;
   margin-top: 3rem;
+  min-height: 50%;
+  transform: rotate(-3.84deg) translateX(60px);
 }
 /* Wiki */
 h2 {
@@ -37,20 +60,19 @@ h2 {
 }
 
 .logoText{
-  font-size: 65px;
+  font-size: 6vw;
   font-family: 'Lacquer', cursive;
   color: #12B0C9;
   text-shadow: 0px 2px 8px #C8DD5D;
-  transform: rotate(-3.84deg);
-  margin-left: 80px;
+  width: 100%;
   letter-spacing: 2px;
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
 }
 
 img.logorick{
-  transform: rotate(-3.84deg);
-  margin-left: 80px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .exploreButton{
@@ -62,26 +84,37 @@ img.logorick{
   color: #D6E3FB;
   border-radius: 50%;
   border: 3px solid;
-  height: 246.02342125057478px;
-  width: 253.8107263059118px;
+  height: 200px;
+  width: 200px;
   border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 72.4%);
   cursor: pointer;
   background: radial-gradient(60% 60% at 50% 50%, rgba(242, 255, 0, 0.89) 24.48%, rgba(242, 255, 0, 0) 100%);
   box-shadow: inset 0px 4px 6px #d6e3fb;
-  transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+  transform: rotate(-10deg);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   position: relative;
-  /* margin-left: 27.5rem;
-  margin-top: 149px; */
 }
 
 .letsExploreButton{
   display: flex;
   justify-content: center;
   flex-direction: row;
+  position: absolute;
+  right: 10.8%;
+  bottom: 32.5%;
 }
 
+@media(max-width:1200px){
+  .letsExploreButton{
+    right: 14%;
+  }
+}
+@media(max-width:780px){
+  .letsExploreButton{
+    right: 20.5%;
+  }
+}
 .letsExploreButton :focus:not(:focus-visible) { 
   outline: 0; 
 }
@@ -111,10 +144,9 @@ img.logorick{
   width: 351px;
   height: 69px;
   border: 3px solid #FFFFFF;
-  box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  margin-bottom: 2%;
+  margin: 0 auto;
 }
 
 .order-tittle{
@@ -136,12 +168,16 @@ select{
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
-  margin-right: 340px;
-  margin-left: 15px;
+  margin-bottom: 50px;
 }
+.selectStyle {
+  margin-bottom: 20px;
+}
+
 .searchStyle{
   font-family: 'Rum Raisin', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  padding: 0 10px;
   color:rgba(255, 255, 255, 1);
   background: rgba(4, 86, 124, 0.44);
   width: 300px;
@@ -149,8 +185,6 @@ select{
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
-  margin-right: 340px;
-  margin-left: 15px;
 }
 
 .filtersStyle{
@@ -163,9 +197,7 @@ select{
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  margin-right: 10px;
-  margin-left: 15px;
-  margin-bottom:10px;
+  margin-bottom:20px;
   display: flex;
   flex-direction: column;
 }
@@ -179,9 +211,7 @@ select{
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  margin-right: 10px;
-  margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -196,8 +226,6 @@ select{
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
-  margin-right: 10px;
-  margin-left: 15px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -210,20 +238,24 @@ select{
 .cardContainer{
   background-color: transparent;
   width: 180px;
-  height: 300px;
+  height: 280px;
   perspective: 1000px;
-  margin:4px;
+  margin-bottom: 30px;
+
 }
 
 .cardContainer-inner{
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
+  border-radius: 6px;
 }
 
 .frontCard, .backCard {
   backface-visibility: hidden;
   position: absolute;
+  width: 100%;
+  border: 2px solid #C8DD5D;
 }
 
 .frontCard {
@@ -231,23 +263,57 @@ select{
   font-size: 24px;
   line-height: 44px;
   background: rgba(255, 255, 255, 0.65);
-  border-radius: 6px;
-  border: 2px solid #E5EC2E;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-items: center;
+  height: 280px;
+}
+
+.frontCard #photo {
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0px 10px 16px -8px rgba(0,0,0,0.15);
+}
+
+.frontCard .nametag {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.frontCard .nametag #nameChar {
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 .backCard {
   display: flex;
   text-align: left;
   flex-direction: column;
-  width: 180px;
-  height: 240px;
+  justify-items: space-between;
+  align-items: center;
+  height: 280px;
   background-color: rgba(51, 66, 98, 1);
-  border: 2px solid #E5EC2E;
   border-radius: 6px;
   color: white;
   transform: rotateY(180deg);
-  padding: 5px;
-  margin: 5px;
+}
+
+.backCard .infoChar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.backCard .infoChar p{
+font-size: 20px;
 }
 
 .propertyStyle{
@@ -263,7 +329,7 @@ select{
 }
 
 .charactersContainer{
-  width: 90%;
+  width: 85%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -272,11 +338,12 @@ select{
   color: #091332;
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color:white;
+  margin-left: 240px;
 }
 
 .photo{
   height: 180px;
-  width: 180px;
+  width: 100%;
 }
 
 .cardText{
@@ -286,16 +353,16 @@ select{
 
 .name-backcard{
   height: 95px;
-  width: 180px;
-  font-size: 26px;
+  width: 100%;
+  font-size: 20px;
   margin: 1px;
-  color: #091332;
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color:white;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
+  padding: 15px 5px;
+  position: relative;
 }
 
 .name-frontcard{
@@ -305,8 +372,15 @@ select{
 .wrap-filter-order{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  width: 200px;
+  margin-top: 50px;
+  height: 20%;
 }
+
 .order-filter-characters{
   display: flex;
   flex-direction: row;
@@ -319,7 +393,6 @@ select{
   height: 100%;
 }
 
-
 .charactersMain{
   display: flex;
   justify-content: center;
@@ -327,10 +400,9 @@ select{
   align-items: center;
 }
 
-.returnButton{
-  margin: 3% 3% 2%;
+.returnButton {
+  padding-left: 50px;
 }
-
 .returnButton:hover{
   cursor: pointer;
 }
@@ -361,8 +433,9 @@ nav ul li .active, nav ul li a:hover {
   color: #fff;
   border-radius: 25px;
 }
+
 /*----------------------RESPONSIVE----------------------*/
-@media only screen 
+/*@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
@@ -371,9 +444,11 @@ nav ul li .active, nav ul li a:hover {
   }
   .welcomeText{
     margin-top: 12vh;
+    font-size: 8vw;
   }
   .logoText{
-    font-size: 91px;
+    font-size: 8vw;
+    width: 100%;
   }
   img.logorick{
     width: 100%;
@@ -394,20 +469,24 @@ nav ul li .active, nav ul li a:hover {
     bottom: 302px;
     right: -56%;
   }
-  /*----------------------SEGUNDA PÁGINA----------------------*/
+
+  /----------------------SEGUNDA PÁGINA----------------------/
   .charactersScreen{
     background-image: url("img/wall-iphone.jpg");
   }
   .charactersTittle {
     font-size: 47px;
+    margin: 0 auto;
   }
   .backgroundTittle{
     width: 281px;
-    margin-left: -9.5%;
+    margin: 0 auto;
   }
   .order-tittle{
     margin-bottom: 10px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
   }
   select{
     font-size: 33px;
@@ -415,30 +494,8 @@ nav ul li .active, nav ul li a:hover {
     height: 63px;
     margin-left: 26px;
   }
-  .filtersStyle{
-    font-size: 41px;
-    width: 173px;
-    height: 54px;
-    margin-left: 27px;
-  }
-  .specieStyle{
-    font-size: 36px;
-    width: 173px;
-    height: 270px;
-    margin-top: 30px;
-    margin-left: 27px;
-    margin-bottom: 16px;
-  }
-  .stateStyle{
-    font-size: 36px;
-    width: 173px;
-    height: 270px;
-    margin-top: 30px;
-    margin-left: 27px;
-    margin-bottom: 16px;
-  }
   .photo {
     height: 230px;
     width: 230px;
   }
-}
+} */

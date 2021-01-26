@@ -35,22 +35,26 @@ const charactersList = (characters) => {
       <div id="printCharacters" class="cardContainer-inner">
         <div class="frontCard">
           <img id="photo" class="photo" src="${characters[i].image}"/>
+          <div class="nametag">
           <p id="nameChar" class="name-frontcard">${characters[i].name}</p>
+          </div>
         </div>
         <div class="backCard">
               <p id="nameChar" class="name-backcard">${characters[i].name}</p>
+            <div class="infoChar"> 
               <div class="propertyFlex">
-                <p class="propertyStyle">Status:</p>
-                <p id="statusChar" class="cardText">${characters[i].status}</p><br>
-              </div>
-              <div class="propertyFlex">
-                <p class="propertyStyle">Specie: </p>
-                <p id="specieChar" class="cardText">${characters[i].species}</p><br>
-              </div>
-              <div class="propertyFlex">
-                <p class="propertyStyle">Gender: </p>
-                <p id="genderChar" class="cardText">${characters[i].gender}</p><br>
-              </div>
+              <p class="propertyStyle">Status:</p>
+              <p id="statusChar" class="cardText">${characters[i].status}</p><br>
+            </div>
+            <div class="propertyFlex">
+              <p class="propertyStyle">Specie: </p>
+              <p id="specieChar" class="cardText">${characters[i].species}</p><br>
+            </div>
+            <div class="propertyFlex">
+              <p class="propertyStyle">Gender: </p>
+              <p id="genderChar" class="cardText">${characters[i].gender}</p><br>
+            </div>
+            </div>
         </div>
       </div>
     </div>`;
@@ -104,102 +108,94 @@ searchBar.addEventListener('keyup', (e) => {
 
 //------------------CHECKSQUARE PARA FILTRAR----------------
 
-function aliveCheck(){
-  //Creamos un array vacío que llamarémos OnlyAlive
-  let onlyAlive = [];
-  //Recorremos el array printCharacters con el ciclo for
-  for (let i = 0; i< printCharacters.length; i++) {
-    //Creamos una variable para llamar a la especificación del filtro, en este caso el Status
-    let currentStatus= printCharacters[i].status;
-    //En cada repetición del ciclo preguntamos si el valor actual es igual a ''Alive''
-    if (currentStatus === "Alive") {
-      //En caso de serlo, se le agrega al Array el OnlyAlive
-      onlyAlive.push(3, currentStatus)
-    }
-}
-console.log(4, onlyAlive);
-}
+const onlyAlive = printCharacters.filter((character) => {
+  return character.status === "Alive";
+});
+console.log(onlyAlive);
+
 const checkAlive = document.querySelector('#aliveCheck');
 checkAlive.addEventListener('click', (event) => {
-  console.log(event.target.checked);
-  // let eTarget = event.target.checked;
-  // if(eTarget === "true"){};
+  if (event.target.checked === true) {
+    charactersList(onlyAlive);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
+
+const onlyDead = printCharacters.filter((character) => {
+  return character.status === "Dead";
+});
+console.log(onlyDead);
 
 const checkDead = document.querySelector('#deadCheck');
 checkDead.addEventListener('click', (event) => {
-  console.log(event.target.checked);
+  if (event.target.checked === true) {
+    charactersList(onlyDead);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
 
-const checkUnkStatus = document.querySelector('#unknownStateCheck');
+const unkStatus = printCharacters.filter((character) => {
+  return character.status === "unknown";
+});
+console.log(unkStatus);
+const checkUnkStatus = document.querySelector('#unknownStatusCheck');
 checkUnkStatus.addEventListener('click', (event) => {
-  console.log(event.target.checked);
+  if (event.target.checked === true) {
+    charactersList(unkStatus);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
 
+const onlyHuman = printCharacters.filter((character) => {
+  return character.species === "Human";
+});
+console.log(onlyHuman);
 const checkHuman = document.querySelector('#humanCheck');
 checkHuman.addEventListener('click', (event) => {
-  console.log(event.target.checked);
+  if (event.target.checked === true) {
+    charactersList(onlyHuman);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
 
+const onlyAlien = printCharacters.filter((character) => {
+  return character.species === "Alien";
+});
+console.log(onlyAlien);
 const checkAlien = document.querySelector('#alienCheck');
 checkAlien.addEventListener('click', (event) => {
-  console.log(event.target.checked);
+  if (event.target.checked === true) {
+    charactersList(onlyAlien);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
 
+const unkSpecie = printCharacters.filter((character) => {
+  return character.species === "unknown";
+});
+console.log(unkSpecie);
 const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
 checkUnkSpecie.addEventListener('click', (event) => {
-  console.log(event.target.checked);
+  if (event.target.checked === true) {
+    charactersList(unkSpecie);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  } else {
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
 });
-
-//------------------FILTRO----------------------- 
-
-    // let onlyAlive = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentStatus= printCharacters[i].status;
-    //   if (currentStatus === "Alive") {
-    //     onlyAlive.push(currentStatus)
-    //   }
-    // }
-    // console.log(4, onlyAlive);
-
-    // let onlyDead = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentStatus = printCharacters[i].status;
-    //   if (currentStatus === "Dead") {
-    //     onlyDead.push(currentStatus)
-    //   }
-    // }
-    // console.log(5, onlyDead);
-
-    // let onlyStatusUnk = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentStatus = printCharacters[i].status;
-    //   if (currentStatus === "unknown") {
-    //     onlyStatusUnk.push(currentStatus)
-    //   }
-    // }
-    // // console.log(6, onlyStatusUnk);
-    // let onlyHuman = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentSpecie = printCharacters[i].species;
-    //   if (currentSpecie === "Human") {
-    //     onlyHuman.push(currentSpecie)
-    //   }
-    // }
-    // // console.log(7, onlyHuman);
-    // let onlyAlien = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentSpecie = printCharacters[i].species;
-    //   if (currentSpecie === "Alien") {
-    //     onlyAlien.push(currentSpecie)
-    //   }
-    // }
-    // // console.log(8, onlyAlien);
-    // let onlySpecieUnk = [];
-    // for (let i = 0; i< printCharacters.length; i++) {
-    //   let currentSpecie = printCharacters[i].species;
-    //   if (currentSpecie === "unknown") {
-    //     onlySpecieUnk.push(currentSpecie)
-    //   }
-    // }
-    // // console.log(9, onlySpecieUnk);

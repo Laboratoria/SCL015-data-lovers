@@ -23,49 +23,40 @@
       </div>
     </div>
 
-    <!---------------------------Segunda página---------------------------------->
+<!---------------------------Segunda página---------------------------------->
 
-    <div class="charactersScreen" id="charactersScreen" hidden>
-      <nav>
-        <img src="img/rickandmortylogopng.png" id="returnButton" class="returnButton" />
-        <!-- <ul>
-          <li> 
-            <a href="Characters">Characters</a>
-          </li>
-          <li> 
-            <a href="Episodes">Episodes</a>
-          </li>
-        </ul>
-        <a href="Search">Search</a> -->
-        <div class="searchrapper">
-          <input type="text" name="searchBar" id="searchBar" class="searchStyle" placeholder="Search for a character"/>
-        </div>
-      </nav>
-      <main class="charactersMain">
-        <div class="order-tittle">
-        <div class="selectStyle">
-          <select value="slct" id="selectOrderValue" class="selectOrder">
-            <option selected disabled>Order</option>
-            <option value="AZorder" id="orderAZ" >Alphabetically A-Z</option>
-            <option value="ZAorder" id="orderZA">Alphabetically Z-A</option>
-            <option value="orderDefault" id="orderDefault">Default</option>
-          </select>
-        </div>
-        <div class="backgroundTittle">
-          <tittle class="charactersTittle">Characters</tittle>
-        </div>
+<div class="charactersScreen" id="charactersScreen" hidden>
+  <nav id="navrick">
+    <img src="img/rickandmortylogopng.png" id="returnButton" class="returnButton" />
+    <div class="searchwrapper">
+      <input type="text" name="searchBar" id="searchBar" class="searchStyle" placeholder="Search for a character"/>
+    </div>
+  </nav>
+  <main class="charactersMain">
+    <div class="order-tittle">
+
+    <div class="backgroundTittle">
+      <tittle class="charactersTittle">Characters</tittle>
+    </div>
+  </div>
+  <div class="order-filter-characters">
+    <div class="wrap-filter-order">
+      <div class="selectStyle">
+        <select value="slct" id="selectOrderValue" class="selectOrder">
+          <option selected disabled>Order</option>
+          <option value="AZorder" id="orderAZ" >Alphabetically A-Z</option>
+          <option value="ZAorder" id="orderZA">Alphabetically Z-A</option>
+          <option value="orderDefault" id="orderDefault">Default</option>
+        </select>
       </div>
-      <div class="order-filter-characters">
-        <div class="wrap-filter-order">
-
           <div class="filtersStyle" id="filterID">Filters</div>
             <div class="stateStyle">State of life:
               <input type="checkbox" value="Alive" id="aliveCheck" />
               <label for="aliveCheck">Alive</label>
               <input type="checkbox" value="Dead" id="deadCheck" />
               <label for="deadCheck">Dead</label>
-              <input type="checkbox" value="UnknownState" id="unknownStateCheck" />
-              <label for="unknownStateCheck">Unknown</label>
+              <input type="checkbox" value="UnknownStatus" id="unknownStatusCheck" />
+              <label for="unknownStatusCheck">Unknown</label>
             </div>
             <div class="specieStyle">Species:
               <input type="checkbox" value="Human" id="humanCheck" name="check"/>
