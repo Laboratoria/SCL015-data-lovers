@@ -19,7 +19,7 @@ export const  = () => {s
         //console.log (position);
         //console.log (typeof(position));
         if (position.includes("water")){
-            console.log("hola");
+            // console.log("hola");
         }
           //  console.log(pokemons[index].name);
           //console.log(position);
@@ -33,6 +33,6 @@ export const  = () => {s
 
 export const helloPokemons= (pokemons) => {
   pokemons.forEach(eachPokemons =>{
-    console.log(eachPokemons.name)
+    // console.log(eachPokemons.name)
   });
 }
