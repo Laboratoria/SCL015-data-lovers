@@ -61,8 +61,35 @@ const charactersList = (characters) => {
 charactersList(printCharacters);
 
 
-//SEARCH------------------------
+//------------------SELECT PARA ORDENAR----------------
+let select = document.getElementById("selectOrderValue");
+select.addEventListener("change", function () {
 
+  if (select.value === "AZorder") {
+    listOfCharacters.innerHTML = "";
+    let array = orderFunctions.orderAZ(printCharacters);
+    printCharacters = array;
+    charactersList(printCharacters);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
+
+  else if (select.value === "ZAorder") {
+    let array = orderFunctions.orderZA(printCharacters);
+    printCharacters = array;
+    charactersList(printCharacters);
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
+
+  else {
+    let array = orderFunctions.orderDefault(printCharacters);
+    printCharacters = array;
+    charactersList(printCharacters)
+    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+  }
+
+});
+
+//------------------------SEARCH------------------------
 
 searchBar.addEventListener('keyup', (e) => {
   const searchTarget = e.target.value;
@@ -75,60 +102,54 @@ searchBar.addEventListener('keyup', (e) => {
   charactersList(filteredCharacters);
 })
 
-
-//------------------SELECT PARA ORDENAR----------------
-let select = document.getElementById("selectOrderValue");
-select.addEventListener("change", function () {
-
-  if (select.value === "AZorder") {
-    listOfCharacters.innerHTML = "";
-    let array = orderFunctions.orderAZ(printCharacters);
-    printCharacters = array;
-    charactersList(printCharacters);
-    document.getElementById("listCharacters").innerHTML = charactersList();
-  }
-
-  else if (select.value === "ZAorder") {
-    let array = orderFunctions.orderZA(printCharacters);
-    printCharacters = array;
-    charactersList(printCharacters);
-    document.getElementById("listCharacters").innerHTML = charactersList();
-  }
-
-  else {
-    let array = orderFunctions.orderDefault(printCharacters);
-    printCharacters = array;
-    charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList();
-  }
-
-});
-
 //------------------CHECKSQUARE PARA FILTRAR----------------
 
-const checkboxes = document.querySelectorAll('.wrap-filter-order input[type="checkbox"]');
-console.log(checkboxes)
-
 function aliveCheck(){
-//Creamos un array vacío que llamarémos OnlyAlive
-let onlyAlive = [];
-//Recorremos el array printCharacters con el ciclo for
-for (let i = 0; i< printCharacters.length; i++) {
-  //Creamos una variable para llamar a la especificación del filtro, en este caso el Status
-  let currentStatus= printCharacters[i].status;
-  //En cada repetición del ciclo preguntamos si el valor actual es igual a ''Alive''
-  if (currentStatus === "Alive") {
-    //En caso de serlo, se le agrega al Array el OnlyAlive
-    onlyAlive.push(currentStatus)
-  }
+  //Creamos un array vacío que llamarémos OnlyAlive
+  let onlyAlive = [];
+  //Recorremos el array printCharacters con el ciclo for
+  for (let i = 0; i< printCharacters.length; i++) {
+    //Creamos una variable para llamar a la especificación del filtro, en este caso el Status
+    let currentStatus= printCharacters[i].status;
+    //En cada repetición del ciclo preguntamos si el valor actual es igual a ''Alive''
+    if (currentStatus === "Alive") {
+      //En caso de serlo, se le agrega al Array el OnlyAlive
+      onlyAlive.push(3, currentStatus)
+    }
 }
 console.log(4, onlyAlive);
 }
-const check4 = document.querySelector('#aliveCheck');
-check4.addEventListener('click', (event) => {
+const checkAlive = document.querySelector('#aliveCheck');
+checkAlive.addEventListener('click', (event) => {
+  console.log(event.target.checked);
+  // let eTarget = event.target.checked;
+  // if(eTarget === "true"){};
+});
+
+const checkDead = document.querySelector('#deadCheck');
+checkDead.addEventListener('click', (event) => {
   console.log(event.target.checked);
 });
-checkboxes.forEach(checkbox => checkbox.addEventListener('click', aliveCheck));
+
+const checkUnkStatus = document.querySelector('#unknownStateCheck');
+checkUnkStatus.addEventListener('click', (event) => {
+  console.log(event.target.checked);
+});
+
+const checkHuman = document.querySelector('#humanCheck');
+checkHuman.addEventListener('click', (event) => {
+  console.log(event.target.checked);
+});
+
+const checkAlien = document.querySelector('#alienCheck');
+checkAlien.addEventListener('click', (event) => {
+  console.log(event.target.checked);
+});
+
+const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
+checkUnkSpecie.addEventListener('click', (event) => {
+  console.log(event.target.checked);
+});
 
 //------------------FILTRO----------------------- 
 
