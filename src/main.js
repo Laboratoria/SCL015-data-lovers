@@ -1,5 +1,5 @@
-import orderFunctions from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
+import orderFunctions from './data.js';
 
 // console.log(alphabetOrderAZ, data);
 
@@ -70,19 +70,19 @@ select.addEventListener("change", function () {
     let array = orderFunctions.orderAZ(printCharacters);
     printCharacters = array;
     charactersList(printCharacters);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+    
   }
   else if (select.value === "ZAorder") {
     let array = orderFunctions.orderZA(printCharacters);
     printCharacters = array;
     charactersList(printCharacters);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+    
   }
   else {
     let array = orderFunctions.orderDefault(printCharacters);
     printCharacters = array;
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
+    
   }
 });
 
@@ -109,10 +109,8 @@ const checkAlive = document.querySelector('#aliveCheck');
 checkAlive.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(onlyAlive);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
 
@@ -124,10 +122,8 @@ const checkDead = document.querySelector('#deadCheck');
 checkDead.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(onlyDead);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
 
@@ -139,10 +135,8 @@ const checkUnkStatus = document.querySelector('#unknownStatusCheck');
 checkUnkStatus.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(unkStatus);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
 
@@ -154,10 +148,8 @@ const checkHuman = document.querySelector('#humanCheck');
 checkHuman.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(onlyHuman);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
 
@@ -169,10 +161,8 @@ const checkAlien = document.querySelector('#alienCheck');
 checkAlien.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(onlyAlien);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
 
@@ -184,9 +174,7 @@ const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
 checkUnkSpecie.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     charactersList(unkSpecie);
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   } else {
     charactersList(printCharacters)
-    document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
 });
