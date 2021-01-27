@@ -1,23 +1,23 @@
-import { pokemons, anotherExample } from '../src/data.js';
+import {filterTypes} from '../src/data.js';
+
+const pokemonS= [
+  {type:'water',name: "bulbasaur"},
+  {type:'grass',name: "ivysaur"},
+  {type:'poison',name: "venusaur"}]
 
 
-describe('pokemons', () => {
-  it('should be an object', () => {
-    expect(typeof pokemons).toBe('object');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+//   });
+// });
 
 
-describe('anotherExample', () => {
+describe('filterTypes',()  => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterTypes).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('filter types of pokemons', () => {
+    expect(filterTypes(pokemonS)).toEqual([{type:'water',name: "bulbasaur"}]);
   });
 });

@@ -16,7 +16,7 @@ h3{
 }
 h4{
     color: black;
-    margin: 43px;
+    margin: 35px;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -209,10 +209,8 @@ body {
 .cards{
     display: inline-block;
     background-color: teal;
-    width: 300px;
-    height: 350px;    
-    height: 250px;
-    width: 250px;
+    height: 265px;
+    width: 265px;
     border: 0rem;
     border-radius: 50%;
     margin-top: 50px;
@@ -220,9 +218,15 @@ body {
     margin-right: 20px;
     margin-bottom: 45px;
 }
+.cards img{
+    display:flex;
+    flex-direction: row-reverse;
+    margin-top: -19px;
+    margin-left: 62px;
+}
 p{
     color: black;
-    margin-top: -155px;
+    margin-top: -140px;
     margin-right: 50px;
     font-size: 25px;
     display: flex;
