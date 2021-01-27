@@ -198,22 +198,17 @@ select{
   border-radius: 6px;
   text-align: center;
   margin-bottom:20px;
-  display: flex;
-  flex-direction: column;
 }
 .specieStyle{
   font-size: 24px;
   color:rgba(255, 255, 255, 1);
   background: rgba(4, 86, 124, 0.44);
   width: 180px;
-  height: 170px;
+  height: 180px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
-  text-align: center;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .stateStyle{
@@ -221,14 +216,19 @@ select{
   color:rgba(255, 255, 255, 1);
   background: rgba(4, 86, 124, 0.44);
   width: 180px;
-  height: 170px;
+  height: 180px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 6px;
-  text-align: center;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+}
+
+.alignTittleCheck{
+  text-align: center;
+}
+
+.alignCheck{
+  width: 40%;
 }
 
 .cardContainer:hover .cardContainer-inner {
