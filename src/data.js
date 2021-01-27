@@ -27,12 +27,7 @@ export const  = () => {s
 
    // console.log(pokemons[index].type);
     }
-    
+  return 'pokemons';  
 //console.log(pokemones[index].name);
-}
+};
 
-export const helloPokemons= (pokemons) => {
-  pokemons.forEach(eachPokemons =>{
-    // console.log(eachPokemons.name)
-  });
-}

@@ -2,7 +2,6 @@
 import data from './data/pokemon/pokemon.js';
 import {filterTypes} from './data.js';
 import {helloPokemons} from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
 
 const pokemons = data.pokemon;
 filterTypes(pokemons);
@@ -18,16 +17,16 @@ document.getElementById("allPokemon").addEventListener('click',()=>{
         <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <img src= "${pokemons[i].img}"> <p>${pokemons[i].type}</p></div>`;  
     }    
 
-const back= document.createElement("button");
-back.type="button;"
-back.addEventListener('click',function() {
-    back.setAttribute('id',back);
-    buttonBack.appendChild(back);
-    window.history.back();
-    }
-    ,false);
+// const back= document.createElement("button");
+// back.type="button;"
+// back.addEventListener('click',function() {
+//     back.setAttribute('id',back);
+//     buttonBack.appendChild(back);
+//     window.history.back();
+//     }
+//     ,false);
    
-});
+// });
 
 
 const pokemonTypes= ['fire','normal','acero','hada','hielo','lucha','planta','posion','psiquico','roca','siniestro','tierra','volador','agua','bicho','dragon','electrico','fantasma'];

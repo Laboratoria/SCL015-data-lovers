@@ -1,23 +1,27 @@
-import { pokemons, anotherExample } from '../src/data.js';
+import {filterTypes} from '../src/data.js';
 
 
-describe('pokemons', () => {
-  it('should be an object', () => {
-    expect(typeof pokemons).toBe('object');
-  });
+describe('should return type of pokemons', () => {
+    expect(filterTypes()).toEqual( 
+      expect.arrayContaining([
+        expect.objectContaining({
+          type: 'water'
+        })
+      ])
+    );
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+//   });
+// });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
+// describe('filterTypes', () => {
+//   it('is a function', () => {
+//     expect(typeof filterTypes).toBe('function');
+//   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
+//   it('returns `filterTypes`', () => {
+//     expect(filterTypes()).toBe('water');
+//   });
 });
