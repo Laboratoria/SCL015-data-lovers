@@ -1,14 +1,10 @@
 import {filterTypes} from '../src/data.js';
 
+const pokemonS= [
+  {type:'water',name: "bulbasaur"},
+  {type:'grass',name: "ivysaur"},
+  {type:'poison',name: "venusaur"}]
 
-describe('should return type of pokemons', () => {
-    expect(filterTypes()).toEqual( 
-      expect.arrayContaining([
-        expect.objectContaining({
-          type: 'water'
-        })
-      ])
-    );
 
 //   it('returns `example`', () => {
 //     expect(example()).toBe('example');
@@ -16,12 +12,12 @@ describe('should return type of pokemons', () => {
 // });
 
 
-// describe('filterTypes', () => {
-//   it('is a function', () => {
-//     expect(typeof filterTypes).toBe('function');
-//   });
+describe('filterTypes',()  => {
+  it('is a function', () => {
+    expect(typeof filterTypes).toBe('function');
+  });
 
-//   it('returns `filterTypes`', () => {
-//     expect(filterTypes()).toBe('water');
-//   });
+  it('filter types of pokemons', () => {
+    expect(filterTypes(pokemonS)).toEqual([{type:'water',name: "bulbasaur"}]);
+  });
 });
