@@ -10,18 +10,15 @@ document.getElementById("startButton")
     document.getElementById("welcomeScreen").hidden = true;
     document.getElementById("charactersScreen").hidden = false;
   }, false);
-
 document.getElementById("returnButton")
   .addEventListener("click", function () {
     document.getElementById("charactersScreen").hidden = true;
     document.getElementById("welcomeScreen").hidden = false;
   }, false);
-
-//
+//--------------------------------------------------------
 let printCharacters = data.results;
 const listOfCharacters = document.getElementById("listCharacters");
 const searchBar = document.getElementById("searchBar");
-
 //-------------LLAMAR LISTA DE PERSONAJES-----------------
 
 const charactersList = (characters) => {
@@ -64,7 +61,6 @@ const charactersList = (characters) => {
 }
 charactersList(printCharacters);
 
-
 //------------------SELECT PARA ORDENAR----------------
 let select = document.getElementById("selectOrderValue");
 select.addEventListener("change", function () {
@@ -76,21 +72,18 @@ select.addEventListener("change", function () {
     charactersList(printCharacters);
     document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
-
   else if (select.value === "ZAorder") {
     let array = orderFunctions.orderZA(printCharacters);
     printCharacters = array;
     charactersList(printCharacters);
     document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
-
   else {
     let array = orderFunctions.orderDefault(printCharacters);
     printCharacters = array;
     charactersList(printCharacters)
     document.getElementById("listCharacters").innerHTML = charactersList(characters);
   }
-
 });
 
 //------------------------SEARCH------------------------
@@ -102,7 +95,7 @@ searchBar.addEventListener('keyup', (e) => {
       character.name.includes(searchTarget)
     );
   });
-  console.log(filteredCharacters)
+  // console.log(filteredCharacters)
   charactersList(filteredCharacters);
 })
 
@@ -111,8 +104,7 @@ searchBar.addEventListener('keyup', (e) => {
 const onlyAlive = printCharacters.filter((character) => {
   return character.status === "Alive";
 });
-console.log(onlyAlive);
-
+// console.log(onlyAlive);
 const checkAlive = document.querySelector('#aliveCheck');
 checkAlive.addEventListener('click', (event) => {
   if (event.target.checked === true) {
@@ -127,8 +119,7 @@ checkAlive.addEventListener('click', (event) => {
 const onlyDead = printCharacters.filter((character) => {
   return character.status === "Dead";
 });
-console.log(onlyDead);
-
+// console.log(onlyDead);
 const checkDead = document.querySelector('#deadCheck');
 checkDead.addEventListener('click', (event) => {
   if (event.target.checked === true) {
@@ -143,7 +134,7 @@ checkDead.addEventListener('click', (event) => {
 const unkStatus = printCharacters.filter((character) => {
   return character.status === "unknown";
 });
-console.log(unkStatus);
+// console.log(unkStatus);
 const checkUnkStatus = document.querySelector('#unknownStatusCheck');
 checkUnkStatus.addEventListener('click', (event) => {
   if (event.target.checked === true) {
@@ -158,7 +149,7 @@ checkUnkStatus.addEventListener('click', (event) => {
 const onlyHuman = printCharacters.filter((character) => {
   return character.species === "Human";
 });
-console.log(onlyHuman);
+// console.log(onlyHuman);
 const checkHuman = document.querySelector('#humanCheck');
 checkHuman.addEventListener('click', (event) => {
   if (event.target.checked === true) {
@@ -173,7 +164,7 @@ checkHuman.addEventListener('click', (event) => {
 const onlyAlien = printCharacters.filter((character) => {
   return character.species === "Alien";
 });
-console.log(onlyAlien);
+// console.log(onlyAlien);
 const checkAlien = document.querySelector('#alienCheck');
 checkAlien.addEventListener('click', (event) => {
   if (event.target.checked === true) {
@@ -188,7 +179,7 @@ checkAlien.addEventListener('click', (event) => {
 const unkSpecie = printCharacters.filter((character) => {
   return character.species === "unknown";
 });
-console.log(unkSpecie);
+// console.log(unkSpecie);
 const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
 checkUnkSpecie.addEventListener('click', (event) => {
   if (event.target.checked === true) {
