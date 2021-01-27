@@ -407,33 +407,6 @@ font-size: 20px;
   cursor: pointer;
 }
 
-/*----------------------NAV----------------------*/
-/* 
-nav{
-  font: size 1.5em;
-  display: flex;
-  justify-content: space-between;
-} */
-ul{
-  border:#12B0C9;
-  flex:1;
-  max-width: 50%;
-  display:flex;
-  justify-content:space-evenly
-}
-nav ul li {
-list-style: none;
-margin: 0 5px;
-}
-nav ul li a {
-  text-decoration: none;
-}
-nav ul li .active, nav ul li a:hover {
-  background: #009BDB;
-  color: #fff;
-  border-radius: 25px;
-}
-
 /*----------------------RESPONSIVE----------------------*/
 /*@media only screen 
   and (min-device-width: 375px) 
@@ -441,61 +414,5 @@ nav ul li .active, nav ul li a:hover {
   and (-webkit-min-device-pixel-ratio: 2) { 
   body{
     background-image: url("img/wellcome-iphone.jpg");
-  }
-  .welcomeText{
-    margin-top: 12vh;
-    font-size: 8vw;
-  }
-  .logoText{
-    font-size: 8vw;
-    width: 100%;
-  }
-  img.logorick{
-    width: 100%;
-  }
-  .exploreButton {
-    font-size: 58px;
-    color: #D6E3FB;
-    height: 294.023421px;
-    width: 271.810726px;
-    -webkit-text-stroke-color: #092740;
-    position: relative;
-  }
-  .letsExploreButton{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: absolute;
-    bottom: 302px;
-    right: -56%;
-  }
-
-  /----------------------SEGUNDA PÁGINA----------------------/
-  .charactersScreen{
-    background-image: url("img/wall-iphone.jpg");
-  }
-  .charactersTittle {
-    font-size: 47px;
-    margin: 0 auto;
-  }
-  .backgroundTittle{
-    width: 281px;
-    margin: 0 auto;
-  }
-  .order-tittle{
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-  }
-  select{
-    font-size: 33px;
-    width: 170px;
-    height: 63px;
-    margin-left: 26px;
-  }
-  .photo {
-    height: 230px;
-    width: 230px;
   }
 } */
