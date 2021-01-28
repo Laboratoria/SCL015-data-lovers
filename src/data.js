@@ -4,6 +4,7 @@
 };*/
 
  export const filterTypes= (pokemons,type)=>{
+   
 let pokemonFilter=[]
     for (let index=0;index<pokemons.length;index++){
         let types= pokemons[index].type;

@@ -46,8 +46,12 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
        smallPokeball.setAttribute('class', "miniP");
        spacePokeballs.appendChild(smallPokeball);
 
-
+       smallPokeball.addEventListener('click',()=>{
+         let filterPokemon= filterTypes(pokemons, event.target.value);
+         console.log(filterPokemon);
+       })
       });
+
       let backButton= document.createElement('button');
       backButton.type='button';
       backButton.setAttribute('id',"back");
