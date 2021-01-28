@@ -5,13 +5,6 @@ const pokemonS= [
   {type:'grass',name: "ivysaur"},
   {type:'poison',name: "venusaur"}]
 
-
-//   it('returns `example`', () => {
-//     expect(example()).toBe('example');
-//   });
-// });
-
-
 describe('filterTypes',()  => {
   it('is a function', () => {
     expect(typeof filterTypes).toBe('function');
@@ -21,3 +14,15 @@ describe('filterTypes',()  => {
     expect(filterTypes(pokemonS)).toEqual([{type:'water',name: "bulbasaur"}]);
   });
 });
+
+
+/*describe('order of pokemons',()  => {
+  it('is a function', () => {
+    expect(typeof filterTypes).toBe('function');
+  });
+
+  it('filter types of pokemons', () => {
+    expect(filterTypes(pokemonS)).toEqual([{type:'water',name: "bulbasaur"}]);
+  });
+});
+*/
