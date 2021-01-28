@@ -11,7 +11,7 @@ export const  = () => {s
 // creo las funciones para filtrar y ordenar
 //en esta función queremos que al presionar pokebola de agua, apareceran los de tipo agua
 
- export const filterTypes= (pokemons)=>{
+ export const filterTypes= (pokemons,type)=>{
 // espacio que contiene los distintos tipos (los elementos)
 // let space = "";
 let pokemonfilter=[]
@@ -19,7 +19,7 @@ let pokemonfilter=[]
         let types= pokemons[index].type;
         
         //console.log (typeof(position));
-        if (types.includes("type")){
+        if (types.includes(type)){
           pokemonfilter.push(pokemons[index]) 
           // console.log(pokemons[index]);
         }

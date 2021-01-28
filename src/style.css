@@ -284,52 +284,52 @@ p{
 #normal{
     background-image: url(image/NORMAL.png);
 }
-#acero{
+#steel{
     background-image: url(image/ACERO.png);
 }
-#hada{
+#fairy{
     background-image: url(image/HADA.png);
 }
-#hielo{
+#ice{
     background-image: url(image/HIELO.png);
 }
-#lucha{
+#fighting{
     background-image: url(image/LUCHA.png);
 }
-#planta{
+#grass{
     background-image: url(image/PLANTA.png);
 }
-#posion{
+#poison{
     background-image: url(image/POISON.png);
 }
-#psiquico{
+#psychic{
     background-image: url(image/PSIQUICO.png);
 }
-#roca{
+#rock{
     background-image: url(image/ROCA.png);
 }
-#siniestro{
+#dark{
     background-image: url(image/SINIESTRO.png);
 }
-#tierra{
+#ground{
     background-image: url(image/TIERRA.png);
 }
-#volador{
+#flying{
     background-image: url(image/VOLADOR.png);
 }
-#agua{
+#water{
     background-image: url(image/AGUA.png);
 }
-#bicho{
+#bug{
     background-image: url(image/BICHO.png);
 }
 #dragon{
     background-image: url(image/DRAGON.png);
 }
-#electrico{
+#electric{
     background-image: url(image/ELECTRICO.png);
 }
-#fantasma{
+#ghost{
     background-image: url(image/FANTASMA.png);
 }
 .footer {
