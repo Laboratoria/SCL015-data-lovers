@@ -19,9 +19,8 @@ nav#navrick {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 30px 0;
   width: 100%;
-  background: rgba(0,0,0,0.15);
 }
 
 nav#navrick .searchwrapper {
@@ -180,7 +179,7 @@ select{
   padding: 0 10px;
   color:rgba(255, 255, 255, 1);
   background: rgba(4, 86, 124, 0.44);
-  width: 300px;
+  width: 200px;
   height: 39px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
@@ -329,10 +328,10 @@ font-size: 20px;
 }
 
 .charactersContainer{
-  width: 85%;
+  width: 80%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
   color: #091332;
@@ -401,18 +400,76 @@ font-size: 20px;
 }
 
 .returnButton {
-  padding-left: 50px;
+  padding-left: 20px;
+  width: 30%;
 }
 .returnButton:hover{
   cursor: pointer;
 }
 
-/*----------------------RESPONSIVE----------------------*/
-/*@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-  body{
-    background-image: url("img/wellcome-iphone.jpg");
+/* ----------------------RESPONSIVE----------------------
+
+@media  only screen and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .welcomeScreen {
+    background: url("img/welcome-iphone.jpg");
+    background-size: cover;
   }
+
+  .welcomeText{
+    min-height: 40%;
+    width: 87%;
+  }
+
+  .logoText{
+    font-size: 10vw;
+  }
+  
+  img.logorick {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .exploreButton{
+    font-size: 55px;
+    height: 260px;
+    width: 260px;
+  }
+  
+  .letsExploreButton{
+    right: 2.8%;
+    bottom: 19%;
+  }
+
+/*----------------------SEGUNDA PÁGINA----------------------*/
+
+  .returnButton {
+    padding-left: 4%;
+    width: 60%;
+  }
+  
+  .searchStyle{
+    font-size: 32px;
+    padding: 0 10px;
+    color:rgba(255, 255, 255, 1);
+    background: rgba(4, 86, 124, 0.44);
+    width: 287px;
+    height: 60px;
+    margin-left: -7vh;
+  }
+
+  #searchBar:focus {
+    background:rgba(31, 166, 230, 0.44);
+    
+  }
+
+
+
+
+
+
+
+
 } */

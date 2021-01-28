@@ -69,20 +69,17 @@ select.addEventListener("change", function () {
     listOfCharacters.innerHTML = "";
     let array = orderFunctions.orderAZ(printCharacters);
     printCharacters = array;
-    charactersList(printCharacters);
-    
+    charactersList(printCharacters); 
   }
   else if (select.value === "ZAorder") {
     let array = orderFunctions.orderZA(printCharacters);
     printCharacters = array;
     charactersList(printCharacters);
-    
   }
   else {
     let array = orderFunctions.orderDefault(printCharacters);
     printCharacters = array;
-    charactersList(printCharacters)
-    
+    charactersList(printCharacters);
   }
 });
 
@@ -101,78 +98,73 @@ searchBar.addEventListener('keyup', (e) => {
 
 //------------------CHECKSQUARE PARA FILTRAR----------------
 
-const onlyAlive = printCharacters.filter((character) => {
-  return character.status === "Alive";
-});
-// console.log(onlyAlive);
 const checkAlive = document.querySelector('#aliveCheck');
 checkAlive.addEventListener('click', (event) => {
   if (event.target.checked === true) {
+    listOfCharacters.innerHTML = "";
+    let status = "Alive";
+    let onlyAlive = orderFunctions.statusFunction(printCharacters, status);
     charactersList(onlyAlive);
   } else {
-    charactersList(printCharacters)
+    charactersList(printCharacters);
   }
 });
 
-const onlyDead = printCharacters.filter((character) => {
-  return character.status === "Dead";
-});
-// console.log(onlyDead);
 const checkDead = document.querySelector('#deadCheck');
 checkDead.addEventListener('click', (event) => {
   if (event.target.checked === true) {
+    listOfCharacters.innerHTML = "";
+    let status = "Dead";
+    let onlyDead = orderFunctions.statusFunction(printCharacters, status);
     charactersList(onlyDead);
   } else {
     charactersList(printCharacters)
   }
 });
 
-const unkStatus = printCharacters.filter((character) => {
-  return character.status === "unknown";
-});
-// console.log(unkStatus);
 const checkUnkStatus = document.querySelector('#unknownStatusCheck');
 checkUnkStatus.addEventListener('click', (event) => {
   if (event.target.checked === true) {
-    charactersList(unkStatus);
+    listOfCharacters.innerHTML = "";
+    let status = "unknown";
+    let onlyUnkStatus = orderFunctions.statusFunction(printCharacters, status);
+    charactersList(onlyUnkStatus);
   } else {
     charactersList(printCharacters)
   }
 });
 
-const onlyHuman = printCharacters.filter((character) => {
-  return character.species === "Human";
-});
-// console.log(onlyHuman);
 const checkHuman = document.querySelector('#humanCheck');
 checkHuman.addEventListener('click', (event) => {
   if (event.target.checked === true) {
+    listOfCharacters.innerHTML = "";
+    let specie = "Human";
+    let onlyHuman = orderFunctions.specieFunction(printCharacters, specie);
     charactersList(onlyHuman);
   } else {
     charactersList(printCharacters)
   }
 });
 
-const onlyAlien = printCharacters.filter((character) => {
-  return character.species === "Alien";
-});
-// console.log(onlyAlien);
 const checkAlien = document.querySelector('#alienCheck');
 checkAlien.addEventListener('click', (event) => {
   if (event.target.checked === true) {
+    listOfCharacters.innerHTML = "";
+    let specie = "Alien";
+    let onlyAlien = orderFunctions.specieFunction(printCharacters, specie);
     charactersList(onlyAlien);
   } else {
     charactersList(printCharacters)
   }
 });
 
-const unkSpecie = printCharacters.filter((character) => {
-  return character.species === "unknown";
-});
-// console.log(unkSpecie);
+
 const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
 checkUnkSpecie.addEventListener('click', (event) => {
   if (event.target.checked === true) {
+    listOfCharacters.innerHTML = "";
+    let specie = "unknown";
+    let unkSpecie = orderFunctions.specieFunction(printCharacters, specie);
     charactersList(unkSpecie);
   } else {
     charactersList(printCharacters)

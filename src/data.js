@@ -40,7 +40,22 @@ const orderFunctions = {
     // console.log(3, orderedResults);
     return orderedResults;
   },
-  
+
+  statusFunction(printCharacters, status){
+    let onlyStatus = printCharacters.filter((character) => {
+    return character.status === status;
+    });
+    // console.log(onlyStatus);
+    return onlyStatus;
+  },
+
+  specieFunction(printCharacters, specie){
+    let onlySpecie = printCharacters.filter((character) => {
+    return character.specie === specie;
+    });
+    console.log(onlySpecie);
+    return onlySpecie;
+  }
 }
 
 export default orderFunctions
