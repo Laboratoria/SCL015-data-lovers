@@ -49,13 +49,12 @@ const orderFunctions = {
     return onlyStatus;
   },
 
-  specieFunction(printCharacters, specie){
-    let onlySpecie = printCharacters.filter((character) => {
-    return character.specie === specie;
+  specieFunction(printCharacters, species){
+    let onlySpecies = printCharacters.filter((character) => {
+    return character.species === species;
     });
-    console.log(onlySpecie);
-    return onlySpecie;
+    console.log(onlySpecies);
+    return onlySpecies;
   }
 }
-
 export default orderFunctions

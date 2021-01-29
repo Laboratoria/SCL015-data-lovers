@@ -185,7 +185,10 @@ select{
   box-sizing: border-box;
   border-radius: 6px;
 }
-
+#searchBar:focus {
+  background:rgba(43, 150, 199, 0.664);
+  
+}
 .filtersStyle{
   font-size: 24px;
   color:rgba(255, 255, 255, 1);
@@ -407,7 +410,7 @@ font-size: 20px;
   cursor: pointer;
 }
 
-/* ----------------------RESPONSIVE----------------------
+/* /----------------------RESPONSIVE----------------------/ */
 
 @media  only screen and (min-device-width: 375px) 
         and (max-device-width: 667px) 
@@ -443,7 +446,7 @@ font-size: 20px;
     bottom: 19%;
   }
 
-/*----------------------SEGUNDA PÁGINA----------------------*/
+/* /----------------------SEGUNDA PÁGINA----------------------/ */
 
   .returnButton {
     padding-left: 4%;
@@ -452,17 +455,69 @@ font-size: 20px;
   
   .searchStyle{
     font-size: 32px;
-    padding: 0 10px;
-    color:rgba(255, 255, 255, 1);
-    background: rgba(4, 86, 124, 0.44);
-    width: 287px;
-    height: 60px;
-    margin-left: -7vh;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    margin-left: -8vh;
   }
 
   #searchBar:focus {
-    background:rgba(31, 166, 230, 0.44);
-    
+    background:rgba(155, 213, 240, 0.986);
+    color: rgb(4,97,148);
+  }
+
+  .backgroundTittle {
+    width: 370px;
+    height: 82px;
+    margin-left: 43%;
+  }
+
+  .charactersTittle {
+  font-size: 55px;
+  }
+
+  .charactersScreen{
+    background-image: url("img/wall-iphone.jpg");
+  }
+
+  .charactersContainer{
+    width: 85%;
+  }
+  
+  .cardContainer{
+    width: 280px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .frontCard {
+    height: 400px;
+  }
+
+  .frontCard .nametag #nameChar {
+    margin: 0 auto;
+    line-height: 34px;
+    font-size: 33px;
+  }
+
+  .photo {
+    height: 400px;
+    width: 100%;
+  }
+
+  .backCard {
+    height: 400px;
+  }
+
+  .backCard .infoChar p{
+    font-size: 40px;
+  }
+
+  .name-backcard{
+    height: 150px;
+    font-size: 36px;
+    margin: 1px;
+    padding: 15px 15px;
   }
 
 
@@ -472,4 +527,17 @@ font-size: 20px;
 
 
 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}

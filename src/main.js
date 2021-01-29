@@ -138,8 +138,8 @@ const checkHuman = document.querySelector('#humanCheck');
 checkHuman.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     listOfCharacters.innerHTML = "";
-    let specie = "Human";
-    let onlyHuman = orderFunctions.specieFunction(printCharacters, specie);
+    let species = "Human";
+    let onlyHuman = orderFunctions.specieFunction(printCharacters, species);
     charactersList(onlyHuman);
   } else {
     charactersList(printCharacters)
@@ -150,8 +150,8 @@ const checkAlien = document.querySelector('#alienCheck');
 checkAlien.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     listOfCharacters.innerHTML = "";
-    let specie = "Alien";
-    let onlyAlien = orderFunctions.specieFunction(printCharacters, specie);
+    let species = "Alien";
+    let onlyAlien = orderFunctions.specieFunction(printCharacters, species);
     charactersList(onlyAlien);
   } else {
     charactersList(printCharacters)
@@ -163,8 +163,8 @@ const checkUnkSpecie = document.querySelector('#unknownSpecieCheck');
 checkUnkSpecie.addEventListener('click', (event) => {
   if (event.target.checked === true) {
     listOfCharacters.innerHTML = "";
-    let specie = "unknown";
-    let unkSpecie = orderFunctions.specieFunction(printCharacters, specie);
+    let species = "unknown";
+    let unkSpecie = orderFunctions.specieFunction(printCharacters, species);
     charactersList(unkSpecie);
   } else {
     charactersList(printCharacters)
