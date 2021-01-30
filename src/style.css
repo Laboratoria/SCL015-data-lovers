@@ -447,78 +447,125 @@ font-size: 20px;
   }
 
 /* /----------------------SEGUNDA PÁGINA----------------------/ */
+.returnButton {
+  padding-left: 4%;
+  width: 60%;
+}
 
-  .returnButton {
-    padding-left: 4%;
-    width: 60%;
-  }
-  
-  .searchStyle{
-    font-size: 32px;
-    text-align: center;
-    width: 300px;
-    height: 70px;
-    margin-left: -8vh;
-  }
+.searchStyle{
+  font-size: 32px;
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  margin-left: -8vh;
+}
 
-  #searchBar:focus {
-    background:rgba(155, 213, 240, 0.986);
-    color: rgb(4,97,148);
-  }
+#searchBar:focus {
+  background:rgba(155, 213, 240, 0.986);
+  color: rgb(4,97,148);
+}
 
-  .backgroundTittle {
-    width: 370px;
-    height: 82px;
-    margin-left: 43%;
-  }
+.backgroundTittle {
+  width: 370px;
+  height: 82px;
+  margin-left: 43%;
+}
 
-  .charactersTittle {
-  font-size: 55px;
-  }
+.charactersTittle {
+font-size: 55px;
+}
 
-  .charactersScreen{
-    background-image: url("img/wall-iphone.jpg");
-  }
+.charactersScreen{
+  background-image: url("img/wall-iphone.jpg");
+}
 
-  .charactersContainer{
-    width: 85%;
-  }
-  
-  .cardContainer{
-    width: 280px;
-    height: 400px;
-    margin-bottom: 30px;
-  }
+.charactersContainer{
+  width: 85%;
+  padding: 5%;
+}
 
-  .frontCard {
-    height: 400px;
-  }
+.cardContainer{
+  width: 280px;
+  height: 400px;
+  margin-bottom: 30px;
+}
 
-  .frontCard .nametag #nameChar {
-    margin: 0 auto;
-    line-height: 34px;
-    font-size: 33px;
-  }
+.frontCard {
+  height: 400px;
+}
 
-  .photo {
-    height: 400px;
-    width: 100%;
-  }
+.frontCard .nametag #nameChar {
+  margin: 0 auto;
+  line-height: 34px;
+  font-size: 33px;
+  padding: 2%;
+}
 
-  .backCard {
-    height: 400px;
-  }
+.photo {
+  height: 400px;
+  width: 100%;
+}
 
-  .backCard .infoChar p{
-    font-size: 40px;
-  }
+.backCard {
+  height: 400px;
+}
 
-  .name-backcard{
-    height: 150px;
-    font-size: 36px;
-    margin: 1px;
-    padding: 15px 15px;
-  }
+.backCard .infoChar p{
+  font-size: 40px;
+}
+
+.name-backcard{
+  height: 150px;
+  font-size: 36px;
+  margin: 1px;
+  padding: 15px 15px;
+}
+
+.wrap-filter-order{
+  width: 300px;
+}
+
+.order-tittle{
+  margin-bottom: 75px;
+  margin-top: 53px;
+}
+
+select{
+  font-size: 50px;
+  width: 234px;
+  height: 90px;
+  margin-bottom: 50px;
+  padding: 3%;
+}
+
+.selectStyle {
+  margin-top: 18vh;
+  margin-bottom: 36%;
+}
+
+.filtersStyle{
+  font-size: 50px;
+  width: 234px;
+  height: 90px;
+  margin-bottom: 20%;
+  padding: 3%;
+}
+
+.stateStyle{
+  font-size: 38px;
+  width: 234px;
+  height: 234px;
+  margin-bottom: 30px;
+  padding: 4%;
+}
+
+.specieStyle{
+  font-size: 38px;
+  width: 234px;
+  height: 234px;
+  margin-bottom: 30px;
+  padding: 4%;
+}
 
 
 
@@ -532,12 +579,4 @@ font-size: 20px;
 
 
 
-
-
-
-
-
-
-
-  
 }

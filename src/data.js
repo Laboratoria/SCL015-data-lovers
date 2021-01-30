@@ -53,7 +53,7 @@ const orderFunctions = {
     let onlySpecies = printCharacters.filter((character) => {
     return character.species === species;
     });
-    console.log(onlySpecies);
+    // console.log(onlySpecies);
     return onlySpecies;
   }
 }
