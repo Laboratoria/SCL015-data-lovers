@@ -87,15 +87,9 @@ select.addEventListener("change", function () {
 
 searchBar.addEventListener('keyup', (e) => {
   const searchTarget = e.target.value;
-  const filteredCharacters = printCharacters.filter( character => {
-    return  (
-      character.name.includes(searchTarget)
-    );
-  });
-  // console.log(filteredCharacters)
-  charactersList(filteredCharacters);
-})
-
+  let searchData = orderFunctions.searchFunction(printCharacters, searchTarget);
+  charactersList(searchData);
+});
 //------------------CHECKSQUARE PARA FILTRAR----------------
 
 const checkAlive = document.querySelector('#aliveCheck');

@@ -55,6 +55,11 @@ const orderFunctions = {
     });
     // console.log(onlySpecies);
     return onlySpecies;
+  },
+  
+  searchFunction(printCharacters, searchValue) {
+    let searchName = printCharacters.filter(e => e.name.includes(searchValue));
+    return searchName;
   }
 }
 export default orderFunctions
