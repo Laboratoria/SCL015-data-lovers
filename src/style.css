@@ -1,0 +1,213 @@
+body {
+    background-image: url("image/fondo.png");
+    background-repeat: round; /* hace que no se repita la imagen */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display : flex;
+    flex-direction: column;
+    /* width: 100vw;
+    height: 100vh; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.contenedor {
+    width: 100wh;
+    /* max-width: 1000px; */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+#logo {
+    width: 346px;
+    height: 100px;
+}
+#pokemonesMain {
+    width: 346px;
+    height: 120px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+}
+
+.welcome-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h2{
+    font-size: 28px; /*CAMBIO */
+    text-align: center;
+    margin: 20px 254px 10px;
+    box-sizing: border-box;
+
+}
+
+.welcome-inferior {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin-right: 380px;
+    align-items: center;
+}
+
+figure {
+    display: flex;
+}
+
+#pikachu {
+    display: flex;
+    width: 243px;
+    height: 211px;
+    margin-left: 50px;
+    margin-right: 180px;
+}
+
+button{
+    width: 203px;
+    height: 56px;
+    margin-right: 190px;
+    left: calc(50% - 299px/2 + 0.5px);
+    top: calc(50% - 80px/2 + 288px);
+    background: rgba(19, 100, 222, 0.67);
+    border: 5px solid rgba(250, 225, 94, 0.91);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color:  rgba(250, 225, 94, 0.91);
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color:white;
+    height: 10vh;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+/* formato responsive para celular galaxy 8 plus */
+@media screen and (max-width: 415px) {
+    
+    header {
+        height: 23vh;
+        margin-bottom: 10vh;
+    }
+    figure {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    #pokemonesMain {
+        width: 253px;
+    }
+
+    h2 {
+        font-size: 19px;
+        margin: 20px 0px;
+    }
+    .welcome {
+        height: 44vh
+    }
+    
+    .welcome-inferior{
+        margin: 50px 0px 0px;
+        height: 13vh;
+    }
+    button {
+        margin:0;
+        width: 165px;
+    }
+    #pikachu {
+        display: none;
+    }
+    footer {
+        height: 10vh;
+        width: 100%;
+    }
+    footer p {
+        margin: 0px;
+        font-size: 13px;
+    }
+}
+
+/* formato responsive para table hay que colocar max y min */  
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    header {
+        height: 15vh;
+        justify-content: center;
+    }
+    section {
+        height: 34vh;
+    }
+    
+    #logo {
+        width: 270px;
+        height: 67px;
+    }
+  
+    #pokeball {
+        width: 168px;
+        height: 100px;
+    }
+    .welcome-information {
+        margin: 0px 47px;
+    }
+    h2{
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+    #pikachu {
+        width: 178px;
+        height: 158px;
+        margin-left: 281px;
+        margin-right: 0px;
+    }
+    footer {
+        height: 7vh;
+        width: 100%;
+    }
+    footer p {
+        margin: 0px;
+        font-size: 13px;
+    }
+}
+/*.welcome-inferior figure{
+    margin-top:100px;       
+}*/
+
+@media screen and (min-width: 1250px) {
+   
+    .welcome-inferior figure {
+        margin-top:100px;       
+    }
+}

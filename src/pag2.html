@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PokeDatos</title>
+    <link rel="stylesheet" href="stylePag2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+
+    <header class="top">
+      <figure>
+        <a href="index.html"><img src="image/logo Pokedatos.png" alt="logoPokedatos" id="logo"></a>
+        <a href="pag2.html"><img src="image/pokebola.png" alt="pokeball" id="pokeBall"></a>
+      </figure>
+      <a href="index.html">
+        <span class="iconify" data-inline="false" data-icon="ant-design:home-outlined"></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="opcion">  
+        <input type="text" id="search" placeholder="&#xf002; Buscar por Nombre"/>
+        
+        <select id="orderPokemon" class="fa" >
+          <option value="0" selected disabled> &#xf160; Ordenar por:</option>
+          <option value="1">Ascendente (A-Z)</option>
+          <option value="2">Descendente (Z-A)</option>
+        </select>
+
+        <select id="filterPokemon" class="fa">
+          <option value="0" selected disabled> &#xf0b0; Tipos</option>
+          <option value="normal">Normal</option>
+          <option value="fire">Fuego</option>
+          <option value="water">Agua</option>
+          <option value="grass">Planta</option>
+          <option value="electric">Electrico</option>
+          <option value="ice">Hielo</option>
+          <option value="fighting">Lucha</option>
+          <option value="poison">Veneno</option>
+          <option value="ground">Tierra</option>
+          <option value="flying">Volador</option>
+          <option value="psychic">Psiquico</option>
+          <option value="bug">Bicho</option>
+          <option value="rock">Roca</option>
+          <option value="ghost">Fantasma</option>
+          <option value="dragon">Dragón</option>
+          <option value="dark">Siniestro</option>
+          <option value="steel">Acero</option>
+          <option value="fairy">Hada</option>
+        </select>
+      </section>
+        <!--contenedor donde van a ir el calculo-->
+      <section id="percentageSeccion">
+        <div id="percentageAll">
+          <div id="percentage">
+          </div>
+          <div id="statistics">
+            <button class="statistics"><a href="pag3.html">Ver Estadisticas</a></button>
+          </div>
+        </div>
+      </section>
+      
+      <!--contenedor donde van a ir todos los pokemones-->
+      <section id="dataList">
+      </section>
+
+        <!--contenedor del modal-->
+      <section id="modal" class="modal">
+
+      </section>
+    </main>
+    <footer>
+      <p>Create by Erika Arango and Luzciel Montesinos SCL15</p>
+    </footer>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>    
+    <script src="main.js" type="module"></script> 
+  </body>
+</html>
