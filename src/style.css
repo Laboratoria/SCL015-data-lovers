@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-/*----------------------PRIMERA PÁGINA----------------------*/
+/*----------------------FIRST PAGE----------------------*/
 body{
   font-family: 'Rum Raisin', sans-serif;
   position: relative;
@@ -118,7 +118,7 @@ img.logorick{
   outline: 0; 
 }
 
-/*----------------------SEGUNDA PÁGINA----------------------*/
+/*----------------------SECOND PAGE----------------------*/
 .charactersScreen{
   background-image: url("img/blue-background.png");
   background-attachment: fixed;
@@ -186,9 +186,10 @@ select{
   border-radius: 6px;
 }
 #searchBar:focus {
-  background:rgba(43, 150, 199, 0.664);
-  
+  background:rgba(155, 213, 240, 0.986);
+  color: rgb(4,97,148);
 }
+
 .filtersStyle{
   font-size: 24px;
   color:rgba(255, 255, 255, 1);
@@ -231,6 +232,7 @@ select{
 
 .alignCheck{
   width: 40%;
+  height: 15%;
 }
 
 .cardContainer:hover .cardContainer-inner {
@@ -410,7 +412,7 @@ font-size: 20px;
   cursor: pointer;
 }
 
-/* /----------------------RESPONSIVE----------------------/ */
+/* /----------------------RESPONSIVE PHONE----------------------/ */
 
 @media  only screen and (min-device-width: 375px) 
         and (max-device-width: 667px) 
@@ -446,137 +448,282 @@ font-size: 20px;
     bottom: 19%;
   }
 
-/* /----------------------SEGUNDA PÁGINA----------------------/ */
-.returnButton {
-  padding-left: 4%;
-  width: 60%;
+/* /----------------------SECOND PAGE----------------------/ */
+  .returnButton {
+    padding-left: 4%;
+    width: 60%;
+  }
+
+  .searchStyle{
+    font-size: 32px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    margin-left: -8vh;
+  }
+
+  #searchBar:focus {
+    background:rgba(155, 213, 240, 0.986);
+    color: rgb(4,97,148);
+  }
+
+  .backgroundTittle {
+    width: 370px;
+    height: 82px;
+    margin-left: 43%;
+  }
+
+  .charactersTittle {
+  font-size: 55px;
+  }
+
+  .charactersScreen{
+    background-image: url("img/wall-iphone.jpg");
+  }
+
+  .charactersContainer{
+    width: 85%;
+    padding: 5%;
+  }
+
+  .cardContainer{
+    width: 280px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .frontCard {
+    height: 400px;
+  }
+
+  .frontCard .nametag #nameChar {
+    margin: 0 auto;
+    line-height: 34px;
+    font-size: 33px;
+    padding: 2%;
+  }
+
+  .photo {
+    height: 400px;
+    width: 100%;
+  }
+
+  .backCard {
+    height: 400px;
+  }
+
+  .backCard .infoChar p{
+    font-size: 40px;
+  }
+
+  .name-backcard{
+    height: 150px;
+    font-size: 36px;
+    margin: 1px;
+    padding: 15px 15px;
+  }
+
+  .wrap-filter-order{
+    width: 300px;
+  }
+
+  .order-tittle{
+    margin-bottom: 75px;
+    margin-top: 53px;
+  }
+
+  select{
+    font-size: 50px;
+    width: 234px;
+    height: 90px;
+    margin-bottom: 50px;
+    padding: 3%;
+  }
+
+  .selectStyle {
+    margin-top: 18vh;
+    margin-bottom: 36%;
+  }
+
+  .filtersStyle{
+    font-size: 50px;
+    width: 234px;
+    height: 90px;
+    margin-bottom: 20%;
+    padding: 3%;
+  }
+
+  .stateStyle{
+    font-size: 38px;
+    width: 234px;
+    height: 234px;
+    margin-bottom: 30px;
+    padding: 4%;
+  }
+
+  .specieStyle{
+    font-size: 38px;
+    width: 234px;
+    height: 234px;
+    margin-bottom: 30px;
+    padding: 4%;
+  }
 }
 
-.searchStyle{
-  font-size: 32px;
-  text-align: center;
-  width: 300px;
-  height: 70px;
-  margin-left: -8vh;
-}
+/* /----------------------RESPONSIVE TABLET----------------------/ */
 
-#searchBar:focus {
-  background:rgba(155, 213, 240, 0.986);
-  color: rgb(4,97,148);
-}
+@media  only screen and (min-device-width: 667px) 
+        and (max-device-width: 768px) 
+        and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .welcomeScreen {
+    background: url("img/welcome-ipad.jpg");
+    background-size: cover;
+  }
 
-.backgroundTittle {
-  width: 370px;
-  height: 82px;
-  margin-left: 43%;
-}
+  .welcomeText{
+    min-height: 42%;
+    width: 80%;
+  }
 
-.charactersTittle {
-font-size: 55px;
-}
+  .logoText{
+    font-size: 9vw;
+  }
+  
+  img.logorick {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.charactersScreen{
-  background-image: url("img/wall-iphone.jpg");
-}
+  .exploreButton{
+    font-size: 45px;
+    height: 230px;
+    width: 230px;
+  }
+  
+  .letsExploreButton{
+    right: 2.5%;
+    bottom: 28%;
+  }
 
-.charactersContainer{
-  width: 85%;
-  padding: 5%;
-}
+/* /----------------------SECOND PAGE----------------------/ */
+  .returnButton {
+    padding-left: 4%;
+    width: 50%;
+  }
 
-.cardContainer{
-  width: 280px;
-  height: 400px;
-  margin-bottom: 30px;
-}
+  .searchStyle{
+    font-size: 28px;
+    text-align: center;
+    width: 280px;
+    height: 60px;
+    margin-left: -10vh;
+  }
 
-.frontCard {
-  height: 400px;
-}
+  #searchBar:focus {
+    background:rgba(155, 213, 240, 0.986);
+    color: rgb(4,97,148);
+  }
 
-.frontCard .nametag #nameChar {
-  margin: 0 auto;
-  line-height: 34px;
-  font-size: 33px;
-  padding: 2%;
-}
+  .backgroundTittle {
+    width: 330px;
+    height: 70px;
+    margin-left: 43%;
+  }
 
-.photo {
-  height: 400px;
-  width: 100%;
-}
+  .charactersTittle {
+  font-size: 45px;
+  }
 
-.backCard {
-  height: 400px;
-}
+  .charactersScreen{
+    background-image: url("img/wall-ipad.jpg");
+  }
 
-.backCard .infoChar p{
-  font-size: 40px;
-}
+  .charactersContainer{
+    width: 85%;
+    padding: 5%;
+  }
 
-.name-backcard{
-  height: 150px;
-  font-size: 36px;
-  margin: 1px;
-  padding: 15px 15px;
-}
+  .cardContainer{
+    width: 180px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
 
-.wrap-filter-order{
-  width: 300px;
-}
+  .frontCard {
+    height: 300px;
+  }
 
-.order-tittle{
-  margin-bottom: 75px;
-  margin-top: 53px;
-}
+  .frontCard .nametag #nameChar {
+    margin: 0 auto;
+    line-height: 32px;
+    font-size: 25px;
+    padding: 3%;
+  }
 
-select{
-  font-size: 50px;
-  width: 234px;
-  height: 90px;
-  margin-bottom: 50px;
-  padding: 3%;
-}
+  .photo {
+    height: 300px;
+    width: 100%;
+  }
 
-.selectStyle {
-  margin-top: 18vh;
-  margin-bottom: 36%;
-}
+  .backCard {
+    height: 300px;
+  }
 
-.filtersStyle{
-  font-size: 50px;
-  width: 234px;
-  height: 90px;
-  margin-bottom: 20%;
-  padding: 3%;
-}
+  .backCard .infoChar p{
+    font-size: 25px;
+  }
 
-.stateStyle{
-  font-size: 38px;
-  width: 234px;
-  height: 234px;
-  margin-bottom: 30px;
-  padding: 4%;
-}
+  .name-backcard{
+    height: 110px;
+    font-size: 25px;
+    margin: 4px;
+    padding: 8px 8px;
+  }
 
-.specieStyle{
-  font-size: 38px;
-  width: 234px;
-  height: 234px;
-  margin-bottom: 30px;
-  padding: 4%;
-}
+  .wrap-filter-order{
+    width: 300px;
+  }
 
+  .order-tittle{
+    margin-bottom: 33px;
+    margin-top: 25px;
+  }
 
+  select{
+    font-size: 35px;
+    width: 220px;
+    height: 70px;
+    margin-bottom: -10%;
+    padding: 2%;
+  }
 
+  .selectStyle {
+    margin-top: 29vh;
+    margin-bottom: 35%;
+  }
 
+  .filtersStyle{
+    font-size: 35px;
+    width: 220px;
+    height: 70px;
+    margin-bottom: 15%;
+    padding: 2%;
+  }
 
+  .stateStyle{
+    font-size: 35px;
+    width: 220px;
+    height: 234px;
+    margin-bottom: 25px;
+    padding: 2%;
+  }
 
-
-
-
-
-
-
-
+  .specieStyle{
+    font-size: 35px;
+    width: 220px;
+    height: 234px;
+    margin-bottom: 25px;
+    padding: 2%;
+  }
 }
