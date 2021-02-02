@@ -1,8 +1,3 @@
-
-/*export const order= (pokemons) => {s
-  return 'OMG';
-};*/
-
  export const filterTypes= (pokemons,type)=>{
    
 let pokemonFilter=[]
@@ -14,3 +9,21 @@ let pokemonFilter=[]
     }
   return pokemonFilter;  
 };
+export const orderPokemons= (pokemons) => {
+let pokemonOrderAZ=[]
+// let pokemonOrderZA=[]
+    for (let index=0;index<pokemons.length;index++){
+      let order=pokemons[index].name;
+      if (order.sort =="A-Z"){
+        pokemonOrderAZ.push(pokemons[index])
+
+      }
+      return pokemonOrderAZ;
+    
+
+      // else (order.reverse =="A-Z"){        
+      //   pokemonOrderZA.push(pokemons[index])
+      // }
+      // return pokemonOrderZA;
+    }  
+}

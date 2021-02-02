@@ -6,7 +6,7 @@
 h2{
     color: blue;
     margin-left: 25px;
-    font-size: 45px;
+    font-size: 75px;
     display: flex;
     margin-top: -125px;
 }
@@ -35,6 +35,10 @@ body {
     background-color: #00ffff;
     margin: 0%;
     
+}
+.containerTotal {
+    width: 100%;
+    max-width: 1000px; ;
 }
 .page-background {
     background-size: cover;
@@ -73,6 +77,9 @@ body {
     justify-content: space-around;
     justify-content: center;
     flex-direction: row;
+}
+.menuIcon{
+    display: none;
 }
 .navigation ul {
     margin: 0%;
@@ -126,9 +133,9 @@ body {
         justify-content: center;
     }  
 #search{
-    width: 80px;
-    height: 60px;
-    margin-left: 200px;
+    width: 8%;
+    height: 6%;
+    margin-left: 20%;
     padding: 5px;
     transition: 1s;
     outline: none;
@@ -338,7 +345,13 @@ p{
 @media (max-width:767px){
     .navigation {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 1rem;       
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
     }
       .navigation ul li {
         display: block;
@@ -352,12 +365,4 @@ p{
           .navigation ul li a:hover {
             background-color: cyan;
           }
-
-
-
-
-
-
-
-
 }
