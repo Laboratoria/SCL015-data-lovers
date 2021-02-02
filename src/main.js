@@ -1,12 +1,11 @@
 
 import data from './data/pokemon/pokemon.js';
 import {filterTypes} from './data.js';
+import {orderPokemons} from './data.js';
 
 const pokemons = data.pokemon;
 
-console.log(filterTypes);
-
-
+console.log(orderPokemons);
 document.getElementById("allPokemon").addEventListener('click',()=>{
     spacePokeballs.innerHTML = '';
   document.getElementById("btnInitial").style.display= "none";
@@ -57,4 +56,4 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
       backButton.setAttribute('id',"back");
       spacePokeballs.appendChild(backButton);
       
-        });
+});
