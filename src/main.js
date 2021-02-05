@@ -3,27 +3,26 @@ import data from './data/pokemon/pokemon.js';
 import {filterTypes,aZorder} from './data.js';
 const pokemons = data.pokemon;
 
+const print=()=>{
+  for(let i=0;i< pokemons.length;i++){
+  `<div class="cards">${i}
+     <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <
+     img src= "${pokemons[i].img}">
+     <p>${pokemons[i].type}</p>
+  </div>`;  
+   }
+ }
+ console.log(print);
+ document.getElementById("cardContainer").innerHTML+=print;
 
-
-document.getElementById("allPokemon").addEventListener('click',()=>{
-    spacePokeballs.innerHTML = '';
-  document.getElementById("btnInitial").style.display= "none";
-  document.getElementById("cardContainer").style.display= "block"; 
-    for(let i=0;i< pokemons.length;i++){
-        document.getElementById("cardContainer").innerHTML+= `<div class="cards">${i}
-        <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <img src= "${pokemons[i].img}"> <p>${pokemons[i].type}</p></div>`;  
-    }
-     
-// const back= document.createElement("button");
-// back.type="button;"
-// back.addEventListener('click',function() {
-//     back.setAttribute('id',back);
-//     buttonBack.appendChild(back);
-//     window.history.back();
-//     }
-//     ,false);
-});
-
+  //   spacePokeballs.innerHTML = '';
+  // document.getElementById("btnInitial").style.display= "none";
+  // document.getElementById("cardContainer").style.display= "block"; 
+  //   for(let i=0;i< pokemons.length;i++){
+  //       document.getElementById("cardContainer").innerHTML+= `<div class="cards">${i}
+  //       <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <img src= "${pokemons[i].img}"> <p>${pokemons[i].type}</p></div>`;  
+  //   }
+  
 
 const pokemonTypes= ['psychic','ice','fairy','fighting','poison','grass','fire','normal','steel','rock','dark','ground','flying','water','bug','dragon','electric','ghost'];
 const spacePokeballs= document.getElementById('spacePokeballs');
@@ -34,7 +33,6 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
        let tittleTwo= document.createElement('h2');
        tittleTwo.textContent= 'Poke Tipo';
        spacePokeballs.appendChild(tittleTwo);
-      
       
       pokemonTypes.forEach(typeOfPokemons=>{
        let smallPokeball= document.createElement('button');
@@ -58,10 +56,16 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
 
       backButton.addEventListener('click',()=>{
         spacePokeballs.innerHTML = '';
-        //let orderA= OrderIn(pokemons);
+        
 })});
-
-
+// const back= document.createElement("button");
+// back.type="button;"
+// back.addEventListener('click',function() {
+//     back.setAttribute('id',back);
+//     buttonBack.appendChild(back);
+//     window.history.back();
+//     }
+//     ,false);
 
 pokemons.sort(aZorder);
 console.log(1,pokemons);
