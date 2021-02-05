@@ -1,7 +1,9 @@
 
 import data from './data/pokemon/pokemon.js';
-import {filterTypes} from './data.js';
+import {filterTypes,aZorder} from './data.js';
 const pokemons = data.pokemon;
+
+
 
 document.getElementById("allPokemon").addEventListener('click',()=>{
     spacePokeballs.innerHTML = '';
@@ -10,7 +12,7 @@ document.getElementById("allPokemon").addEventListener('click',()=>{
     for(let i=0;i< pokemons.length;i++){
         document.getElementById("cardContainer").innerHTML+= `<div class="cards">${i}
         <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <img src= "${pokemons[i].img}"> <p>${pokemons[i].type}</p></div>`;  
-    };
+    }
      
 // const back= document.createElement("button");
 // back.type="button;"
@@ -60,15 +62,6 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
 })});
 
 
-const aZorder = (dev, next) => {
-  if (dev.name < next.name){
-    return -1;
-  }
-  if (dev.name > next.name){
-    return 1;
-  }
-  return 0;
-}
 
 pokemons.sort(aZorder);
 console.log(1,pokemons);

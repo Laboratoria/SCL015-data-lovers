@@ -11,6 +11,16 @@ let pokemonFilter=[]
   return pokemonFilter;  
   };
  
+  export const aZorder = (dev, next) => {
+    if (dev.name < next.name){
+      return -1;
+    }
+    if (dev.name > next.name){
+      return 1;
+    }
+    return 0;
+  }
+  
 
 /*export const ordenIn= (pokemons) =>{
       pokemons.sort((nameA, nameB)=>{
