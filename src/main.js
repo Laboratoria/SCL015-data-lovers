@@ -3,17 +3,28 @@ import data from './data/pokemon/pokemon.js';
 import {filterTypes,aZorder} from './data.js';
 const pokemons = data.pokemon;
 
-const print=()=>{
-  for(let i=0;i< pokemons.length;i++){
-  `<div class="cards">${i}
-     <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <
-     img src= "${pokemons[i].img}">
-     <p>${pokemons[i].type}</p>
-  </div>`;  
-   }
- }
- console.log(print);
- document.getElementById("cardContainer").innerHTML+=print;
+// const print=()=>{
+//   for(let i=0;i< pokemons.length;i++){
+//   `<div class="cards">${i}
+//      <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <
+//      img src= "${pokemons[i].img}">
+//      <p>${pokemons[i].type}</p>
+//   </div>`;  
+//    }
+//  }
+//  console.log(print);
+//  document.getElementById("cardContainer").innerHTML+=print;
+
+ let tazos= (pokemons.forEach
+ `<div class="cards">
+ <h4>${(pokemons[i].name).toUpperCase(i)}</h4> <
+ img src= "${pokemons[i].img}">
+ <p>${pokemons[i].type}</p>
+</div>`);  
+ 
+
+let print =tazos(pokemons);
+console.log(print);
 
   //   spacePokeballs.innerHTML = '';
   // document.getElementById("btnInitial").style.display= "none";
