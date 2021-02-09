@@ -2,9 +2,23 @@
 import data from './data/pokemon/pokemon.js';
 import {filterTypes,aZorder} from './data.js';
 const pokemons = data.pokemon;
+
 pokemons.sort(aZorder);
 
-let tazo="";
+const printPokemon= (arrayPokemons)=>{
+  let tazo="";
+  for(let i=0;i< arrayPokemons.length;i++){
+    tazo += `
+    <div class="cards">${i}
+    <h4>${(arrayPokemons[i].name).toUpperCase(i)}</h4>
+    <img src= "${arrayPokemons[i].img}">
+    <p>${arrayPokemons[i].type}</p></div>
+    `;
+  }
+    return tazo;  
+}
+
+
 document.getElementById("allPokemon").addEventListener('click', ()=>{
 document.getElementById("btnInitial").style.display= "none";
 document.getElementById("cardContainer").style.display= "block"; 
@@ -16,15 +30,8 @@ let buttonTazo=`
 <option value="order Z-A" id="orderZA">Ordena Z - A</option>
 </select>
 `;
-  for(let i=0;i< pokemons.length;i++){
-    tazo += `
-    <div class="cards">${i}
-    <h4>${(pokemons[i].name).toUpperCase(i)}</h4>
-    <img src= "${pokemons[i].img}">
-    <p>${pokemons[i].type}</p></div>
-    `;  
-  }
-  document.getElementById("cardContainer").innerHTML+=buttonTazo+tazo;
+  const pokemonsPrint= printPokemon(pokemons);
+  document.getElementById("cardContainer").innerHTML=buttonTazo+pokemonsPrint;
 });
 
 const pokemonTypes= ['psychic','ice','fairy','fighting','poison','grass','fire','normal','steel','rock','dark','ground','flying','water','bug','dragon','electric','ghost'];
@@ -48,7 +55,8 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
 
        smallPokeball.addEventListener('click',()=>{
          let filterPokemon= filterTypes(pokemons, event.target.value);
-         console.log(filterPokemon);
+         const printPokemonFilter= printPokemon(filterPokemon);
+         document.getElementById("cardContainer").innerHTML=printPokemonFilter;
        })
       });
 
@@ -59,7 +67,9 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
 
       backButton.addEventListener('click',() =>{
         // window.history.back();
-      spacePokeballs.innerHTML= btnInitial;
+        document.getElementById("btnInitial").style.display= "block";
+        document.getElementById("spacePokeball").style.display= "none";
+      // spacePokeballs.innerHTML= '';
       // history.back();
       });
 });
