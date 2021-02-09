@@ -21,25 +21,16 @@ let pokemonFilter=[]
     return 0;
   }
   
-
-/*export const ordenIn= (pokemons) =>{
-      pokemons.sort((nameA, nameB)=>{
-    return nameA.name + nameB.name;
-  })};
-console.log(ordenIn);
-;
-
-export const ordenIn= (pokemons)=>{pokemons.sort(function(prev,next){
-  if (prev.name>next.name){
-  return 1;
-  }{
-  return -1;
-  }
-  });
-  console.log(3,ordenIn)
-  return ordenIn;
-  
-  }
+// export const ordenIn= (pokemons)=>{
+//   pokemons.sort((dev,next)=>{
+//     if (dev.name < next.name){
+//           return -1;
+//         }
+//         if (dev.name > next.name){
+//           return 1;
+//         }
+//         return 0;
+//   }
 
 /*export const orderPokemons= (pokemons,name) => {
   let pokemonOrderAZ=[]
