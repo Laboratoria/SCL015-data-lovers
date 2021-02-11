@@ -1,5 +1,5 @@
 import {filterTypes} from '../src/data.js';
-import {orderPokemons} from '../src/data.js';
+import {aZorder} from '../src/data.js';
 
 const pokemonS= [
   {type:'water',name: "bulbasaur"},
@@ -17,18 +17,15 @@ describe('filterTypes',()  => {
 });
 
 
-describe('orderPokemons',()  => {
+describe('aZoreder',()  => {
   it('is a function', () => {
-    expect(typeof orderPokemons).toBe('function');
+    expect(typeof aZorder).toBe('function');
   });
 
   it('sort by A-Z the pokemons', () => {
-    expect(orderPokemons(pokemonS,"name")).toEqual([{type:'water',name: "bulbasaur"},{type:'grass',name: "ivysaur"},
+    expect(aZorder(pokemonS,"name")).toEqual([{type:'water',name: "bulbasaur"},{type:'grass',name: "ivysaur"},
     {type:'poison',name: "venusaur"}]);
   });
 
-  // it('sort by Z-A the pokemons',() => {
-  //   expect(orderPokemons(pokemonS)).toEqual([{name:"venusaur"},{name: "ivysaur"},{name: "bulbasaur"}]);
-  // });
 });
 

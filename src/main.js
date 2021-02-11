@@ -3,8 +3,6 @@ import data from './data/pokemon/pokemon.js';
 import {filterTypes, aZorder} from './data.js';
 
 const pokemons = data.pokemon;
-console.log(pokemons,{aZorder});
-// pokemons.sort(aZorder);
 
 const printPokemon= (arrayPokemons)=>{
   let tazo="";
@@ -19,7 +17,6 @@ const printPokemon= (arrayPokemons)=>{
     return tazo;  
 }
 
-
 document.getElementById("allPokemon").addEventListener('click', ()=>{
 document.getElementById("btnInitial").style.display= "none";
 document.getElementById("cardContainer").style.display= "block"; 
@@ -28,11 +25,13 @@ document.getElementById("back").style.display="block";
 let buttonTazo=`
 <select value= "select" id="selectOrder" class="selectAZ" name="selectAZ">
 <option selected disabled>Ordena</option>
-<option value="orderAZ" id="orderAZ">Ordena A - Z</option>
+<option value="orderAZ" id="orderAZ" onchange="${aZorder(pokemons)}">Ordena A - Z</option>
 <option value="order Z-A" id="orderZA">Ordena Z - A</option>
 </select>
 `;
-  //funcion para el select... llamando a la funcion de ordenar 
+const printPokemonAll= printPokemon(pokemons);
+ document.getElementById("cardContainer").innerHTML=buttonTazo+printPokemonAll;
+ 
     });
 
 
