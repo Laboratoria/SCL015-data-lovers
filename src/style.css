@@ -22,10 +22,6 @@ h4{
     display: flex;
     justify-content: center;
 }
-/*.hidden{ 
-
-}
-*/
 body {
     background-image: url(image/65.jpg); 
     background-position: center center;
@@ -143,22 +139,6 @@ body {
 #search:hover {
     transform: scale(1.4,1.4);
 }
-/*.btn_initial {
-    padding-top: 25rem;
-    padding-bottom: 15rem;
-    border: 15rem;
-    margin: 15rem;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-}     
-.btn_types {
-    padding-top: 25rem;
-    padding: 5rem;
-    display: flex;
-    align-items: flex-start;
-}
-*/
 .poketype {
     background-image: url(image/poketipo.png);
     flex-direction: column;
@@ -180,7 +160,6 @@ body {
 }  
 .poketype:hover {
     transform: scale(1.2,1.2);
-
 }
 .button_links {
     position: relative;
@@ -240,15 +219,13 @@ p{
     display: flex;
     justify-content: flex-end;
 }
-
-#back{
+.backButton{
     background-image: url(image/atras.png);
     height: 90px;
     width: 90px;
     border: 0rem;
     background-position: center;
     flex-direction: column-reverse;
-    /* align-items: flex-end; */
     background-size: cover;
     box-shadow: 3px 20px 35px black;
     border-radius: 50%;
@@ -256,6 +233,7 @@ p{
     margin-left: 1050px;
     outline: none;
     transition: 1s;
+    display: none;
 }
 #back:hover{
     transform: scale(1.5,1.5);
@@ -360,7 +338,6 @@ p{
           display: block;
           padding: 0.5rem 0rem;
           transition: all 0.4s linear;
-          /* border-radius: 5px; */
         }
           .navigation ul li a:hover {
             background-color: cyan;
