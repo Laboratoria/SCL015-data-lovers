@@ -17,7 +17,7 @@ describe('filterTypes',()  => {
 });
 
 
-describe('aZoreder',()  => {
+describe('aZorder',()  => {
   it('is a function', () => {
     expect(typeof aZorder).toBe('function');
   });
