@@ -78,5 +78,3 @@ document.getElementById("btnTypes").addEventListener('click', ()=>{
       //   // document.getElementById("spacePokeball").style.display= "none";
       // });
 });
-
-console.log(1,pokemons);
