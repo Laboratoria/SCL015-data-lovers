@@ -42,7 +42,7 @@ El nombre POKETEKA fue pensado en que es una especie de biblioteca pokemón, nos
 
 ### La página Web 
 
-[Link de la página](https://gi-isler.github.io/SCL015-data-lovers/scr/index.html)
+[Link de la página](https://gi-isler.github.io/SCL015-data-lovers/src)
 
 
 
