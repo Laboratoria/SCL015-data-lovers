@@ -186,7 +186,7 @@ DEFINICIÓN DE TERMINADO:
 
 
 
-[link al sitio web POKEDATOS](https://luzciel.github.io/SCL015-data-lovers/src/)
+[link al sitio web POKEDATOS](https://luzciel.github.io/POKEDATOS/src/)
 
 
 
