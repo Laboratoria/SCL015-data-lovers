@@ -15,7 +15,7 @@ const htmlToElements = (html) => {
 }
 
 //data .JSON
-fetch('https://luzciel/POKEDATOS/blob/master/src/data/pokemon/pokemon.json')
+fetch('https://luzciel.github.io/POKEDATOS/src/data/pokemon/pokemon.json')
   .then(response => response.json())
   .then(data => {
     const dataPokemon = data.pokemon; // data pokemon del json    
