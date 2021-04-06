@@ -7,6 +7,7 @@
 * [3. Definición del usuario y solución de problemas](#3-definición-del-producto-y-solución-de-problemas)
 * [4. Etapa de diseño](#4-etapa-de-diseño)
 * [5. Historias de usuario](#5-historias-de-usuario)
+* [6. Diseño Final](#6-Diseño-Final)
 ----------------------------------------------------------------------------------------------------------------------------------
 
 ***
@@ -50,3 +51,6 @@ El proceso de diseño del producto siguió la siguiente planificación:
 ![historia1](/src/images/diseño/historia1.png)
 ![historia2](/src/images/diseño/historia2.png)
 ![historia3](/src/images/diseño/historia3.png)
+
+## 6. Diseño final
+![historia3](/src/images/diseño/datalovers.png)
