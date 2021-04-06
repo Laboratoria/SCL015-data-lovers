@@ -54,3 +54,5 @@ El proceso de diseño del producto siguió la siguiente planificación:
 
 ## 6. Diseño final
 ![historia3](/src/images/diseño/datalovers.png)
+![historia3](/src/images/diseño/motog4png.png)
+![historia3](/src/images/diseño/nexus7.png)
