@@ -53,6 +53,11 @@ El proceso de diseño del producto siguió la siguiente planificación:
 ![historia3](/src/images/diseño/historia3.png)
 
 ## 6. Diseño final
+Diseño para celular:
+
 ![historia3](/src/images/diseño/datalovers.png)
 ![historia3](/src/images/diseño/motog4png.png)
-![historia3](/src/images/diseño/nexus7.png)
+
+Diseño para ipad
+
+![historia3](/src/images/diseño/ipad.png)
